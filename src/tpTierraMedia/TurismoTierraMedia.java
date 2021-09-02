@@ -1,5 +1,5 @@
 package tpTierraMedia;
 
 public class TurismoTierraMedia {
-private int lil:
+private int li;
 }
