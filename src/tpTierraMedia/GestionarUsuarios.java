@@ -24,10 +24,34 @@ public class GestionarUsuarios {
 			String linea = br.readLine();
 			while ((linea != null)) {
 				String[] valores = linea.split(",");
-				Usuario nuevoUsuario = new Usuario(valores[0], (int) Double.parseDouble(valores[1]),
-						(int) Double.parseDouble(valores[2], valores[3]));
+				
+				String nombre= valores[0];
+				int presupuesto= Integer.parseInt(valores[1]);
+			    int tiempo = Integer.parseInt(valores[2]);
+			    
+			   
+			    
+			    int j;
+			    if(valores[3]== "PAISAJE") {
+			    	j=1;}
+			    if(valores[3]== "AVENTURA") {
+			    	j=2;}
+			    else {j= 3;}
+			    
+			    TipoAtraccion valor =  TipoAtraccion.values()[j];
+			    
+			    TipoAtraccion valor = Enum.valueOf (TipoAtraccion.class ,valores[3]);
+			     
+			    // posibles soluciones aal parametro , hayq  dejar una
+			                                        
+				
+				Usuario nuevoUsuario = new Usuario(nombre, presupuesto, tiempo , valor);
 				listaUsuarios.add(nuevoUsuario);
+				
+				
 				linea = br.readLine();
+				
+				
 				//Hay que ver el valor[3] para que de con tipoPreferido o cambiar el parametro a un String//
 			}
 
@@ -44,4 +68,10 @@ public class GestionarUsuarios {
 		}
 		return listaUsuarios;
 	}
-}
+	
+		
+		
+	}
+
+
+
