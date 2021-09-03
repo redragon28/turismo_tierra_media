@@ -4,11 +4,13 @@ import java.util.List;
 
 public class Usuario {
 
+	private String nombre;
 	private int presupuesto;
 	private int tiempoDisponible;
 	private TipoAtraccion tipoPreferido;
 
-	public Usuario(int presupuesto, int tiempoDisponible, TipoAtraccion tipoPreferido) {
+	public Usuario(String nombre, int presupuesto, int tiempoDisponible, TipoAtraccion tipoPreferido) {
+		this.nombre = nombre;
 		this.presupuesto = presupuesto;
 		this.tiempoDisponible = tiempoDisponible;
 		this.tipoPreferido = tipoPreferido;

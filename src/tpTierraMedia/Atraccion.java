@@ -6,12 +6,14 @@ import java.util.List;
 
 public class Atraccion {
 
+	private String nombre;
 	private TipoAtraccion tipo;
 	private double precio;
 	private double duracion;
 	private int cupoPersonas;
 
 	public Atraccion(TipoAtraccion tipo, double precio, double duracion, int cupoPersonas) {
+		this.nombre = nombre;
 		this.tipo = tipo;
 		this.precio = precio;
 		this.duracion = duracion;
