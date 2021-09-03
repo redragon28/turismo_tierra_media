@@ -1,17 +1,27 @@
 package tpTierraMedia;
 
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class Atraccion {
 
 	private TipoAtraccion tipo;
 	private double precio;
-	private int duracion;
+	private double duracion;
 	private int cupoPersonas;
 
-	public Atraccion(TipoAtraccion tipo, double precio, int duracion, int cupoPersonas) {
+	public Atraccion(TipoAtraccion tipo, double precio, double duracion, int cupoPersonas) {
 		this.tipo = tipo;
 		this.precio = precio;
 		this.duracion = duracion;
 		this.cupoPersonas = cupoPersonas;
+	}
+	
+	public List<TipoAtraccion> getListaTiposAtraccion() {
+		List<TipoAtraccion> listaTipoAtraccion = new ArrayList<TipoAtraccion>();
+		listaTipoAtraccion.add(tipo);
+		return listaTipoAtraccion;
 	}
 
 	public TipoAtraccion getTipo() {
@@ -22,7 +32,7 @@ public class Atraccion {
 		return precio;
 	}
 
-	public int getDuracion() {
+	public double getDuracion() {
 		return duracion;
 	}
 

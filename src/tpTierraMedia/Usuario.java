@@ -22,8 +22,8 @@ public class Usuario {
 		return tiempoDisponible >= duracion;
 	}
 	
-	public boolean esAtraccionPreferida(List<tipoAtraccion> tiposAtraccion) {
-		return tiposAtraccion.contains(tipoPreferido); // hay que definir o crear la lista :)
+	public boolean esAtraccionPreferida(List<TipoAtraccion> tipoAtraccion) {
+		return tipoAtraccion.contains(tipoPreferido); 
 	}
 
 }
