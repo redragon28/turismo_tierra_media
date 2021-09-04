@@ -13,7 +13,7 @@ public class GestionarAtracciones {
 		FileReader fr = null;
 		BufferedReader br = null;
 
-		List<Atraccion> listaAtracciones = new ArrayList<>(); // conviene list o LINkList?
+		List<Atraccion> listaAtracciones = new ArrayList<>(); // conviene list o LINkList?3
 
 		try {
 
