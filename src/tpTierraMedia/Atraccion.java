@@ -12,7 +12,7 @@ public class Atraccion {
 	private double duracion;
 	private int cupoPersonas;
 
-	public Atraccion(TipoAtraccion tipo, double precio, double duracion, int cupoPersonas) {
+	public Atraccion(String nombre, TipoAtraccion tipo, double precio, double duracion, int cupoPersonas) {
 		this.nombre = nombre;
 		this.tipo = tipo;
 		this.precio = precio;
