@@ -12,7 +12,7 @@ public class Atraccion {
 	private double duracion;
 	private int cupoPersonas;
 
-	public Atraccion(TipoAtraccion tipo, double precio, double duracion, int cupoPersonas) {
+	public Atraccion(String nombre, double precio, double duracion, int cupoPersonas, TipoAtraccion tipo) {
 		this.nombre = nombre;
 		this.tipo = tipo;
 		this.precio = precio;
@@ -42,4 +42,5 @@ public class Atraccion {
 		return cupoPersonas;
 	}
 
+	
 }

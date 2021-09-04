@@ -1,0 +1,8 @@
+Pack aventura , Bosque Negro , Mordor ,0.2
+Pack landscape , Erebor, Abismo de helm ,0.1
+Pack vista ,Minas Tirith, Erebor ,0.2
+Pack degustacion ,Lothlorien , La Comarca ,36
+PacK riesgo ,Bosque Negro , Moria ,11
+Pack view ,Minas tirith, Abismo de Helm ,9
+Pack paisajes ,Minas tirith , Abismo de Helm ,Erebor gratis
+Pack maligno ,Mordor , Moria , Bosque Negro gratis

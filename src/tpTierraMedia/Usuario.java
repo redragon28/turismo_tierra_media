@@ -6,10 +6,10 @@ public class Usuario {
 
 	private String nombre;
 	private int presupuesto;
-	private int tiempoDisponible;
+	private double tiempoDisponible;
 	private TipoAtraccion tipoPreferido;
 
-	public Usuario(String nombre, int presupuesto, int tiempoDisponible, TipoAtraccion tipoPreferido) {
+	public Usuario(String nombre, int presupuesto, double tiempoDisponible, TipoAtraccion tipoPreferido) {
 		this.nombre = nombre;
 		this.presupuesto = presupuesto;
 		this.tiempoDisponible = tiempoDisponible;
@@ -28,4 +28,7 @@ public class Usuario {
 		return tipoAtraccion.contains(tipoPreferido); 
 	}
 
-}
+	
+
+	}
+

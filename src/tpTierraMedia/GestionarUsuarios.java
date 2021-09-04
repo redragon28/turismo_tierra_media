@@ -27,18 +27,18 @@ public class GestionarUsuarios {
 				
 				String nombre= valores[0];
 				int presupuesto= Integer.parseInt(valores[1]);
-			    int tiempo = Integer.parseInt(valores[2]);
+			    double tiempo = Double.parseDouble(valores[2]);
 			    
 			   
 			    
-			    int j;
+			   /* int j;
 			    if(valores[3]== "PAISAJE") {
 			    	j=1;}
 			    if(valores[3]== "AVENTURA") {
 			    	j=2;}
 			    else {j= 3;}
 			    
-			    TipoAtraccion valor =  TipoAtraccion.values()[j];
+			    TipoAtraccion valor =  TipoAtraccion.values()[j]; */
 			    
 			    TipoAtraccion valor = Enum.valueOf (TipoAtraccion.class ,valores[3]);
 			     
