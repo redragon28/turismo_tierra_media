@@ -32,7 +32,7 @@ package tpTierraMedia;
 				    int descuento = Integer.parseInt(valores[3]);
 				   
 				   
-				    TipoAtraccion valor = Enum.valueOf (TipoAtraccion.class ,valores[3]);
+				   // TipoAtraccion valor = Enum.valueOf (TipoAtraccion.class ,valores[3]);
 				     
 				    // posibles soluciones aal parametro , hayq  dejar una
 				                                        
