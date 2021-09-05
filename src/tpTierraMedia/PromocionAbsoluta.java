@@ -5,5 +5,8 @@ public class PromocionAbsoluta extends Promocion {
 	
 	
 	
-	public double valorPromo()
+	public double valorPromo() {
+		return 0;
+		
+	}
 }
