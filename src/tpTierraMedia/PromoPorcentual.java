@@ -25,7 +25,9 @@ public class PromoPorcentual extends Promocion {
 	
 	
 	public double getPromocion () {
-		return super.getPrecio()* (1-(this.porcentaje/100));
+		return super.getPrecio()* (1-(this.porcentaje));
 	
 }
 }
+
+  

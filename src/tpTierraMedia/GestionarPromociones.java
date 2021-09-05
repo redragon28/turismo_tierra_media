@@ -1,23 +1,21 @@
 package tpTierraMedia;
 
-	import java.io.BufferedReader;
-	import java.io.FileReader;
-	import java.io.IOException;
-	import java.util.ArrayList;
-	import java.util.List;
-	public class GestionarPromociones {
-	
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
-		public List<Promocion> readPromocionFileAndCreateList() {
+public class GestionarPromociones {
+
+	public List<Promocion> readPromocionFileAndCreateList() {
 
 
 			FileReader fr = null;
 			BufferedReader br = null;
 			
 			List<Promocion> listaPromociones = new ArrayList<>();  // es mejor una linkedlist o arraylist?
-			
-
-			try {
+				try {
 
 				fr = new FileReader("Archivos/Usuarios.txt");
 				br = new BufferedReader(fr);
@@ -36,7 +34,7 @@ package tpTierraMedia;
 				     
 				    // posibles soluciones aal parametro , hayq  dejar una
 				                                        
-					Promocion Promocion = new Promocion(nombre, nombreLugar1, nombreLugar2 , descuento);
+					Promocion Promocion = new Promocion(nombre, nombreLugar1, nombreLugar2 , descuento, list atraccion);
 					listaPromociones.add(nuevaPromocion);
 								
 					linea = br.readLine();
@@ -57,10 +55,5 @@ package tpTierraMedia;
 			}
 			return listaPromociones;
 		}
-		
-			
-			
-		}
-
 
 }
