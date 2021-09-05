@@ -6,6 +6,13 @@ public abstract class Promocion {
 
 	protected String nombre;
 	protected List<Atraccion> atracciones;
+	
+	public Promocion (List<Atraccion> atracciones) {
+		this.atracciones= atracciones;
+	
+	}
+
+	
 
 	public Double getPrecio() {
 		Double costoTotal = 0.0;

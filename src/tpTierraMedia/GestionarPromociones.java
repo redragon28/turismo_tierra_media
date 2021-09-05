@@ -29,32 +29,19 @@ package tpTierraMedia;
 					String nombre= valores[0];
 					int nombreLugar1= Integer.parseInt(valores[1]);
 				    int nombreLugar2 = Integer.parseInt(valores[2]);
-				    String descuento = Integer.parseInt(valores[3]);
-				    String descuento2 = valores[3];
-				    
-				    /*
-				    int j;
-				    if(valores[3]== "PAISAJE") {
-				    	j=1;}
-				    if(valores[3]== "AVENTURA") {
-				    	j=2;}
-				    else {j= 3;}
-				    TipoAtraccion valor =  TipoAtraccion.values()[j];
-				    */
-				    
+				    int descuento = Integer.parseInt(valores[3]);
+				   
+				   
 				    TipoAtraccion valor = Enum.valueOf (TipoAtraccion.class ,valores[3]);
 				     
 				    // posibles soluciones aal parametro , hayq  dejar una
 				                                        
-					
-					Usuario nuevaPromocion = new Promocion(nombre, presupuesto, tiempo , valor);
+					Promocion Promocion = new Promocion(nombre, nombreLugar1, nombreLugar2 , descuento);
 					listaPromociones.add(nuevaPromocion);
-					
-					
+								
 					linea = br.readLine();
 					
 					
-					//Hay que ver el valor[3] para que de con tipoPreferido o cambiar el parametro a un String//
 				}
 
 			} catch (IOException e) {
