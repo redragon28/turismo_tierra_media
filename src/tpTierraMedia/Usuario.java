@@ -5,8 +5,8 @@ import java.util.List;
 public class Usuario {
 
 	private String nombre;
-	private int presupuesto;
-	private double tiempoDisponible;
+	public int presupuesto;
+	public double tiempoDisponible;
 	private TipoAtraccion tipoPreferido;
 
 	public Usuario(String nombre, int presupuesto, double tiempoDisponible, TipoAtraccion tipoPreferido) {
