@@ -8,7 +8,7 @@ import java.util.List;
 
 public class GestionarAtracciones {
 
-	public List<Atraccion> readUsuariosFileAndCreateList() {
+	public List<Atraccion> readAtraccionesFileAndCreateList() {
 
 		FileReader fr = null;
 		BufferedReader br = null;
