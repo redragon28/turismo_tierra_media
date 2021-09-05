@@ -38,8 +38,7 @@ public class GestionarPromociones {
 					listaPromociones.add(nuevaPromocion);
 								
 					linea = br.readLine();
-					
-					
+						
 				}
 
 			} catch (IOException e) {
