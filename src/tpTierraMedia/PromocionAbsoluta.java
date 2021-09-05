@@ -19,14 +19,11 @@ public class PromocionAbsoluta extends Promocion {
 	
 	}
 	
-<<<<<<< HEAD
+
 	public double getPromocion() {
 	return this.valorPaquete;
 }
-=======
-	public double valorPromo() {
-		return 0;
+
 		
 	}
->>>>>>> branch 'main' of https://github.com/redragon28/turismo_tierra_media.git
-}
+
