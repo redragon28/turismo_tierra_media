@@ -2,7 +2,7 @@ package tpTierraMedia;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Objects;
 
 public class Atraccion {
 
@@ -19,7 +19,7 @@ public class Atraccion {
 		this.duracion = duracion;
 		this.cupoPersonas = cupoPersonas;
 	}
-	
+
 	public List<TipoAtraccion> getListaTiposAtraccion() {
 		List<TipoAtraccion> listaTipoAtraccion = new ArrayList<TipoAtraccion>();
 		listaTipoAtraccion.add(tipo);
@@ -42,5 +42,24 @@ public class Atraccion {
 		return cupoPersonas;
 	}
 
-	
+	@Override
+	public int hashCode() {
+		return Objects.hash(cupoPersonas, duracion, nombre, precio, tipo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Atraccion other = (Atraccion) obj;
+		return cupoPersonas == other.cupoPersonas
+				&& Double.doubleToLongBits(duracion) == Double.doubleToLongBits(other.duracion)
+				&& Objects.equals(nombre, other.nombre)
+				&& Double.doubleToLongBits(precio) == Double.doubleToLongBits(other.precio) && tipo == other.tipo;
+	}
+
 }
