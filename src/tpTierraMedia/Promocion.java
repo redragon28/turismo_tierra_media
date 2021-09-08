@@ -7,8 +7,9 @@ public abstract class Promocion {
 	protected String nombre;
 	protected List<Atraccion> atracciones;
 	
-	public Promocion (List<Atraccion> atracciones) {
+	public Promocion (String nombre, List<Atraccion> atracciones) {
 		this.atracciones= atracciones;
+		this.nombre= nombre;
 	
 	}
 
@@ -31,4 +32,6 @@ public abstract class Promocion {
 	}
 
 }
+
+
 

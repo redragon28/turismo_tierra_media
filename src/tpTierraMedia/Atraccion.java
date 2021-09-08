@@ -25,6 +25,10 @@ public class Atraccion {
 		listaTipoAtraccion.add(tipo);
 		return listaTipoAtraccion;
 	}
+	public  String getNombre() {
+	return nombre;
+	}
+	
 
 	public TipoAtraccion getTipo() {
 		return tipo;
