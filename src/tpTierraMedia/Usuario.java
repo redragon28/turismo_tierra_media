@@ -28,6 +28,22 @@ public class Usuario {
 		return tipoAtraccion.contains(tipoPreferido); 
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public int getPresupuesto() {
+		return presupuesto;
+	}
+
+	public double getTiempoDisponible() {
+		return tiempoDisponible;
+	}
+
+	public TipoAtraccion getTipoPreferido() {
+		return tipoPreferido;
+	}
+
 	
 
 	}
