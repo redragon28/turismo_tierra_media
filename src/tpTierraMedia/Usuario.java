@@ -28,13 +28,30 @@ public class Usuario {
 		return tipoAtraccion.contains(tipoPreferido); 
 	}
 
+
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public int getPresupuesto() {
+		return presupuesto;
+	}
+
+	public double getTiempoDisponible() {
+		return tiempoDisponible;
+	}
+
+	public TipoAtraccion getTipoPreferido() {
+		return tipoPreferido;
+
+	}
+
 	@Override
 	public String toString() {
 		return "Usuario [nombre=" + nombre + ", presupuesto=" + presupuesto + ", tiempoDisponible=" + tiempoDisponible
 				+ ", tipoPreferido=" + tipoPreferido + "]";
 	}
-
-	
 
 	}
 
