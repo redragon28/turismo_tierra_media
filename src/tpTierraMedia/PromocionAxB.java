@@ -9,7 +9,7 @@ public class PromocionAxB extends Promocion {
 		
 		
 	}
-	
+	@Override
 public double getPrecio() {
 	double valor = 0;
 	for (int x=0 ; x < atracciones.size()-1; x++) {
