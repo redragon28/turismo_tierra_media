@@ -30,6 +30,20 @@ public abstract class Promocion {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+    public double getTiempoPromocion () {
+    	double tiempo = 0.0;
+    	for(Atraccion atraccionesEnPromo : atracciones) {
+    		tiempo += atraccionesEnPromo.getDuracion();
+    	}
+    		return tiempo;
+    }
+
+
+
+	@Override
+	public String toString() {
+		return "Promocion [nombre=" + nombre + ", atracciones=" + atracciones + "]";
+	}
 
 }
 

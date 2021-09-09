@@ -8,7 +8,8 @@ import java.util.List;
 
 public class GestionarAtracciones {
 
-	public List<Atraccion> readAtraccionesFileAndCreateList() {
+
+public static List<Atraccion> readAtraccionesFileAndCreateList() {
 
 		FileReader fr = null;
 		BufferedReader br = null;
@@ -22,11 +23,11 @@ public class GestionarAtracciones {
 
 			String linea = br.readLine();
 			while ((linea != null)) {
-				String[] valores = linea.split(",");
+				String[] valores = linea.split(";");
 
 				String nombre = valores[0];
 				int costo = Integer.parseInt(valores[1]);
-				double tiempo = Integer.parseInt(valores[2]);
+				double tiempo = Double.parseDouble(valores[2]);
 				int cupo = Integer.parseInt(valores[3]);
 
 				TipoAtraccion valor = Enum.valueOf(TipoAtraccion.class, valores[4]);
@@ -48,8 +49,11 @@ public class GestionarAtracciones {
 			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
-		}
+		}  
 		return listaAtracciones;
 	}
-
+public static void main(String[] args) {
+		
+		System.out.println(GestionarAtracciones.readAtraccionesFileAndCreateList().toString());
+	}
 }

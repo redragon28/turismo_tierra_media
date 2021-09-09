@@ -20,10 +20,21 @@ public class PromoPorcentual extends Promocion {
 	
 	
 	
-	public double getPromocion () {
+	public double getPrecioPromocion () {
 		return super.getPrecio()* (1-(this.porcentaje));
 	
 }
-}
+
+
+
+	@Override
+	public String toString() {
+		return "PromoPorcentual [porcentaje=" + porcentaje + "]";
+	}
+
+
+
+	}
+	
 
   

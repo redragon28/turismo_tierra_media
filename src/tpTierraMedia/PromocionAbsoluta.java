@@ -14,9 +14,16 @@ public class PromocionAbsoluta extends Promocion {
 	}
 	
 
-	public double getPromocion() {
+	public double getPrecioPromocion() {
 	return this.valorPaquete;
 }
-    
+
+
+	@Override
+	public String toString() {
+		return "PromocionAbsoluta [valorPaquete=" + valorPaquete + "]";
+	}
+     
+  
 	}
 

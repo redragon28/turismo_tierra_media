@@ -66,4 +66,10 @@ public class Atraccion {
 				&& Double.doubleToLongBits(precio) == Double.doubleToLongBits(other.precio) && tipo == other.tipo;
 	}
 
+	@Override
+	public String toString() {
+		return "Atraccion [nombre=" + nombre + ", tipo=" + tipo + ", precio=" + precio + ", duracion=" + duracion
+				+ ", cupoPersonas=" + cupoPersonas + "]";
+	}
+
 }

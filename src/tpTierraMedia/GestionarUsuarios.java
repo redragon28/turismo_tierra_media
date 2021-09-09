@@ -8,7 +8,9 @@ import java.util.List;
 
 public class GestionarUsuarios {
 
-	public List<Usuario> readUsuariosFileAndCreateList() {
+	public static List<Usuario> ListaUsuarios;
+
+	public static List<Usuario> readUsuariosFileAndCreateList() {
 
 
 		FileReader fr = null;
@@ -66,10 +68,14 @@ public class GestionarUsuarios {
 				e2.printStackTrace();
 			}
 		}
+		
 		return listaUsuarios;
 	}
 	
+	public static void main(String[] args) {
 		
+		System.out.println(GestionarUsuarios.readUsuariosFileAndCreateList().toString());
+	}
 		
 	}
 

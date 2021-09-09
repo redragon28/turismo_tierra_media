@@ -8,8 +8,6 @@ import java.util.List;
 
 public class GestionarPromociones {
 
-	private static List<Atraccion> atracciones;
-
 	public static List<Promocion> readPromocionFileAndCreateList() {
 
 		FileReader fr = null;
@@ -25,23 +23,23 @@ public class GestionarPromociones {
 			String linea = br.readLine();
 			while ((linea != null)) {
 				String[] valores = linea.split(",");
-				if(!valores[3].matches("[0-9]")){
+				String valor3 = valores[3];
+				
+				if(!esNumero(valor3)){
 	            Promocion nuevaPromocion = new PromocionAxB(valores[1],atraccionesInvolucrada(valores) );
 					listaPromociones.add(nuevaPromocion);
+					break;
 				}
-				double Valor = Double.parseDouble(valores[3]);
-				if(Valor>1) {
-					Promocion nuevaPromocion = new PromocionAbsoluta(valores[1],Valor,atraccionesInvolucrada(valores));
+				double Valor3 = Double.parseDouble(valores[3]);
+				if(Valor3> 1) {
+					Promocion nuevaPromocion = new PromocionAbsoluta(valores[1],Valor3,atraccionesInvolucrada(valores));
 					listaPromociones.add(nuevaPromocion);
 				}else {
-					Promocion nuevaPromocion = new PromoPorcentual(valores[1],Valor,atraccionesInvolucrada(valores));
+					Promocion nuevaPromocion = new PromoPorcentual(valores[1],Valor3,atraccionesInvolucrada(valores));
 					listaPromociones.add(nuevaPromocion);
 				}
 
 			
-				//Promocion nuevaPromocion = new PromocionAbsoluta();
-				//listaPromociones.add(nuevaPromocion);
-
 				linea = br.readLine();
 
 			}
@@ -66,22 +64,31 @@ public class GestionarPromociones {
 
 	public static List<Atraccion> atraccionesInvolucrada(String[] valores) {
 		List<Atraccion> atraccionesInvolucradas = new ArrayList<>();
-		for (int i = 1; i <= valores.length; i++) {
+		for (int i = 1; i <= valores.length-1; i++) {
 			atraccionesInvolucradas.add(buscadorAtraccion(valores[i]));
 		}
 		return atraccionesInvolucradas;
 	}
-
+	
+	public static boolean esNumero (String valor) {
+	return	valor.matches("[-+]?\\d*\\.?\\d+");
+	
+	}
 	// busca en el array los objetos que represtan los lugares.
 	public static Atraccion buscadorAtraccion(String nombre) {
 		Atraccion resultado = null;
 
-		for (Atraccion atraccion : atracciones) {
+		for (Atraccion atraccion : GestionarAtracciones.readAtraccionesFileAndCreateList()) {
 			if (atraccion.getNombre() == nombre) { // revisar esto a ver si equals.(valores.trim())
 				resultado = atraccion;
 			}
 		}
 		return resultado;
 	}
-	
+public static void main(String[] args) {
+		
+		System.out.println(GestionarPromociones.readPromocionFileAndCreateList().toString());
+		
+		
+	}
 	}

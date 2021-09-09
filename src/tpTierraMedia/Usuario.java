@@ -28,6 +28,12 @@ public class Usuario {
 		return tipoAtraccion.contains(tipoPreferido); 
 	}
 
+	@Override
+	public String toString() {
+		return "Usuario [nombre=" + nombre + ", presupuesto=" + presupuesto + ", tiempoDisponible=" + tiempoDisponible
+				+ ", tipoPreferido=" + tipoPreferido + "]";
+	}
+
 	
 
 	}

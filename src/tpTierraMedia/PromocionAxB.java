@@ -21,4 +21,5 @@ return valor;
 public String VisitaGratis() {
 	return atracciones.get(atracciones.size()).getNombre();
 }
+
 }
