@@ -10,7 +10,7 @@ public class PromocionAxB extends Promocion {
 		
 	}
 	
-public double getPromocion() {
+public double getPrecio() {
 	double valor = 0;
 	for (int x=0 ; x < atracciones.size()-1; x++) {
 		valor = atracciones.get(x).getPrecio() ;

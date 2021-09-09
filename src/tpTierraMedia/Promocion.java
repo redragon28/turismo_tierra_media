@@ -15,8 +15,8 @@ public abstract class Promocion {
 
 	
 
-	public Double getPrecio() {
-		Double costoTotal = 0.0;
+	public double getPrecio() {
+		double costoTotal = 0.0;
 		for (Atraccion atraccion : atracciones) {
 			costoTotal += atraccion.getPrecio();
 		}
