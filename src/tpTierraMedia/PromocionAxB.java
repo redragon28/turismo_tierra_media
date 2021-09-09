@@ -21,5 +21,10 @@ return valor;
 public String VisitaGratis() {
 	return atracciones.get(atracciones.size()).getNombre();
 }
+@Override
+public String toString() {
+	return "PromocionAxB [nombre=" + nombre + ", atracciones=" + atracciones + "]";
+}
+
 
 }

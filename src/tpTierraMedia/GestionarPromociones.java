@@ -26,16 +26,16 @@ public class GestionarPromociones {
 				String valor3 = valores[3];
 				
 				if(!esNumero(valor3)){
-	            Promocion nuevaPromocion = new PromocionAxB(valores[1],atraccionesInvolucrada(valores) );
+	            Promocion nuevaPromocion = new PromocionAxB(valores[0],atraccionesInvolucrada(valores) );
 					listaPromociones.add(nuevaPromocion);
 					break;
 				}
 				double Valor3 = Double.parseDouble(valores[3]);
 				if(Valor3> 1) {
-					Promocion nuevaPromocion = new PromocionAbsoluta(valores[1],Valor3,atraccionesInvolucrada(valores));
+					Promocion nuevaPromocion = new PromocionAbsoluta(valores[0],Valor3,atraccionesInvolucrada(valores));
 					listaPromociones.add(nuevaPromocion);
 				}else {
-					Promocion nuevaPromocion = new PromoPorcentual(valores[1],Valor3,atraccionesInvolucrada(valores));
+					Promocion nuevaPromocion = new PromoPorcentual(valores[0],Valor3,atraccionesInvolucrada(valores));
 					listaPromociones.add(nuevaPromocion);
 				}
 
@@ -64,7 +64,7 @@ public class GestionarPromociones {
 
 	public static List<Atraccion> atraccionesInvolucrada(String[] valores) {
 		List<Atraccion> atraccionesInvolucradas = new ArrayList<>();
-		for (int i = 1; i <= valores.length-1; i++) {
+		for (int i = 1; i < valores.length-1; i++) {
 			atraccionesInvolucradas.add(buscadorAtraccion(valores[i]));
 		}
 		return atraccionesInvolucradas;
@@ -79,7 +79,7 @@ public class GestionarPromociones {
 		Atraccion resultado = null;
 
 		for (Atraccion atraccion : GestionarAtracciones.readAtraccionesFileAndCreateList()) {
-			if (atraccion.getNombre() == nombre) { // revisar esto a ver si equals.(valores.trim())
+			if (atraccion.getNombre().equals(nombre)) { // revisar esto a ver si equals.(valores.trim())
 				resultado = atraccion;
 			}
 		}

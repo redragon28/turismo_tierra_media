@@ -45,7 +45,18 @@ public abstract class Promocion {
 		return "Promocion [nombre=" + nombre + ", atracciones=" + atracciones + "]";
 	}
 
-}
+	public TipoAtraccion getPreferenciaPromo() {
+		TipoAtraccion preferencia;
+		
+		preferencia= ((Atraccion) atracciones).getTipo();
+		
+		
+		return preferencia;
+	}
+	
+	}
+
+
 
 
 

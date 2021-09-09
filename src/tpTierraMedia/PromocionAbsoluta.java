@@ -18,12 +18,16 @@ public class PromocionAbsoluta extends Promocion {
 	return this.valorPaquete;
 }
 
-
 	@Override
 	public String toString() {
-		return "PromocionAbsoluta [valorPaquete=" + valorPaquete + "]";
+		return "PromocionAbsoluta [valorPaquete=" + valorPaquete + ", nombre=" + nombre + ", atracciones=" + atracciones
+				+ "]";
+	}
+
+
+	
 	}
      
   
-	}
+	
 
