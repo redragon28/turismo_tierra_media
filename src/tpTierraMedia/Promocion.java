@@ -46,17 +46,15 @@ public abstract class Promocion {
 	}
 
 	public TipoAtraccion getPreferenciaPromo() {
-		TipoAtraccion preferencia;
-		
-		preferencia= ((Atraccion) atracciones).getTipo();
-		
-		
-		return preferencia;
+		TipoAtraccion preferencia = null;
+		for(Atraccion atraccionesEnPromo : atracciones) {
+			preferencia =  atraccionesEnPromo.getTipo();			
 	}
 	
+		return preferencia;
 	}
 
-
+}
 
 
 
