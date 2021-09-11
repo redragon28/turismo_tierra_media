@@ -21,9 +21,9 @@ public class PromocionTest {
 		Atracciones.add(a1);
 		Atracciones.add(a2);
 		
-		Promocion ema = new PromoPorcentual ("ema", 20, Atracciones);  
+		Promocion flex = new PromoPorcentual ("Relax", 20, Atracciones);  
 		
-		assertNotNull(ema); 
+		assertNotNull(flex); 
 	}
 
 	
@@ -39,13 +39,13 @@ public class PromocionTest {
 		Atracciones.add(a1);
 		Atracciones.add(a2);
 		
-		Promocion ema = new PromoPorcentual ("ema", 0.2, Atracciones);  
+		Promocion flex = new PromoPorcentual ("Relax", 0.2, Atracciones);  
 		
-		assertEquals (52, ema.getPrecio (), 0.001);
+		assertEquals (52, flex.getPrecio (), 0.001);
 		
-		assertEquals (5, ema.getTiempoPromocion(), 0.001);
+		assertEquals (5, flex.getTiempoPromocion(), 0.001);
 		
-		assertEquals (TipoAtraccion.PAISAJE, ema.getPreferenciaPromo ());
+		assertEquals (TipoAtraccion.PAISAJE, flex.getPreferenciaPromo ());
 	}
 
 }
