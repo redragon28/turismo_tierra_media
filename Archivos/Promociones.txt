@@ -5,4 +5,4 @@ Pack degustacion,Lothlorien,La Comarca,36
 PacK riesgo,Bosque Negro,Moria,11
 Pack view,Minas tirith,Abismo de Helm,9
 Pack paisajes,Minas tirith,Abismo de Helm,Erebor 
-Pack maligno,Mordor,Moria,Bosque Negro 
+Pack maligno,Mordor,Moria,Bosque Negro
