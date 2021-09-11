@@ -14,7 +14,7 @@ import tpTierraMedia.PromocionAxB;
 
 public class PromocionAxB {
 
-/*	@Test
+	@Test
 	public void test() {
 		List<Atraccion> Atracciones = new ArrayList<>();
 		
@@ -31,7 +31,7 @@ public class PromocionAxB {
 		
 		assertNotNull(dosXuno); 
 	}
-*/
+
 	
 	@Test
 	public void test2() {
