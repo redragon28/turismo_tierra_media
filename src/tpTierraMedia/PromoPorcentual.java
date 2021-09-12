@@ -6,10 +6,11 @@ import tpTierraMedia.Atraccion;
 
 public class PromoPorcentual extends Promocion {
 	private double porcentaje;
-	
-	public PromoPorcentual(String nombre, double porcentajeDescuento, List<Atraccion> atracciones) {
+
+public PromoPorcentual(String nombre, double porcentajeDescuento, List<Atraccion> atracciones) {
 		super(nombre, atracciones);
 		this.porcentaje = porcentajeDescuento;
+
 
 	}
 
@@ -30,7 +31,6 @@ public class PromoPorcentual extends Promocion {
 		return 3;
 	}
 
+
 }
 	
-
-  
