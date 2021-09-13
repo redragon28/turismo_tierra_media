@@ -25,6 +25,10 @@ public abstract class Promocion {
 		return nombre;
 	}
 
+	public List<Atraccion> getAtracciones() {
+		return atracciones;
+	}
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -37,6 +41,7 @@ public abstract class Promocion {
     	}
     		return tiempo;
     }
+	
 
 	@Override
 	public String toString() {
@@ -53,4 +58,8 @@ public abstract class Promocion {
 	}
 
 	protected abstract int tipoPromocion();
+	
+	protected abstract double precioPromocion();
+
+	protected abstract double duracionPromocion();
 }
