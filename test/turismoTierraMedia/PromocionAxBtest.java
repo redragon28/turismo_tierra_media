@@ -12,7 +12,7 @@ import tpTierraMedia.Promocion;
 import tpTierraMedia.TipoAtraccion;
 import tpTierraMedia.PromocionAxB;
 
-public class PromocionAxB {
+public class PromocionAxBtest {
 
 	@Test
 	public void test() {
