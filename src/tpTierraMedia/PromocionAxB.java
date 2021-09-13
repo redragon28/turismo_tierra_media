@@ -18,7 +18,7 @@ public class PromocionAxB extends Promocion {
 		return valor;
 	}
 
-	public String VisitaGratis() {
+	public String visitaGratis() {
 		return atracciones.get(atracciones.size()).getNombre();
 	}
 
