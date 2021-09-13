@@ -1,5 +1,6 @@
 package tpTierraMedia;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario {
@@ -8,12 +9,18 @@ public class Usuario {
 	public int presupuesto;
 	public double tiempoDisponible;
 	private TipoAtraccion tipoPreferido;
-
+	//private List<Atraccion> todasLasAtracciones;
+	private List<Atraccion> atraccionesAdquiridas;
+	private List<Promocion> promocionesAdquiridas;
+	
 	public Usuario(String nombre, int presupuesto, double tiempoDisponible, TipoAtraccion tipoPreferido) {
 		this.nombre = nombre;
 		this.presupuesto = presupuesto;
 		this.tiempoDisponible = tiempoDisponible;
 		this.tipoPreferido = tipoPreferido;
+		//this.todasLasAtracciones = new ArrayList<Atraccion>();
+		this.atraccionesAdquiridas = new ArrayList<Atraccion>();
+		this.promocionesAdquiridas = promocionesAdquiridas;
 	}
 	
 	public boolean esBuenPrecio(double precio) {
@@ -46,6 +53,47 @@ public class Usuario {
 		return tipoPreferido;
 
 	}
+	
+	/*public List<Atraccion> getTodasLasAtracciones() {
+		return todasLasAtracciones;
+	}
+
+	
+	public List<Atraccion> getHistorialDeAtracciones() {
+		return historialDeAtracciones;
+	}*/
+
+	public List<Promocion> getPromocionesAdquiridas() {
+		return promocionesAdquiridas;
+	}
+
+	public List<Atraccion> getAtraccionesAdquiridas() {
+		return atraccionesAdquiridas;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public void setPresupuesto(int presupuesto) {
+		this.presupuesto = presupuesto;
+	}
+
+	public void setTiempoDisponible(double tiempoDisponible) {
+		this.tiempoDisponible = tiempoDisponible;
+	}
+
+	public void setTipoPreferido(TipoAtraccion tipoPreferido) {
+		this.tipoPreferido = tipoPreferido;
+	}
+
+	/*public void setTodasLasAtracciones(List<Atraccion> todasLasAtracciones) {
+		this.todasLasAtracciones = todasLasAtracciones;
+	}
+
+	public void setHistorialDeAtracciones(List<Atraccion> historialDeAtracciones) {
+		this.historialDeAtracciones = historialDeAtracciones;
+	}*/
 
 	@Override
 	public String toString() {
