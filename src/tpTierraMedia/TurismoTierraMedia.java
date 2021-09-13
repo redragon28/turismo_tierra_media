@@ -321,10 +321,59 @@ public class TurismoTierraMedia {
 					+ usuario.getTipoPreferido() + " - Presupuesto: " + usuario.getPresupuesto() + " monedas"
 					+ " - Tiempo disponible: " + usuario.getTiempoDisponible() + " hs.");
 		}
+		
 	}
 	
-
+		public static void generarItinerario(Usuario usuario) {
+			
+			if (usuario.getPromocionesAdquiridas().isEmpty() && usuario.getAtraccionesAdquiridas().isEmpty()) {
+				System.out.println("Aún no adquirió ningún servicio!");
+			} else {
+				System.out.println("\nSu itinerario es:");
+				double precio = 0;
+				double horas = 0;
+				
+				if (!(usuario.getPromocionesAdquiridas().isEmpty())) {
+					List<Promocion> promocionesAdquiridas = usuario.getPromocionesAdquiridas();
+					System.out.println("\nPromociones Adquiridas:");
+					for (Promocion promocion : promocionesAdquiridas) {
+						precio += promocion.getPrecio();
+						horas += promocion.getTiempoPromocion();
+						List<Atraccion> atraccionesPromo = promocion.getAtracciones();
+						
+						System.out.println("\nPromocion: " + promocion.getNombre() + ", precio: " + promocion.getPrecio()
+								+ " monedas, duracion: " + promocion.getTiempoPromocion() + " hs., visita gratis: "
+								+ promocion.visitaGratis());
+						System.out.println("\nAtracciones Incluidas:");
+						for (Atraccion atraccion : atraccionesPromo) {
+							System.out.println("\n* " + atraccion.getNombre());
+						}
+					}
+		
+				}
+				
+				if (!(usuario.getAtraccionesAdquiridas().isEmpty())) {
+					List<Atraccion> atraccionesAdquiridas = usuario.getAtraccionesAdquiridas();
+					System.out.println("\nAtracciones Adquiridas:");
+					
+					for (Atraccion atraccion : atraccionesAdquiridas) {
+						precio += atraccion.getPrecio();
+						horas += atraccion.getDuracion();
+						System.out.println(
+								"---------------------------------------------------------------------------------------------------------------------------------");
+						System.out.println("\nAtraccion: " + atraccion.getNombre() + ", precio: " + atraccion.getPrecio()
+								+ " monedas, duracion: " + atraccion.getDuracion() + " hs.");
+					}
+				}
+				
+				System.out.println("\nCosto total: " + precio + " monedas, tiempo empleado: " + horas + " hs.");
+				
+			}
+		}
+		
 	
+
+
 	
 
 }
