@@ -59,5 +59,12 @@ public PromoPorcentual(String nombre, double porcentajeDescuento, List<Atraccion
 	}
 
 
+
+	@Override
+	protected String visitaGratis() {
+		return null;
+	}
+
+
 }
 	

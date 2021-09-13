@@ -17,7 +17,7 @@ public class PromocionAxB extends Promocion {
 		}
 		return valor;
 	}
-
+	@Override
 	public String visitaGratis() {
 		return atracciones.get(atracciones.size() - 1).getNombre();
 	}
