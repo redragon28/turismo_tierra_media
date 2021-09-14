@@ -305,17 +305,17 @@ public class TurismoTierraMedia {
 	}*/
 
 	public static void ordenarAtraccionesPorPrecioYDuracion(List<Atraccion> listaAtracciones) {
-		Collections.sort(listaAtracciones, new PrecioComparator());
+		Collections.sort(listaAtracciones, new AtraccionComparator());
 	}
 	
 	public static void mostrarUsuarios() {
 		int p = 0;
 		// creamos el iterator para recorrer la lista sin ordenar
-		Iterator<Usuario> itUsuarios = listaUsuarios.iterator();
+		Iterator<Usuario> itinerarioUsuarios = listaUsuarios.iterator();
 
 		// imprime la lista sin ordenar
-		while (itUsuarios.hasNext()) {
-			Usuario usuario = itUsuarios.next();
+		while (itinerarioUsuarios.hasNext()) {
+			Usuario usuario = itinerarioUsuarios.next();
 			p += 1;
 			System.out.println(p + " - " + usuario.getNombre() + "------>   Atraccion preferida:"
 					+ usuario.getTipoPreferido() + " - Presupuesto: " + usuario.getPresupuesto() + " monedas"
