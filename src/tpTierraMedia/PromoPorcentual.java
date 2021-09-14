@@ -35,24 +35,8 @@ public class PromoPorcentual extends Promocion {
 	}
 
 	@Override
-	public double duracionPromocion() {
-		double horas = 0;
-
-		for (Atraccion atraccion : this.atracciones) {
-			horas += atraccion.getDuracion();
-		}
-		return horas;
-	}
-
-	@Override
-	public double precioPromocion() {
-		double costo = 0;
-
-		for (Atraccion atraccion : this.atracciones) {
-			costo += atraccion.getPrecio();
-		}
-		costo = costo - (costo * this.getPorcentaje());
-		return costo;
+	public double getTiempoPromocion() {
+		return super.getTiempoPromocion();
 	}
 
 	@Override
