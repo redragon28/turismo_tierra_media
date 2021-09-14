@@ -28,4 +28,25 @@ public class PromocionAbsoluta extends Promocion {
 		return 2;
 	}
 
+	@Override
+	protected double precioPromocion() {
+		double valorPaquete = this.valorPaquete;
+		return valorPaquete;
+	}
+
+	@Override
+	protected double duracionPromocion() {
+		double horas =0;
+		for (Atraccion atraccion : this.atracciones){
+			horas += atraccion.getDuracion();
+		}
+		return horas;
+	}
+
+	@Override
+	protected String visitaGratis() {
+		return null;
+	}
+
+	
 }

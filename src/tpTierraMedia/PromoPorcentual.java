@@ -55,4 +55,9 @@ public class PromoPorcentual extends Promocion {
 		return costo;
 	}
 
+	@Override
+	protected String visitaGratis() {
+		return null;
+	}
+
 }
