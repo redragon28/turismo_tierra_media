@@ -1,6 +1,9 @@
 package tpTierraMedia;
 
 import java.util.ArrayList;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.util.Collections;
 import java.util.Iterator;
@@ -371,8 +374,63 @@ public class TurismoTierraMedia {
 			}
 		}
 		
+		public void generarArchivo(Usuario usuarioActual) {
+			String url = "./Archivos/Itinerarios/";
+			
+			try {
+			String contenido = "";
+			
+			contenido = "Nombre: " + usuarioActual.getNombre();
+			contenido += "\n==================================================================================";
+			contenido += "\nItinerario elegido: ";
+			contenido += "\n==================================================================================";
+			
+			if (!(usuarioActual.getPromocionesAdquiridas().isEmpty())) {	
+				contenido += "\nPromociones Compradas:";
+				for (Promocion promo : usuarioActual.getPromocionesAdquiridas()) {
+					contenido += "\n----------------------------------------------------------------------------------";
+					contenido += "\nPromocion: " + promo.getNombre() + ", precio: " + promo.getPrecio()
+							+ " monedas, duracion: " + promo.getTiempoPromocion() + " horas.";
+					}
+				
+			} else {
+				contenido += "\n------------------------------------------------------------------------------------";
+				contenido += "\n Usted no ha adquirido ninguna promocion";
+				contenido += "\n------------------------------------------------------------------------------------";
+			}
+			if(!(usuarioActual.getAtraccionesAdquiridas().isEmpty())) {
+				contenido += "\nAtracciones adquiridas";
+				contenido +=  "\n----------------------------------------------------------------------------------";
+				for(Atraccion atr : usuarioActual.getAtraccionesAdquiridas()) {
+					contenido += "\nAtraccion" + atr.getNombre() + ", precio: " + atr.getPrecio() + " monedas, duracion: " + atr.getDuracion() + " horas";
+				}
+			} else {
+				contenido += "\n------------------------------------------------------------------------------------";
+				contenido += "\n Usted no ha adquirido ninguna atraccion";
+				contenido += "\n------------------------------------------------------------------------------------";
+			}
+			
+			File archivo = new File(url);
+			
+			if(!archivo.exists()) {
+			 archivo.createNewFile();
+			}
+			
+			FileWriter fw = new FileWriter(archivo);
+			BufferedWriter bw = new BufferedWriter(fw);
+			
+			bw.write(contenido);
+			bw.close();
+			
+			} catch (Exception e) {
+				
+				// TODO: handle exception
+				e.printStackTrace();
+			
+			}
+			System.out.println("Archivo generado exitosamente!");
 	
-
+}
 
 	
 
