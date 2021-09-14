@@ -46,6 +46,26 @@ public class Atraccion {
 		return cupoPersonas;
 	}
 
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public void setTipo(TipoAtraccion tipo) {
+		this.tipo = tipo;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+
+	public void setDuracion(double duracion) {
+		this.duracion = duracion;
+	}
+
+	public void setCupoPersonas(int cupoPersonas) {
+		this.cupoPersonas = cupoPersonas;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(cupoPersonas, duracion, nombre, precio, tipo);

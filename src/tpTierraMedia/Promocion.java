@@ -59,9 +59,5 @@ public abstract class Promocion {
 
 	protected abstract int tipoPromocion();
 	
-	protected abstract double precioPromocion();
-
-	protected abstract double duracionPromocion();
-	
 	protected abstract String visitaGratis();
 }

@@ -9,7 +9,7 @@ public class Usuario {
 	public int presupuesto;
 	public double tiempoDisponible;
 	private TipoAtraccion tipoPreferido;
-	//private List<Atraccion> todasLasAtracciones;
+	private List<Atraccion> todasLasAtracciones;
 	private List<Atraccion> atraccionesAdquiridas;
 	private List<Promocion> promocionesAdquiridas;
 	
@@ -18,7 +18,7 @@ public class Usuario {
 		this.presupuesto = presupuesto;
 		this.tiempoDisponible = tiempoDisponible;
 		this.tipoPreferido = tipoPreferido;
-		//this.todasLasAtracciones = new ArrayList<Atraccion>();
+		this.todasLasAtracciones = new ArrayList<Atraccion>();
 		this.atraccionesAdquiridas = new ArrayList<Atraccion>();
 		this.promocionesAdquiridas = promocionesAdquiridas;
 	}
@@ -54,14 +54,10 @@ public class Usuario {
 
 	}
 	
-	/*public List<Atraccion> getTodasLasAtracciones() {
+	public List<Atraccion> getTodasLasAtracciones() {
 		return todasLasAtracciones;
 	}
 
-	
-	public List<Atraccion> getHistorialDeAtracciones() {
-		return historialDeAtracciones;
-	}*/
 
 	public List<Promocion> getPromocionesAdquiridas() {
 		return promocionesAdquiridas;
@@ -87,19 +83,17 @@ public class Usuario {
 		this.tipoPreferido = tipoPreferido;
 	}
 
-	/*public void setTodasLasAtracciones(List<Atraccion> todasLasAtracciones) {
+	public void setTodasLasAtracciones(List<Atraccion> todasLasAtracciones) {
 		this.todasLasAtracciones = todasLasAtracciones;
 	}
 
-	public void setHistorialDeAtracciones(List<Atraccion> historialDeAtracciones) {
-		this.historialDeAtracciones = historialDeAtracciones;
-	}*/
 
 	@Override
 	public String toString() {
 		return "Usuario [nombre=" + nombre + ", presupuesto=" + presupuesto + ", tiempoDisponible=" + tiempoDisponible
 				+ ", tipoPreferido=" + tipoPreferido + "]";
 	}
+
 
 	}
 

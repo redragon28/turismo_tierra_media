@@ -7,18 +7,15 @@ import tpTierraMedia.Atraccion;
 public class PromoPorcentual extends Promocion {
 	private double porcentaje;
 
-public PromoPorcentual(String nombre, double porcentajeDescuento, List<Atraccion> atracciones) {
+	public PromoPorcentual(String nombre, double porcentajeDescuento, List<Atraccion> atracciones) {
 		super(nombre, atracciones);
 		this.porcentaje = porcentajeDescuento;
 
-
 	}
 
-
-
 	public double getPorcentaje() {
-	return porcentaje;
-}
+		return porcentaje;
+	}
 
 	@Override
 	public double getPrecio() {
@@ -36,35 +33,15 @@ public PromoPorcentual(String nombre, double porcentajeDescuento, List<Atraccion
 	public int tipoPromocion() {
 		return 3;
 	}
-	
+
 	@Override
-	public double duracionPromocion() {
-		double horas = 0;
-
-	    for(Atraccion atraccion : this.atracciones) {
-	    	horas += atraccion.getDuracion();
-	    }
-	    return horas;
+	public double getTiempoPromocion() {
+		return super.getTiempoPromocion();
 	}
-	
-	@Override
-	public double precioPromocion() {
-		double costo = 0;
-
-	    for(Atraccion atraccion : this.atracciones) {
-	    	costo += atraccion.getPrecio();
-	    }
-	    costo = costo - (costo * this.getPorcentaje());
-	    return costo;
-	}
-
-
 
 	@Override
 	protected String visitaGratis() {
 		return null;
 	}
 
-
 }
-	
