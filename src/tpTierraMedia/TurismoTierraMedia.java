@@ -10,7 +10,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-
 public class TurismoTierraMedia {
 	private static List<Atraccion> listaAtracciones;
 	private static List<Promocion> listaPromociones;
@@ -27,8 +26,8 @@ public class TurismoTierraMedia {
 				sugerirPromociones(usuario, promocionesRecomendadas, atraccionesRecomendadas, otrasAtracciones,
 						eleccion);
 			} else if (usuario.getPresupuesto() >= 3 || usuario.getTiempoDisponible() >= 1) {
-				sugerirAtraccionesPreferidas(usuario, promocionesRecomendadas, atraccionesRecomendadas, otrasAtracciones,
-						eleccion);
+				sugerirAtraccionesPreferidas(usuario, promocionesRecomendadas, atraccionesRecomendadas,
+						otrasAtracciones, eleccion);
 			} else if (usuario.getPresupuesto() >= 3 || usuario.getTiempoDisponible() >= 1) {
 				sugerirOtrasAtracciones(usuario, promocionesRecomendadas, atraccionesRecomendadas, otrasAtracciones,
 						eleccion);
@@ -239,10 +238,10 @@ public class TurismoTierraMedia {
 		}
 		return atraccionesRecomendadas;
 	}
-	
+
 	public static List<Atraccion> sugerenciasOtrasAtracciones(Usuario usuario) {
 		List<Atraccion> otrasAtracciones = new ArrayList<Atraccion>();
-		
+
 		for (Atraccion atraccion : listaAtracciones) {
 			if ((usuario.getTipoPreferido()).compareTo(atraccion.getTipo()) != 0) {
 				if (atraccion.getCupoPersonas() > 0 && usuario.getPresupuesto() >= atraccion.getPrecio()
@@ -273,44 +272,42 @@ public class TurismoTierraMedia {
 	 */
 
 	public static List<Promocion> sugerenciasPromociones(Usuario usuario) {
-        List<Promocion> promocionesRecomendadas = new ArrayList<Promocion>();
-        for (Promocion promocion : listaPromociones) {
+		List<Promocion> promocionesRecomendadas = new ArrayList<Promocion>();
+		for (Promocion promocion : listaPromociones) {
 			if (promocion.tipoPromocion() == 3 || promocion.tipoPromocion() == 2 || promocion.tipoPromocion() == 1)
-	              promocionesRecomendadas.add(promocion);
-        }
-        return promocionesRecomendadas;
-    }
-
-	/*public static List<Atraccion> actualizarListaAtracciones(Usuario usuario) {
-		List<Atraccion> atraccionesActualizada = new ArrayList<Atraccion>();
-
-		for (Atraccion atraccion : listaAtracciones) {
-			if (!(usuario.getTodasLasAtracciones().contains(atraccion))) {
-				atraccionesActualizada.add(atraccion);
-			}
+				promocionesRecomendadas.add(promocion);
 		}
-		return atraccionesActualizada;
+		return promocionesRecomendadas;
 	}
 
-	public static void actualizarUsuarioPromocion(Usuario usuario, List<Promocion> promociones, int eleccion) {
-		usuario.setPresupuesto((int) (usuario.getPresupuesto() - promociones.get(eleccion).costoPromocion()));
-		usuario.setTiempoDisponible(usuario.getTiempoDisponible() - promociones.get(eleccion).tiempoPromocion());
-	}
-
-	public static void actualizarHistorialAtraccionesDelUsuario(Usuario usuario, List<Atraccion> atracciones,
-			int opcion) {
-		usuario.getHistorialDeAtracciones().add(atracciones.get(opcion));
-		usuario.getTodasLasAtracciones().add(atracciones.get(opcion));
-	}
-
-	public static void actualizarCupoAtraccion(List<Atraccion> atracciones, int i) {
-		atracciones.get(i).setCupoPersonas(atracciones.get(i).getCupoPersonas() - 1);
-	}*/
+	/*
+	 * public static List<Atraccion> actualizarListaAtracciones(Usuario usuario) {
+	 * List<Atraccion> atraccionesActualizada = new ArrayList<Atraccion>();
+	 * 
+	 * for (Atraccion atraccion : listaAtracciones) { if
+	 * (!(usuario.getTodasLasAtracciones().contains(atraccion))) {
+	 * atraccionesActualizada.add(atraccion); } } return atraccionesActualizada; }
+	 * 
+	 * public static void actualizarUsuarioPromocion(Usuario usuario,
+	 * List<Promocion> promociones, int eleccion) { usuario.setPresupuesto((int)
+	 * (usuario.getPresupuesto() - promociones.get(eleccion).costoPromocion()));
+	 * usuario.setTiempoDisponible(usuario.getTiempoDisponible() -
+	 * promociones.get(eleccion).tiempoPromocion()); }
+	 * 
+	 * public static void actualizarHistorialAtraccionesDelUsuario(Usuario usuario,
+	 * List<Atraccion> atracciones, int opcion) {
+	 * usuario.getHistorialDeAtracciones().add(atracciones.get(opcion));
+	 * usuario.getTodasLasAtracciones().add(atracciones.get(opcion)); }
+	 * 
+	 * public static void actualizarCupoAtraccion(List<Atraccion> atracciones, int
+	 * i) { atracciones.get(i).setCupoPersonas(atracciones.get(i).getCupoPersonas()
+	 * - 1); }
+	 */
 
 	public static void ordenarAtraccionesPorPrecioYDuracion(List<Atraccion> listaAtracciones) {
 		Collections.sort(listaAtracciones, new PrecioComparator());
 	}
-	
+
 	public static void mostrarUsuarios() {
 		int p = 0;
 		// creamos el iterator para recorrer la lista sin ordenar
@@ -324,114 +321,113 @@ public class TurismoTierraMedia {
 					+ usuario.getTipoPreferido() + " - Presupuesto: " + usuario.getPresupuesto() + " monedas"
 					+ " - Tiempo disponible: " + usuario.getTiempoDisponible() + " hs.");
 		}
-		
+
 	}
-	
-		public static void generarItinerario(Usuario usuario) {
-			
-			if (usuario.getPromocionesAdquiridas().isEmpty() && usuario.getAtraccionesAdquiridas().isEmpty()) {
-				System.out.println("Aún no adquirió ningún servicio!");
-			} else {
-				System.out.println("\nSu itinerario es:");
-				double precio = 0;
-				double horas = 0;
-				
-				if (!(usuario.getPromocionesAdquiridas().isEmpty())) {
-					List<Promocion> promocionesAdquiridas = usuario.getPromocionesAdquiridas();
-					System.out.println("\nPromociones Adquiridas:");
-					for (Promocion promocion : promocionesAdquiridas) {
-						precio += promocion.getPrecio();
-						horas += promocion.getTiempoPromocion();
-						List<Atraccion> atraccionesPromo = promocion.getAtracciones();
-						
-						System.out.println("\nPromocion: " + promocion.getNombre() + ", precio: " + promocion.getPrecio()
-								+ " monedas, duracion: " + promocion.getTiempoPromocion() + " hs., visita gratis: "
-								+ promocion.visitaGratis());
-						System.out.println("\nAtracciones Incluidas:");
-						for (Atraccion atraccion : atraccionesPromo) {
-							System.out.println("\n* " + atraccion.getNombre());
-						}
-					}
-		
-				}
-				
-				if (!(usuario.getAtraccionesAdquiridas().isEmpty())) {
-					List<Atraccion> atraccionesAdquiridas = usuario.getAtraccionesAdquiridas();
-					System.out.println("\nAtracciones Adquiridas:");
-					
-					for (Atraccion atraccion : atraccionesAdquiridas) {
-						precio += atraccion.getPrecio();
-						horas += atraccion.getDuracion();
-						System.out.println(
-								"---------------------------------------------------------------------------------------------------------------------------------");
-						System.out.println("\nAtraccion: " + atraccion.getNombre() + ", precio: " + atraccion.getPrecio()
-								+ " monedas, duracion: " + atraccion.getDuracion() + " hs.");
+
+	public static void generarItinerario(Usuario usuario) {
+
+		if (usuario.getPromocionesAdquiridas().isEmpty() && usuario.getAtraccionesAdquiridas().isEmpty()) {
+			System.out.println("Aún no adquirió ningún servicio!");
+		} else {
+			System.out.println("\nSu itinerario es:");
+			double precio = 0;
+			double horas = 0;
+
+			if (!(usuario.getPromocionesAdquiridas().isEmpty())) {
+				List<Promocion> promocionesAdquiridas = usuario.getPromocionesAdquiridas();
+				System.out.println("\nPromociones Adquiridas:");
+				for (Promocion promocion : promocionesAdquiridas) {
+					precio += promocion.getPrecio();
+					horas += promocion.getTiempoPromocion();
+					List<Atraccion> atraccionesPromo = promocion.getAtracciones();
+
+					System.out.println("\nPromocion: " + promocion.getNombre() + ", precio: " + promocion.getPrecio()
+							+ " monedas, duracion: " + promocion.getTiempoPromocion() + " hs., visita gratis: "
+							+ promocion.visitaGratis());
+					System.out.println("\nAtracciones Incluidas:");
+					for (Atraccion atraccion : atraccionesPromo) {
+						System.out.println("\n* " + atraccion.getNombre());
 					}
 				}
-				
-				System.out.println("\nCosto total: " + precio + " monedas, tiempo empleado: " + horas + " hs.");
-				
+
 			}
+
+			if (!(usuario.getAtraccionesAdquiridas().isEmpty())) {
+				List<Atraccion> atraccionesAdquiridas = usuario.getAtraccionesAdquiridas();
+				System.out.println("\nAtracciones Adquiridas:");
+
+				for (Atraccion atraccion : atraccionesAdquiridas) {
+					precio += atraccion.getPrecio();
+					horas += atraccion.getDuracion();
+					System.out.println(
+							"---------------------------------------------------------------------------------------------------------------------------------");
+					System.out.println("\nAtraccion: " + atraccion.getNombre() + ", precio: " + atraccion.getPrecio()
+							+ " monedas, duracion: " + atraccion.getDuracion() + " hs.");
+				}
+			}
+
+			System.out.println("\nCosto total: " + precio + " monedas, tiempo empleado: " + horas + " hs.");
+
 		}
-		
-		public void generarArchivo(Usuario usuarioActual) {
-			String url = "./Archivos/Itinerarios/";
-			
-			try {
+	}
+
+	public void generarArchivo(Usuario usuarioActual) {
+
+		try {
+			String url = ".\\Archivos\\Itinerarios\\"+ usuarioActual.getNombre() +".txt";
 			String contenido = "";
-			
+
 			contenido = "Nombre: " + usuarioActual.getNombre();
 			contenido += "\n==================================================================================";
 			contenido += "\nItinerario elegido: ";
 			contenido += "\n==================================================================================";
-			
-			if (!(usuarioActual.getPromocionesAdquiridas().isEmpty())) {	
+
+			if (!(usuarioActual.getPromocionesAdquiridas().isEmpty())) {
 				contenido += "\nPromociones Compradas:";
 				for (Promocion promo : usuarioActual.getPromocionesAdquiridas()) {
 					contenido += "\n----------------------------------------------------------------------------------";
 					contenido += "\nPromocion: " + promo.getNombre() + ", precio: " + promo.getPrecio()
 							+ " monedas, duracion: " + promo.getTiempoPromocion() + " horas.";
-					}
-				
+				}
+
 			} else {
 				contenido += "\n------------------------------------------------------------------------------------";
 				contenido += "\n Usted no ha adquirido ninguna promocion";
 				contenido += "\n------------------------------------------------------------------------------------";
 			}
-			if(!(usuarioActual.getAtraccionesAdquiridas().isEmpty())) {
+			if (!(usuarioActual.getAtraccionesAdquiridas().isEmpty())) {
 				contenido += "\nAtracciones adquiridas";
-				contenido +=  "\n----------------------------------------------------------------------------------";
-				for(Atraccion atr : usuarioActual.getAtraccionesAdquiridas()) {
-					contenido += "\nAtraccion" + atr.getNombre() + ", precio: " + atr.getPrecio() + " monedas, duracion: " + atr.getDuracion() + " horas";
+				contenido += "\n----------------------------------------------------------------------------------";
+				for (Atraccion atr : usuarioActual.getAtraccionesAdquiridas()) {
+					contenido += "\nAtraccion" + atr.getNombre() + ", precio: " + atr.getPrecio()
+							+ " monedas, duracion: " + atr.getDuracion() + " horas";
 				}
 			} else {
 				contenido += "\n------------------------------------------------------------------------------------";
 				contenido += "\n Usted no ha adquirido ninguna atraccion";
 				contenido += "\n------------------------------------------------------------------------------------";
 			}
-			
+
 			File archivo = new File(url);
 			
-			if(!archivo.exists()) {
-			 archivo.createNewFile();
-			}
+			 if (archivo.createNewFile()) {
+			        System.out.println("Archivo creado: " + archivo.getName());
+			      } else {
+			        System.out.println("El archivo ya existe.");
+			      }
 			
 			FileWriter fw = new FileWriter(archivo);
 			BufferedWriter bw = new BufferedWriter(fw);
-			
+
+			bw.write(contenido);
 			bw.write(contenido);
 			bw.close();
-			
-			} catch (Exception e) {
-				
-				// TODO: handle exception
-				e.printStackTrace();
-			
-			}
-			System.out.println("Archivo generado exitosamente!");
-	
-}
 
-	
+		} catch (Exception e) {
 
+			
+			e.printStackTrace();
+
+		}
+	}
 }
