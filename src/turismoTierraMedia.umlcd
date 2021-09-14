@@ -1,0 +1,1874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_AN6j0BWpEeyDzaCLVC3BWQ">
+  <modelElement href="turismoTierraMedia.uml#_Av8S0BWpEeyDzaCLVC3BWQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_A97rgBWpEeyDzaCLVC3BWQ" sourceAnchor="153.0,0.0" targetAnchor="654.0,135.0" target="_A-wx8BWpEeyDzaCLVC3BWQ" source="_A97riRWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A3ZlsBWpEeyDzaCLVC3BWQ"/>
+    <bendpoints xmi:id="_BL_VohWpEeyDzaCLVC3BWQ" sourceY="-190" targetX="663"/>
+    <stereotypes xmi:id="_A97rgRWpEeyDzaCLVC3BWQ" name="Reference">
+      <modelElement href="turismoTierraMedia.uml#_A3aMwBWpEeyDzaCLVC3BWQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_A97rghWpEeyDzaCLVC3BWQ" text="">
+      <visualProperties xmi:id="_BMDnEBWpEeyDzaCLVC3BWQ" position="-12.348482198739703,119.49548124094474"/>
+    </nameVisual>
+    <sourceRole xmi:id="_A97rgxWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="">
+      <modelElement href="turismoTierraMedia.uml#_A3ZlsRWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMCY8BWpEeyDzaCLVC3BWQ" position="2.9386329892406593,-67.5746444723103"/>
+      <visibility xmi:id="_A97rhBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A97rhRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_A97rhhWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="ListaUsuarios" navigable="true">
+      <modelElement href="turismoTierraMedia.uml#_A2Y5ERWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMEOIBWpEeyDzaCLVC3BWQ" position="631.858177978854,82.21249711148539"/>
+      <visibility xmi:id="_A97rhxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A97riBWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_A-YXcBWpEeyDzaCLVC3BWQ" sourceAnchor="133.0,54.0" targetAnchor="678.0,107.0" target="_A_E7ABWpEeyDzaCLVC3BWQ" source="_A-ZllBWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A3K8MBWpEeyDzaCLVC3BWQ"/>
+    <bendpoints xmi:id="_BL_8tRWpEeyDzaCLVC3BWQ" sourceX="447" targetX="338" targetY="959"/>
+    <bendpoints xmi:id="_BL_8thWpEeyDzaCLVC3BWQ" sourceX="447" sourceY="-959" targetX="338"/>
+    <nameVisual xmi:id="_A-Y-gRWpEeyDzaCLVC3BWQ" text="">
+      <visualProperties xmi:id="_BME1MBWpEeyDzaCLVC3BWQ" position="-463.7206651122492,476.41934955049953"/>
+    </nameVisual>
+    <sourceRole xmi:id="_A-Y-ghWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="tipo" navigable="true">
+      <modelElement href="turismoTierraMedia.uml#_A2V1wBWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMEOIRWpEeyDzaCLVC3BWQ" position="24.708898370245947,-13.108514494500866"/>
+      <visibility xmi:id="_A-Y-iBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-Y-hxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_A-Y-gxWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="">
+      <modelElement href="turismoTierraMedia.uml#_A3K8MRWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMFcQBWpEeyDzaCLVC3BWQ" position="-170.83645185324485,945.2206651122492"/>
+      <visibility xmi:id="_A-Y-ihWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-Y-iRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_A-Y-gBWpEeyDzaCLVC3BWQ" sourceAnchor="66.0,0.0" targetAnchor="155.0,270.0" target="_A-wx8BWpEeyDzaCLVC3BWQ" source="_A-ZllBWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A3Rp4BWpEeyDzaCLVC3BWQ"/>
+    <nameVisual xmi:id="_A-Y-hBWpEeyDzaCLVC3BWQ" text="">
+      <visualProperties xmi:id="_BMHRcBWpEeyDzaCLVC3BWQ" position="-8.696674488767371,16.1633789492181"/>
+    </nameVisual>
+    <sourceRole xmi:id="_A-Y-hRWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="tipoPreferido" navigable="true">
+      <modelElement href="turismoTierraMedia.uml#_A2gN0xWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMGDUBWpEeyDzaCLVC3BWQ" position="-50.027328854494385,-80.45286587052715"/>
+      <visibility xmi:id="_A-ZlkRWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-ZlkBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_A-Y-hhWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="">
+      <modelElement href="turismoTierraMedia.uml#_A3Rp4RWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMH4gBWpEeyDzaCLVC3BWQ" position="-15.342495130056022,88.01171619360173"/>
+      <visibility xmi:id="_A-ZlkxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-ZlkhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_A-fFIBWpEeyDzaCLVC3BWQ" sourceAnchor="415.0,0.0" targetAnchor="0.0,126.0" superClass="_A-jWkBWpEeyDzaCLVC3BWQ" subClass="_A-KVABWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A1AZABWpEeyDzaCLVC3BWQ"/>
+    <bendpoints xmi:id="_BL_VoxWpEeyDzaCLVC3BWQ" sourceY="-255" targetX="437" targetY="827"/>
+    <bendpoints xmi:id="_BL_8sBWpEeyDzaCLVC3BWQ" sourceX="-934" sourceY="-255" targetX="-497" targetY="827"/>
+    <bendpoints xmi:id="_BL_8sRWpEeyDzaCLVC3BWQ" sourceX="-934" sourceY="-1082" targetX="-497"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_A-fFIRWpEeyDzaCLVC3BWQ" sourceAnchor="282.0,0.0" targetAnchor="0.0,126.0" superClass="_A-jWkBWpEeyDzaCLVC3BWQ" subClass="_A-RCsBWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A1C1QBWpEeyDzaCLVC3BWQ"/>
+    <bendpoints xmi:id="_BL_8shWpEeyDzaCLVC3BWQ" sourceY="-34" targetX="-369" targetY="827"/>
+    <bendpoints xmi:id="_BL_8sxWpEeyDzaCLVC3BWQ" sourceX="-128" sourceY="-34" targetX="-497" targetY="827"/>
+    <bendpoints xmi:id="_BL_8tBWpEeyDzaCLVC3BWQ" sourceX="-128" sourceY="-861" targetX="-497"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_A-fFIhWpEeyDzaCLVC3BWQ" sourceAnchor="221.0,0.0" targetAnchor="0.0,126.0" superClass="_A-jWkBWpEeyDzaCLVC3BWQ" subClass="_A92L8BWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A1DcUBWpEeyDzaCLVC3BWQ"/>
+    <bendpoints xmi:id="_BL-ukBWpEeyDzaCLVC3BWQ" sourceY="-30" targetX="220" targetY="827"/>
+    <bendpoints xmi:id="_BL_VoBWpEeyDzaCLVC3BWQ" sourceX="-717" sourceY="-30" targetX="-497" targetY="827"/>
+    <bendpoints xmi:id="_BL_VoRWpEeyDzaCLVC3BWQ" sourceX="-717" sourceY="-857" targetX="-497"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_A-fFIxWpEeyDzaCLVC3BWQ" sourceAnchor="0.0,135.0" targetAnchor="190.0,251.0" target="_A-jWkBWpEeyDzaCLVC3BWQ" source="_A-wx8BWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A3iIkRWpEeyDzaCLVC3BWQ"/>
+    <bendpoints xmi:id="_BMAjwBWpEeyDzaCLVC3BWQ" sourceX="-307" targetY="190"/>
+    <stereotypes xmi:id="_A-hhYxWpEeyDzaCLVC3BWQ" name="Reference">
+      <modelElement href="turismoTierraMedia.uml#_A3ivoBWpEeyDzaCLVC3BWQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_A-hhYBWpEeyDzaCLVC3BWQ" text="">
+      <visualProperties xmi:id="_BMNYEBWpEeyDzaCLVC3BWQ" position="116.03689606239925,-10.565109263625004"/>
+    </nameVisual>
+    <sourceRole xmi:id="_A-hhYRWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="">
+      <modelElement href="turismoTierraMedia.uml#_A3iIkhWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMMJ8BWpEeyDzaCLVC3BWQ" position="-48.519851598046046,-29.32656013496046"/>
+      <visibility xmi:id="_A-iIcxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-iIchWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_A-hhYhWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="promocionesAdquiridas" navigable="true">
+      <modelElement href="turismoTierraMedia.uml#_A2iqEBWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMN_IBWpEeyDzaCLVC3BWQ" position="-71.25705727604105,160.65575447608887"/>
+      <visibility xmi:id="_A-iIdRWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-iIdBWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_A-fFJBWpEeyDzaCLVC3BWQ" sourceAnchor="190.0,0.0" targetAnchor="40.0,213.0" target="_A_E7ABWpEeyDzaCLVC3BWQ" source="_A-jWkBWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A3az0BWpEeyDzaCLVC3BWQ"/>
+    <stereotypes xmi:id="_A-iIcRWpEeyDzaCLVC3BWQ" name="Reference">
+      <modelElement href="turismoTierraMedia.uml#_A3ba4BWpEeyDzaCLVC3BWQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_A-hhZBWpEeyDzaCLVC3BWQ" text="">
+      <visualProperties xmi:id="_BMLi4BWpEeyDzaCLVC3BWQ" position="-19.73328858496069,-152.89343291054115"/>
+    </nameVisual>
+    <sourceRole xmi:id="_A-hhZRWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="">
+      <modelElement href="turismoTierraMedia.uml#_A3az0RWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMKUwBWpEeyDzaCLVC3BWQ" position="-14.043204408729395,-81.75279125625093"/>
+      <visibility xmi:id="_A-iIdxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-iIdhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_A-iIcBWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="atracciones" navigable="true">
+      <modelElement href="turismoTierraMedia.uml#_A2b8YRWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMLi4RWpEeyDzaCLVC3BWQ" position="-43.62134581133154,-253.07075792112664"/>
+      <visibility xmi:id="_A-ivgRWpEeyDzaCLVC3BWQ" label="#"/>
+      <cardinality xmi:id="_A-ivgBWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_A-sggBWpEeyDzaCLVC3BWQ" sourceAnchor="15.0,0.0" targetAnchor="362.0,213.0" target="_A_E7ABWpEeyDzaCLVC3BWQ" source="_A-wx8BWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A3g6cBWpEeyDzaCLVC3BWQ"/>
+    <stereotypes xmi:id="_A-u8wxWpEeyDzaCLVC3BWQ" name="Reference">
+      <modelElement href="turismoTierraMedia.uml#_A3hhgBWpEeyDzaCLVC3BWQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_A-u8wBWpEeyDzaCLVC3BWQ" text="">
+      <visualProperties xmi:id="_BMP0UBWpEeyDzaCLVC3BWQ" position="-20.456934555141856,-150.49607346311768"/>
+    </nameVisual>
+    <sourceRole xmi:id="_A-u8wRWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="">
+      <modelElement href="turismoTierraMedia.uml#_A3g6cRWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMPNQBWpEeyDzaCLVC3BWQ" position="-13.736653241984186,-80.87051912650134"/>
+      <visibility xmi:id="_A-vj0RWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-vj0BWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_A-u8whWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="todasLasAtracciones" navigable="true">
+      <modelElement href="turismoTierraMedia.uml#_A2g04BWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMQbYBWpEeyDzaCLVC3BWQ" position="-67.98202802894389,-247.2574167559494"/>
+      <visibility xmi:id="_A-vj0xWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-vj0hWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_A-sggRWpEeyDzaCLVC3BWQ" sourceAnchor="275.0,0.0" targetAnchor="622.0,213.0" target="_A_E7ABWpEeyDzaCLVC3BWQ" source="_A-wx8BWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A3hhgRWpEeyDzaCLVC3BWQ"/>
+    <stereotypes xmi:id="_A-u8xxWpEeyDzaCLVC3BWQ" name="Reference">
+      <modelElement href="turismoTierraMedia.uml#_A3iIkBWpEeyDzaCLVC3BWQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_A-u8xBWpEeyDzaCLVC3BWQ" text="">
+      <visualProperties xmi:id="_BMRpgBWpEeyDzaCLVC3BWQ" position="-20.956934555141856,-150.49607346311768"/>
+    </nameVisual>
+    <sourceRole xmi:id="_A-u8xRWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="">
+      <modelElement href="turismoTierraMedia.uml#_A3hhghWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMRCcBWpEeyDzaCLVC3BWQ" position="-14.236653241984186,-80.87051912650134"/>
+      <visibility xmi:id="_A-vj1RWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-vj1BWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_A-u8xhWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="atraccionesAdquiridas" navigable="true">
+      <modelElement href="turismoTierraMedia.uml#_A2hb8BWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMSQkBWpEeyDzaCLVC3BWQ" position="-73.08559530915409,-247.74657298709644"/>
+      <visibility xmi:id="_A-wK4BWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-vj1hWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_A_X18BWpEeyDzaCLVC3BWQ" sourceAnchor="0.0,217.0" targetAnchor="0.0,107.0" target="_A_E7ABWpEeyDzaCLVC3BWQ" source="_A_r_ABWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A3cB8BWpEeyDzaCLVC3BWQ"/>
+    <bendpoints xmi:id="_BMBx4BWpEeyDzaCLVC3BWQ" sourceX="-45" targetX="-677" targetY="856"/>
+    <bendpoints xmi:id="_BMBx4RWpEeyDzaCLVC3BWQ" sourceX="-45" sourceY="-856" targetX="-677"/>
+    <stereotypes xmi:id="_A_kqQBWpEeyDzaCLVC3BWQ" name="Reference">
+      <modelElement href="turismoTierraMedia.uml#_A3d3IBWpEeyDzaCLVC3BWQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_A_kDMBWpEeyDzaCLVC3BWQ" text="">
+      <visualProperties xmi:id="_BMUFwBWpEeyDzaCLVC3BWQ" position="-71.85722842980636,411.8539000767256"/>
+    </nameVisual>
+    <sourceRole xmi:id="_A_kDMRWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="">
+      <modelElement href="turismoTierraMedia.uml#_A3cB8RWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMTesBWpEeyDzaCLVC3BWQ" position="-55.01173482237357,-33.10173518773348"/>
+      <visibility xmi:id="_A_piwRWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_piwBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_A_kDMhWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="listaAtracciones" navigable="true">
+      <modelElement href="turismoTierraMedia.uml#_A2dxkBWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMUs0BWpEeyDzaCLVC3BWQ" position="-837.8274043136696,822.3199883474811"/>
+      <visibility xmi:id="_A_piwxWpEeyDzaCLVC3BWQ" label="-"/>
+      <cardinality xmi:id="_A_piwhWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_A_YdABWpEeyDzaCLVC3BWQ" sourceAnchor="642.0,0.0" targetAnchor="160.0,251.0" target="_A-jWkBWpEeyDzaCLVC3BWQ" source="_A_r_ABWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A3d3IRWpEeyDzaCLVC3BWQ"/>
+    <stereotypes xmi:id="_A_kqRBWpEeyDzaCLVC3BWQ" name="Reference">
+      <modelElement href="turismoTierraMedia.uml#_A3fFQBWpEeyDzaCLVC3BWQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_A_kqQRWpEeyDzaCLVC3BWQ" text="">
+      <visualProperties xmi:id="_BMWiABWpEeyDzaCLVC3BWQ" position="-13.234756672993257,-0.2345376687977705"/>
+    </nameVisual>
+    <sourceRole xmi:id="_A_kqQhWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="">
+      <modelElement href="turismoTierraMedia.uml#_A3d3IhWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMV68BWpEeyDzaCLVC3BWQ" position="2.039627496354626,-66.2125283497437"/>
+      <visibility xmi:id="_A_qJ0RWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_qJ0BWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_A_kqQxWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="listaPromociones" navigable="true">
+      <modelElement href="turismoTierraMedia.uml#_A2eYoRWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMXJEBWpEeyDzaCLVC3BWQ" position="-42.70019239222677,30.861830892943885"/>
+      <visibility xmi:id="_A_qJ0xWpEeyDzaCLVC3BWQ" label="-"/>
+      <cardinality xmi:id="_A_qJ0hWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_A_d8kBWpEeyDzaCLVC3BWQ" sourceAnchor="877.0,15.0" targetAnchor="0.0,187.0" target="_A-wx8BWpEeyDzaCLVC3BWQ" source="_A_r_ABWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A3fFQRWpEeyDzaCLVC3BWQ"/>
+    <stereotypes xmi:id="_A_lRUxWpEeyDzaCLVC3BWQ" name="Reference">
+      <modelElement href="turismoTierraMedia.uml#_A3fsUBWpEeyDzaCLVC3BWQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_A_lRUBWpEeyDzaCLVC3BWQ" text="">
+      <visualProperties xmi:id="_BMY-QBWpEeyDzaCLVC3BWQ" position="53.191492968354055,-2.039423697169923"/>
+    </nameVisual>
+    <sourceRole xmi:id="_A_lRURWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="">
+      <modelElement href="turismoTierraMedia.uml#_A3fFQhWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMYXMBWpEeyDzaCLVC3BWQ" position="38.293008244039925,-11.962286576048257"/>
+      <visibility xmi:id="_A_qJ1hWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_qJ1RWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_A_lRUhWpEeyDzaCLVC3BWQ" aggregationKind="NONE" name="listaUsuarios" navigable="true">
+      <modelElement href="turismoTierraMedia.uml#_A2eYpBWpEeyDzaCLVC3BWQ"/>
+      <visualProperties xmi:id="_BMZlUBWpEeyDzaCLVC3BWQ" position="63.6042005365656,-12.52940715304635"/>
+      <visibility xmi:id="_A_qJ2BWpEeyDzaCLVC3BWQ" label="-"/>
+      <cardinality xmi:id="_A_qJ1xWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_A_mfcRWpEeyDzaCLVC3BWQ" targetItem="_A_smRxWpEeyDzaCLVC3BWQ" sourceItem="_A_mfcBWpEeyDzaCLVC3BWQ"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_A_mfcBWpEeyDzaCLVC3BWQ" sourceConnectionVisual="_A_mfcRWpEeyDzaCLVC3BWQ" text="public static void usuarioSinAtracciones(Usuario usuario, int eleccion) {&#xD;&#xA;&#x9; * System.out.println(&quot;\nNo puede acceder a las atracciones&quot;);&#xD;&#xA;&#x9; * generarArchivoUsuario(usuario); eleccion = 99999; mostrarItinerario(usuario);&#xD;&#xA;&#x9; * listaUsuarios.remove(usuario); consola(); }" item="_A_smRxWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_A3QbwBWpEeyDzaCLVC3BWQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A92L8BWpEeyDzaCLVC3BWQ" name="PromocionAxB" generalizations="_A-fFIhWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_AyHdEBWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A92L8RWpEeyDzaCLVC3BWQ" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A92L8hWpEeyDzaCLVC3BWQ" label="+"/>
+    <operations xmi:id="_A92L8xWpEeyDzaCLVC3BWQ" name="getPrecio">
+      <modelElement href="turismoTierraMedia.uml#_AyIEIBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A92L9BWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AyIrMRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A92L9RWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AyIrMhWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A92L9hWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A92L9xWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A92L-BWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AyIrMBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A92L-RWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A92L-hWpEeyDzaCLVC3BWQ" name="visitaGratis">
+      <modelElement href="turismoTierraMedia.uml#_AyIrNBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A92L-xWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AyJSQRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A92L_BWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AyJSQhWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A92L_RWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A92L_hWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A92L_xWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AyJSQBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A92MABWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A92MARWpEeyDzaCLVC3BWQ" name="toString">
+      <modelElement href="turismoTierraMedia.uml#_AyJ5URWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A92MAhWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AyJ5UxWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A92MAxWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AyKgYBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A92MBBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A92MBRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A92MBhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AyJ5UhWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A92MBxWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A92MCBWpEeyDzaCLVC3BWQ" name="tipoPromocion">
+      <modelElement href="turismoTierraMedia.uml#_AyKgYhWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A92MCRWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AyLHcBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A92MChWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AyLugBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A92MCxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A92MDBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A92MDRWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AyKgYxWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A92MDhWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A92MDxWpEeyDzaCLVC3BWQ" name="getTiempoPromocion">
+      <modelElement href="turismoTierraMedia.uml#_AyLughWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A92MEBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AyMVkBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A92MERWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AyMVkRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A92MEhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A92MExWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A92MFBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AyLugxWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A92MFRWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A92MFhWpEeyDzaCLVC3BWQ" name="PromocionAxB">
+      <modelElement href="turismoTierraMedia.uml#_A1zDMBWpEeyDzaCLVC3BWQ"/>
+      <keywords xmi:id="_A92MFxWpEeyDzaCLVC3BWQ" keyword="create"/>
+      <visibility xmi:id="_A92MGBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A92MGRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A92MGhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1zqRBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A92MGxWpEeyDzaCLVC3BWQ" name="PromocionAxB">
+          <modelElement href="turismoTierraMedia.uml#_AyHdEBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A92MHBWpEeyDzaCLVC3BWQ" name="nombre">
+        <modelElement href="turismoTierraMedia.uml#_A1zqQBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A92MHRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A92MHhWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A92MHxWpEeyDzaCLVC3BWQ" name="atracciones">
+        <modelElement href="turismoTierraMedia.uml#_A1zqQRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A92MIBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A92MIRWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A97riRWpEeyDzaCLVC3BWQ" name="GestionarUsuarios" associationsOut="_A97rgBWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_AxqxIBWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A97rihWpEeyDzaCLVC3BWQ" position="1692.0,-322.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A97rixWpEeyDzaCLVC3BWQ" label="+"/>
+    <attributes xmi:id="_A97rjBWpEeyDzaCLVC3BWQ" name="ListaUsuarios" staticAttribute="true">
+      <modelElement href="turismoTierraMedia.uml#_A2Y5ERWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A97rjRWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A2auQBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A97rjhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A97rjxWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_A97rkBWpEeyDzaCLVC3BWQ" name="Usuario">
+        <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_A97rkRWpEeyDzaCLVC3BWQ" name="readUsuariosFileAndCreateList" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_AxrYMBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A97rkhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A97rkxWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_A97rlBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Axr_QBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A97rlRWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A97rlhWpEeyDzaCLVC3BWQ" name="main" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_AxsmUBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A97rlxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A97rmBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A97rmRWpEeyDzaCLVC3BWQ" name="args">
+        <modelElement href="turismoTierraMedia.uml#_AxsmURWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A97rmhWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_A97rmxWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A-FcgBWpEeyDzaCLVC3BWQ" name="GestionarAtracciones">
+    <modelElement href="turismoTierraMedia.uml#_AxhnMBWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A-FcgRWpEeyDzaCLVC3BWQ" position="804.0,125.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A-FcghWpEeyDzaCLVC3BWQ" label="+"/>
+    <operations xmi:id="_A-FcgxWpEeyDzaCLVC3BWQ" name="readAtraccionesFileAndCreateList" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_AxiOQBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-FchBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-FchRWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_A-FchhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AxiOQRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-FchxWpEeyDzaCLVC3BWQ" name="Atraccion">
+          <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-FciBWpEeyDzaCLVC3BWQ" name="main" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_Axi1URWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-FciRWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-FcihWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A-FcixWpEeyDzaCLVC3BWQ" name="args">
+        <modelElement href="turismoTierraMedia.uml#_Axi1UhWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-FcjBWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_A-FcjRWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A-KVABWpEeyDzaCLVC3BWQ" name="PromoPorcentual" generalizations="_A-fFIBWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_AxubgBWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A-KVARWpEeyDzaCLVC3BWQ" position="53.0,255.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A-KVAhWpEeyDzaCLVC3BWQ" label="+"/>
+    <attributes xmi:id="_A-KVAxWpEeyDzaCLVC3BWQ" name="porcentaje">
+      <modelElement href="turismoTierraMedia.uml#_A2auQRWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-KVBBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-KVBRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A-KVBhWpEeyDzaCLVC3BWQ" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_A-KVBxWpEeyDzaCLVC3BWQ" name="getPrecio">
+      <modelElement href="turismoTierraMedia.uml#_AxvpoBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-KVCBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_Axw3wBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-KVCRWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_Axw3wRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-KVChWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-KVCxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-KVDBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AxwQsBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-KVDRWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-KVDhWpEeyDzaCLVC3BWQ" name="toString">
+      <modelElement href="turismoTierraMedia.uml#_Axys8BWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-KVDxWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AxzUABWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-KVEBWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AxzUARWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-KVERWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-KVEhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-KVExWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Axys8RWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-KVFBWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-KVFRWpEeyDzaCLVC3BWQ" name="tipoPromocion">
+      <modelElement href="turismoTierraMedia.uml#_AxzUAxWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-KVFhWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_Axz7ERWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-KVFxWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_Axz7EhWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-KVGBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-KVGRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-KVGhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Axz7EBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-KVGxWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-KVHBWpEeyDzaCLVC3BWQ" name="getTiempoPromocion">
+      <modelElement href="turismoTierraMedia.uml#_Ax0iIBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-KVHRWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_Ax1JMBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-KVHhWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_Ax1JMRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-KVHxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-KVIBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-KVIRWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Ax0iIRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-KVIhWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-KVIxWpEeyDzaCLVC3BWQ" name="visitaGratis">
+      <modelElement href="turismoTierraMedia.uml#_Ax1wQBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-KVJBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_Ax2XURWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-KVJRWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_Ax2XUhWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-KVJhWpEeyDzaCLVC3BWQ" label="#"/>
+      <cardinality xmi:id="_A-KVJxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-KVKBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Ax2XUBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-KVKRWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-KVKhWpEeyDzaCLVC3BWQ" name="PromoPorcentual">
+      <modelElement href="turismoTierraMedia.uml#_A1p5QBWpEeyDzaCLVC3BWQ"/>
+      <keywords xmi:id="_A-KVKxWpEeyDzaCLVC3BWQ" keyword="create"/>
+      <visibility xmi:id="_A-KVLBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-KVLRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-KVLhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1qgUxWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-KVLxWpEeyDzaCLVC3BWQ" name="PromoPorcentual">
+          <modelElement href="turismoTierraMedia.uml#_AxubgBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A-KVMBWpEeyDzaCLVC3BWQ" name="nombre">
+        <modelElement href="turismoTierraMedia.uml#_A1p5QRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-KVMRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-KVMhWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A-KVMxWpEeyDzaCLVC3BWQ" name="porcentajeDescuento">
+        <modelElement href="turismoTierraMedia.uml#_A1p5QhWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-KVNBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-KVNRWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A-KVNhWpEeyDzaCLVC3BWQ" name="atracciones">
+        <modelElement href="turismoTierraMedia.uml#_A1qgUBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-KVNxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-KVOBWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A-RCsBWpEeyDzaCLVC3BWQ" name="PromocionAbsoluta" generalizations="_A-fFIRWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_Ax_hQBWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A-RCsRWpEeyDzaCLVC3BWQ" position="-620.0,34.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A-RCshWpEeyDzaCLVC3BWQ" label="+"/>
+    <attributes xmi:id="_A-RCsxWpEeyDzaCLVC3BWQ" name="valorPaquete">
+      <modelElement href="turismoTierraMedia.uml#_A2dKgBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-RCtBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A2dKgRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-RCtRWpEeyDzaCLVC3BWQ" label="-"/>
+      <cardinality xmi:id="_A-RCthWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A-RCtxWpEeyDzaCLVC3BWQ" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_A-RCuBWpEeyDzaCLVC3BWQ" name="getPrecio">
+      <modelElement href="turismoTierraMedia.uml#_AyAIUBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-RCuRWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AyBWcBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-RCuhWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AyBWcRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-RCuxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-RCvBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-RCvRWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AyAvYBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-RCvhWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-RCvxWpEeyDzaCLVC3BWQ" name="toString">
+      <modelElement href="turismoTierraMedia.uml#_AyBWcxWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-RCwBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AyB9gRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-RCwRWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AyB9ghWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-RCwhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-RCwxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-RCxBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AyB9gBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-RCxRWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-RCxhWpEeyDzaCLVC3BWQ" name="tipoPromocion">
+      <modelElement href="turismoTierraMedia.uml#_AyB9hBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-RCxxWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AyCkkRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-RCyBWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AyDLoBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-RCyRWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-RCyhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-RCyxWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AyCkkBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-RCzBWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-RCzRWpEeyDzaCLVC3BWQ" name="getTiempoPromocion">
+      <modelElement href="turismoTierraMedia.uml#_AyDLohWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-RCzhWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AyDysBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-RCzxWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AyDysRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-RC0BWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-RC0RWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-RC0hWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AyDLoxWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-RC0xWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-RC1BWpEeyDzaCLVC3BWQ" name="visitaGratis">
+      <modelElement href="turismoTierraMedia.uml#_AyFn4BWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-RC1RWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AyFn4hWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-RC1hWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AyGO8BWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-RC1xWpEeyDzaCLVC3BWQ" label="#"/>
+      <cardinality xmi:id="_A-RC2BWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-RC2RWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AyFn4RWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-RC2hWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-RC2xWpEeyDzaCLVC3BWQ" name="PromocionAbsoluta">
+      <modelElement href="turismoTierraMedia.uml#_A1xOABWpEeyDzaCLVC3BWQ"/>
+      <keywords xmi:id="_A-RC3BWpEeyDzaCLVC3BWQ" keyword="create"/>
+      <visibility xmi:id="_A-RC3RWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-RC3hWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-RC3xWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1x1EBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-RC4BWpEeyDzaCLVC3BWQ" name="PromocionAbsoluta">
+          <modelElement href="turismoTierraMedia.uml#_Ax_hQBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A-RC4RWpEeyDzaCLVC3BWQ" name="nombre">
+        <modelElement href="turismoTierraMedia.uml#_A1xOARWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-RC4hWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-RC4xWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A-RC5BWpEeyDzaCLVC3BWQ" name="precio">
+        <modelElement href="turismoTierraMedia.uml#_A1xOAhWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-RC5RWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-RC5hWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A-RC5xWpEeyDzaCLVC3BWQ" name="atracciones">
+        <modelElement href="turismoTierraMedia.uml#_A1xOAxWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-RC6BWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-RC6RWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_A-ZllBWpEeyDzaCLVC3BWQ" name="TipoAtraccion" associationsOut="_A-YXcBWpEeyDzaCLVC3BWQ _A-Y-gBWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_AyROEBWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A-ZllRWpEeyDzaCLVC3BWQ" position="617.0,-209.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_A-ZllhWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+      <modelElement href="turismoTierraMedia.uml#_AyR1IBWpEeyDzaCLVC3BWQ"/>
+    </stereotypes>
+    <visibility xmi:id="_A-ZllxWpEeyDzaCLVC3BWQ" label="+"/>
+    <literals xmi:id="_A-ZlmBWpEeyDzaCLVC3BWQ" name="PAISAJE">
+      <modelElement href="turismoTierraMedia.uml#_AyR1IRWpEeyDzaCLVC3BWQ"/>
+    </literals>
+    <literals xmi:id="_A-ZlmRWpEeyDzaCLVC3BWQ" name="AVENTURA">
+      <modelElement href="turismoTierraMedia.uml#_AyR1IhWpEeyDzaCLVC3BWQ"/>
+    </literals>
+    <literals xmi:id="_A-ZlmhWpEeyDzaCLVC3BWQ" name="DEGUSTACION">
+      <modelElement href="turismoTierraMedia.uml#_AyR1IxWpEeyDzaCLVC3BWQ"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A-jWkBWpEeyDzaCLVC3BWQ" name="Promocion" abstractClass="true" associationsIn="_A-fFIxWpEeyDzaCLVC3BWQ _A_YdABWpEeyDzaCLVC3BWQ" associationsOut="_A-fFJBWpEeyDzaCLVC3BWQ" subclassedBy="_A-fFIBWpEeyDzaCLVC3BWQ _A-fFIRWpEeyDzaCLVC3BWQ _A-fFIhWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_Ax3lcBWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A-jWkRWpEeyDzaCLVC3BWQ" position="31.0,-953.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A-jWkhWpEeyDzaCLVC3BWQ" label="+"/>
+    <attributes xmi:id="_A-jWkxWpEeyDzaCLVC3BWQ" name="nombre">
+      <modelElement href="turismoTierraMedia.uml#_A2bVUBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-jWlBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A2b8YBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-jWlRWpEeyDzaCLVC3BWQ" label="#"/>
+      <cardinality xmi:id="_A-jWlhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A-jWlxWpEeyDzaCLVC3BWQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A-jWmBWpEeyDzaCLVC3BWQ" name="atracciones">
+      <modelElement href="turismoTierraMedia.uml#_A2b8YRWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-jWmRWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A2cjcBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-jWmhWpEeyDzaCLVC3BWQ" label="#"/>
+      <cardinality xmi:id="_A-jWmxWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_A-jWnBWpEeyDzaCLVC3BWQ" name="Atraccion">
+        <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_A-jWnRWpEeyDzaCLVC3BWQ" name="getPrecio">
+      <modelElement href="turismoTierraMedia.uml#_Ax5aoBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-jWnhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-jWnxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-jWoBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Ax5aoRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-jWoRWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-jWohWpEeyDzaCLVC3BWQ" name="getNombre">
+      <modelElement href="turismoTierraMedia.uml#_Ax5aohWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-jWoxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-jWpBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-jWpRWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Ax5aoxWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-jWphWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-jWpxWpEeyDzaCLVC3BWQ" name="getAtracciones">
+      <modelElement href="turismoTierraMedia.uml#_Ax6BsBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-jWqBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-jWqRWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_A-jWqhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Ax6BsRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-jWqxWpEeyDzaCLVC3BWQ" name="Atraccion">
+          <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-jWrBWpEeyDzaCLVC3BWQ" name="setNombre">
+      <modelElement href="turismoTierraMedia.uml#_Ax6BsxWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-jWrRWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-jWrhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A-jWrxWpEeyDzaCLVC3BWQ" name="nombre">
+        <modelElement href="turismoTierraMedia.uml#_Ax7P0BWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-jWsBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-jWsRWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A-jWshWpEeyDzaCLVC3BWQ" name="getTiempoPromocion">
+      <modelElement href="turismoTierraMedia.uml#_Ax724BWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-jWsxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-jWtBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-jWtRWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Ax724RWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-jWthWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-jWtxWpEeyDzaCLVC3BWQ" name="toString">
+      <modelElement href="turismoTierraMedia.uml#_Ax724hWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-jWuBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_Ax8d8RWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-jWuRWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_Ax8d8hWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-jWuhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-jWuxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-jWvBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Ax8d8BWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-jWvRWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-jWvhWpEeyDzaCLVC3BWQ" name="getPreferenciaPromo">
+      <modelElement href="turismoTierraMedia.uml#_Ax8d9BWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-jWvxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-jWwBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-jWwRWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1COMBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-jWwhWpEeyDzaCLVC3BWQ" name="TipoAtraccion">
+          <modelElement href="turismoTierraMedia.uml#_AyROEBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-jWwxWpEeyDzaCLVC3BWQ" abstractOperation="true" name="tipoPromocion">
+      <modelElement href="turismoTierraMedia.uml#_Ax9FABWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-jWxBWpEeyDzaCLVC3BWQ" label="#"/>
+      <cardinality xmi:id="_A-jWxRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-jWxhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Ax9FARWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-jWxxWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-jWyBWpEeyDzaCLVC3BWQ" abstractOperation="true" name="visitaGratis">
+      <modelElement href="turismoTierraMedia.uml#_Ax9sEBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-jWyRWpEeyDzaCLVC3BWQ" label="#"/>
+      <cardinality xmi:id="_A-jWyhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-jWyxWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Ax9sERWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-jWzBWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-jWzRWpEeyDzaCLVC3BWQ" name="Promocion">
+      <modelElement href="turismoTierraMedia.uml#_A1sVgBWpEeyDzaCLVC3BWQ"/>
+      <keywords xmi:id="_A-jWzhWpEeyDzaCLVC3BWQ" keyword="create"/>
+      <visibility xmi:id="_A-jWzxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-jW0BWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-jW0RWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1s8kRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-jW0hWpEeyDzaCLVC3BWQ" name="Promocion">
+          <modelElement href="turismoTierraMedia.uml#_Ax3lcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A-jW0xWpEeyDzaCLVC3BWQ" name="nombre">
+        <modelElement href="turismoTierraMedia.uml#_A1sVgRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-jW1BWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-jW1RWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A-jW1hWpEeyDzaCLVC3BWQ" name="atracciones">
+        <modelElement href="turismoTierraMedia.uml#_A1sVghWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-jW1xWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-jW2BWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A-wx8BWpEeyDzaCLVC3BWQ" name="Usuario" associationsIn="_A-Y-gBWpEeyDzaCLVC3BWQ _A97rgBWpEeyDzaCLVC3BWQ _A_d8kBWpEeyDzaCLVC3BWQ" associationsOut="_A-fFIxWpEeyDzaCLVC3BWQ _A-sggBWpEeyDzaCLVC3BWQ _A-sggRWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A-wx8RWpEeyDzaCLVC3BWQ" position="528.0,-647.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A-wx8hWpEeyDzaCLVC3BWQ" label="+"/>
+    <attributes xmi:id="_A-wx8xWpEeyDzaCLVC3BWQ" name="nombre">
+      <modelElement href="turismoTierraMedia.uml#_A2fmwBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wx9BWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wx9RWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A-wx9hWpEeyDzaCLVC3BWQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A-wx9xWpEeyDzaCLVC3BWQ" name="presupuesto">
+      <modelElement href="turismoTierraMedia.uml#_A2fmwRWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-wx-BWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A2gN0BWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-wx-RWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wx-hWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A-wx-xWpEeyDzaCLVC3BWQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A-wx_BWpEeyDzaCLVC3BWQ" name="tiempoDisponible">
+      <modelElement href="turismoTierraMedia.uml#_A2gN0RWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-wx_RWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A2gN0hWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-wx_hWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wx_xWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A-wyABWpEeyDzaCLVC3BWQ" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A-wyARWpEeyDzaCLVC3BWQ" name="tipoPreferido">
+      <modelElement href="turismoTierraMedia.uml#_A2gN0xWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wyAhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyAxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A-wyBBWpEeyDzaCLVC3BWQ" name="TipoAtraccion">
+        <modelElement href="turismoTierraMedia.uml#_AyROEBWpEeyDzaCLVC3BWQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A-wyBRWpEeyDzaCLVC3BWQ" name="todasLasAtracciones">
+      <modelElement href="turismoTierraMedia.uml#_A2g04BWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wyBhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyBxWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_A-wyCBWpEeyDzaCLVC3BWQ" name="Atraccion">
+        <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A-wyCRWpEeyDzaCLVC3BWQ" name="atraccionesAdquiridas">
+      <modelElement href="turismoTierraMedia.uml#_A2hb8BWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wyChWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyCxWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_A-wyDBWpEeyDzaCLVC3BWQ" name="Atraccion">
+        <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A-wyDRWpEeyDzaCLVC3BWQ" name="promocionesAdquiridas">
+      <modelElement href="turismoTierraMedia.uml#_A2iqEBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wyDhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyDxWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_A-wyEBWpEeyDzaCLVC3BWQ" name="Promocion">
+        <modelElement href="turismoTierraMedia.uml#_Ax3lcBWpEeyDzaCLVC3BWQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_A-wyERWpEeyDzaCLVC3BWQ" name="esBuenPrecio">
+      <modelElement href="turismoTierraMedia.uml#_AykJABWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wyEhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyExWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-wyFBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AykJAhWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-wyFRWpEeyDzaCLVC3BWQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A-wyFhWpEeyDzaCLVC3BWQ" name="precio">
+        <modelElement href="turismoTierraMedia.uml#_AykJARWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-wyFxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-wyGBWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A-wyGRWpEeyDzaCLVC3BWQ" name="esTiempoSuficiente">
+      <modelElement href="turismoTierraMedia.uml#_AykJAxWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wyGhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyGxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-wyHBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AykwEBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-wyHRWpEeyDzaCLVC3BWQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A-wyHhWpEeyDzaCLVC3BWQ" name="duracion">
+        <modelElement href="turismoTierraMedia.uml#_AykJBBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-wyHxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-wyIBWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A-wyIRWpEeyDzaCLVC3BWQ" name="getPresupuesto">
+      <modelElement href="turismoTierraMedia.uml#_AylXIBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wyIhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyIxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-wyJBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AylXIRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-wyJRWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-wyJhWpEeyDzaCLVC3BWQ" name="getTiempoDisponible">
+      <modelElement href="turismoTierraMedia.uml#_Ayl-MBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wyJxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyKBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-wyKRWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Ayl-MRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-wyKhWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-wyKxWpEeyDzaCLVC3BWQ" name="setPresupuesto">
+      <modelElement href="turismoTierraMedia.uml#_Ayl-MhWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wyLBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyLRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A-wyLhWpEeyDzaCLVC3BWQ" name="presupuesto">
+        <modelElement href="turismoTierraMedia.uml#_Ayl-MxWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-wyLxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-wyMBWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A-wyMRWpEeyDzaCLVC3BWQ" name="setTiempoDisponible">
+      <modelElement href="turismoTierraMedia.uml#_Ayl-NBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wyMhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyMxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A-wyNBWpEeyDzaCLVC3BWQ" name="tiempoDisponible">
+        <modelElement href="turismoTierraMedia.uml#_AymlQBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-wyNRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-wyNhWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A-wyNxWpEeyDzaCLVC3BWQ" name="toString">
+      <modelElement href="turismoTierraMedia.uml#_AymlQRWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-wyOBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AynMUBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-wyORWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AynMURWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-wyOhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyOxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-wyPBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AymlQhWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-wyPRWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A-wyPhWpEeyDzaCLVC3BWQ" name="Usuario">
+      <modelElement href="turismoTierraMedia.uml#_A1W-UBWpEeyDzaCLVC3BWQ"/>
+      <keywords xmi:id="_A-wyPxWpEeyDzaCLVC3BWQ" keyword="create"/>
+      <visibility xmi:id="_A-wyQBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyQRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-wyQhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1W-VxWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-wyQxWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A-wyRBWpEeyDzaCLVC3BWQ" name="nombre">
+        <modelElement href="turismoTierraMedia.uml#_A1W-URWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-wyRRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-wyRhWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A-wyRxWpEeyDzaCLVC3BWQ" name="presupuesto">
+        <modelElement href="turismoTierraMedia.uml#_A1W-UhWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-wySBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-wySRWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A-wyShWpEeyDzaCLVC3BWQ" name="tiempoDisponible">
+        <modelElement href="turismoTierraMedia.uml#_A1W-UxWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-wySxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-wyTBWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A-wyTRWpEeyDzaCLVC3BWQ" name="tipoPreferido">
+        <modelElement href="turismoTierraMedia.uml#_A1W-VBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-wyThWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-wyTxWpEeyDzaCLVC3BWQ" name="TipoAtraccion">
+          <modelElement href="turismoTierraMedia.uml#_AyROEBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A-wyUBWpEeyDzaCLVC3BWQ" name="esAtraccionPreferida">
+      <modelElement href="turismoTierraMedia.uml#_A2QWMBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A-wyURWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-wyUhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-wyUxWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A2Q9QRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-wyVBWpEeyDzaCLVC3BWQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A-wyVRWpEeyDzaCLVC3BWQ" name="tipoAtraccion">
+        <modelElement href="turismoTierraMedia.uml#_A2Q9QBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-wyVhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-wyVxWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A-7KABWpEeyDzaCLVC3BWQ" name="AtraccionComparator">
+    <modelElement href="turismoTierraMedia.uml#_AxcusBWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A-7KARWpEeyDzaCLVC3BWQ" position="767.0,282.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A-7KAhWpEeyDzaCLVC3BWQ" label="+"/>
+    <operations xmi:id="_A-7KAxWpEeyDzaCLVC3BWQ" name="compare">
+      <modelElement href="turismoTierraMedia.uml#_A03PEBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A-7KBBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A032IRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A-7KBRWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_A04dMBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A-7KBhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A-7KBxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A-7KCBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A032IBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A-7KCRWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A-7KChWpEeyDzaCLVC3BWQ" name="atraccion1">
+        <modelElement href="turismoTierraMedia.uml#_A03PERWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-7KCxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-7KDBWpEeyDzaCLVC3BWQ" name="Atraccion">
+          <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A-7KDRWpEeyDzaCLVC3BWQ" name="atraccion2">
+        <modelElement href="turismoTierraMedia.uml#_A03PEhWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A-7KDhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A-7KDxWpEeyDzaCLVC3BWQ" name="Atraccion">
+          <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A_E7ABWpEeyDzaCLVC3BWQ" name="Atraccion" associationsIn="_A-YXcBWpEeyDzaCLVC3BWQ _A-fFJBWpEeyDzaCLVC3BWQ _A-sggBWpEeyDzaCLVC3BWQ _A-sggRWpEeyDzaCLVC3BWQ _A_X18BWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A_E7ARWpEeyDzaCLVC3BWQ" position="181.0,-1221.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A_E7AhWpEeyDzaCLVC3BWQ" label="+"/>
+    <attributes xmi:id="_A_E7AxWpEeyDzaCLVC3BWQ" name="nombre">
+      <modelElement href="turismoTierraMedia.uml#_A2VOsBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_E7BBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_E7BRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A_E7BhWpEeyDzaCLVC3BWQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A_E7BxWpEeyDzaCLVC3BWQ" name="tipo">
+      <modelElement href="turismoTierraMedia.uml#_A2V1wBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_E7CBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_E7CRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A_E7ChWpEeyDzaCLVC3BWQ" name="TipoAtraccion">
+        <modelElement href="turismoTierraMedia.uml#_AyROEBWpEeyDzaCLVC3BWQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A_E7CxWpEeyDzaCLVC3BWQ" name="precio">
+      <modelElement href="turismoTierraMedia.uml#_A2V1wRWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_E7DBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_E7DRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A_E7DhWpEeyDzaCLVC3BWQ" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A_E7DxWpEeyDzaCLVC3BWQ" name="duracion">
+      <modelElement href="turismoTierraMedia.uml#_A2V1whWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_E7EBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_E7ERWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A_E7EhWpEeyDzaCLVC3BWQ" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A_E7ExWpEeyDzaCLVC3BWQ" name="cupoPersonas">
+      <modelElement href="turismoTierraMedia.uml#_A2V1wxWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_E7FBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_E7FRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A_E7FhWpEeyDzaCLVC3BWQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_A_E7FxWpEeyDzaCLVC3BWQ" name="getListaTiposAtraccion">
+      <modelElement href="turismoTierraMedia.uml#_AxWoEBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_E7GBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_E7GRWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_A_E7GhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AxWoERWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_E7GxWpEeyDzaCLVC3BWQ" name="TipoAtraccion">
+          <modelElement href="turismoTierraMedia.uml#_AyROEBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A_E7HBWpEeyDzaCLVC3BWQ" name="hashCode">
+      <modelElement href="turismoTierraMedia.uml#_AxXPIBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A_E7HRWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AxYdQBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A_E7HhWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AxYdQRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A_E7HxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_E7IBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A_E7IRWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AxX2MBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_E7IhWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A_E7IxWpEeyDzaCLVC3BWQ" name="toString">
+      <modelElement href="turismoTierraMedia.uml#_AxZEUBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A_E7JBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_AxZEUhWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A_E7JRWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_AxZrYBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A_E7JhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_E7JxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A_E7KBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AxZEURWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_E7KRWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A_E7KhWpEeyDzaCLVC3BWQ" name="Atraccion">
+      <modelElement href="turismoTierraMedia.uml#_A0y9oBWpEeyDzaCLVC3BWQ"/>
+      <keywords xmi:id="_A_E7KxWpEeyDzaCLVC3BWQ" keyword="create"/>
+      <visibility xmi:id="_A_E7LBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_E7LRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A_E7LhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A00LwBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_E7LxWpEeyDzaCLVC3BWQ" name="Atraccion">
+          <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A_E7MBWpEeyDzaCLVC3BWQ" name="nombre">
+        <modelElement href="turismoTierraMedia.uml#_A0zksBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_E7MRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_E7MhWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_E7MxWpEeyDzaCLVC3BWQ" name="precio">
+        <modelElement href="turismoTierraMedia.uml#_A0zksRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_E7NBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_E7NRWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_E7NhWpEeyDzaCLVC3BWQ" name="duracion">
+        <modelElement href="turismoTierraMedia.uml#_A0zkshWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_E7NxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_E7OBWpEeyDzaCLVC3BWQ" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_E7ORWpEeyDzaCLVC3BWQ" name="cupoPersonas">
+        <modelElement href="turismoTierraMedia.uml#_A0zksxWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_E7OhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_E7OxWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_E7PBWpEeyDzaCLVC3BWQ" name="tipo">
+        <modelElement href="turismoTierraMedia.uml#_A0zktBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_E7PRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_E7PhWpEeyDzaCLVC3BWQ" name="TipoAtraccion">
+          <modelElement href="turismoTierraMedia.uml#_AyROEBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_E7PxWpEeyDzaCLVC3BWQ" name="equals">
+      <modelElement href="turismoTierraMedia.uml#_A1h9cRWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A_E7QBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A1ikghWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_A_E7QRWpEeyDzaCLVC3BWQ" name="Annotations">
+        <modelElement href="turismoTierraMedia.uml#_A1jLkBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A_E7QhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_E7QxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A_E7RBWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1ikgRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_E7RRWpEeyDzaCLVC3BWQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A_E7RhWpEeyDzaCLVC3BWQ" name="obj">
+        <modelElement href="turismoTierraMedia.uml#_A1ikgBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_E7RxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_E7SBWpEeyDzaCLVC3BWQ" name="Object">
+          <modelElement href="turismoTierraMedia.uml#_A1hWYRWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A_OE8BWpEeyDzaCLVC3BWQ" name="GestionarPromociones">
+    <modelElement href="turismoTierraMedia.uml#_AxjcYRWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A_OE8RWpEeyDzaCLVC3BWQ" position="1227.0,-203.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A_OE8hWpEeyDzaCLVC3BWQ" label="+"/>
+    <operations xmi:id="_A_OE8xWpEeyDzaCLVC3BWQ" name="readPromocionFileAndCreateList" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_AxkDcBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_OE9BWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_OE9RWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_A_OE9hWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_AxkDcRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_OE9xWpEeyDzaCLVC3BWQ" name="Promocion">
+          <modelElement href="turismoTierraMedia.uml#_Ax3lcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_A_OE-BWpEeyDzaCLVC3BWQ" name="atraccionesInvolucrada" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_AxlRkBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_OE-RWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_OE-hWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_A_OE-xWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Axl4oBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_OE_BWpEeyDzaCLVC3BWQ" name="Atraccion">
+          <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A_OE_RWpEeyDzaCLVC3BWQ" name="valores">
+        <modelElement href="turismoTierraMedia.uml#_AxlRkRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_OE_hWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_A_OE_xWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_OFABWpEeyDzaCLVC3BWQ" name="esNumero" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_AxnGwBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_OFARWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_OFAhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A_OFAxWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_Axnt0BWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_OFBBWpEeyDzaCLVC3BWQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A_OFBRWpEeyDzaCLVC3BWQ" name="valor">
+        <modelElement href="turismoTierraMedia.uml#_AxnGwRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_OFBhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_OFBxWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_OFCBWpEeyDzaCLVC3BWQ" name="buscadorAtraccion" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_AxoU4BWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_OFCRWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_OFChWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A_OFCxWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A0_K4RWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_OFDBWpEeyDzaCLVC3BWQ" name="Atraccion">
+          <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A_OFDRWpEeyDzaCLVC3BWQ" name="nombre">
+        <modelElement href="turismoTierraMedia.uml#_AxoU4RWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_OFDhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_OFDxWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_OFEBWpEeyDzaCLVC3BWQ" name="main" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_Axo78BWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_OFERWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_OFEhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_OFExWpEeyDzaCLVC3BWQ" name="args">
+        <modelElement href="turismoTierraMedia.uml#_AxpjABWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_OFFBWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_A_OFFRWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A_S9cBWpEeyDzaCLVC3BWQ" name="Consola">
+    <modelElement href="turismoTierraMedia.uml#_Axd80BWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A_S9cRWpEeyDzaCLVC3BWQ" position="540.0,-30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A_S9chWpEeyDzaCLVC3BWQ" label="+"/>
+    <attributes xmi:id="_A_S9cxWpEeyDzaCLVC3BWQ" name="valorEntrada" staticAttribute="true">
+      <modelElement href="turismoTierraMedia.uml#_A2Wc0BWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A_S9dBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A2Y5EBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A_S9dRWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_S9dhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <type xmi:id="_A_S9dxWpEeyDzaCLVC3BWQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_A_S9eBWpEeyDzaCLVC3BWQ" name="metodoSaludar" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_Axej4BWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_S9eRWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_S9ehWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_A_S9exWpEeyDzaCLVC3BWQ" name="leerConsola" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_AxfK8BWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_S9fBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_S9fRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_A_S9fhWpEeyDzaCLVC3BWQ" name="main" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_AxfK8RWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_S9fxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_S9gBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_S9gRWpEeyDzaCLVC3BWQ" name="args">
+        <modelElement href="turismoTierraMedia.uml#_AxfK8hWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_S9ghWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_A_S9gxWpEeyDzaCLVC3BWQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_A_r_ABWpEeyDzaCLVC3BWQ" name="TurismoTierraMedia" associationsOut="_A_X18BWpEeyDzaCLVC3BWQ _A_YdABWpEeyDzaCLVC3BWQ _A_d8kBWpEeyDzaCLVC3BWQ">
+    <modelElement href="turismoTierraMedia.uml#_AyTqUBWpEeyDzaCLVC3BWQ"/>
+    <visualProperties xmi:id="_A_r_ARWpEeyDzaCLVC3BWQ" position="-451.0,-475.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_A_r_AhWpEeyDzaCLVC3BWQ" label="+"/>
+    <attributes xmi:id="_A_r_AxWpEeyDzaCLVC3BWQ" name="listaAtracciones" staticAttribute="true">
+      <modelElement href="turismoTierraMedia.uml#_A2dxkBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A_r_BBWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A2eYoBWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A_r_BRWpEeyDzaCLVC3BWQ" label="-"/>
+      <cardinality xmi:id="_A_r_BhWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_A_r_BxWpEeyDzaCLVC3BWQ" name="Atraccion">
+        <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A_r_CBWpEeyDzaCLVC3BWQ" name="listaPromociones" staticAttribute="true">
+      <modelElement href="turismoTierraMedia.uml#_A2eYoRWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A_r_CRWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A2eYoxWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A_r_ChWpEeyDzaCLVC3BWQ" label="-"/>
+      <cardinality xmi:id="_A_r_CxWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_A_smEBWpEeyDzaCLVC3BWQ" name="Promocion">
+        <modelElement href="turismoTierraMedia.uml#_Ax3lcBWpEeyDzaCLVC3BWQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_A_smERWpEeyDzaCLVC3BWQ" name="listaUsuarios" staticAttribute="true">
+      <modelElement href="turismoTierraMedia.uml#_A2eYpBWpEeyDzaCLVC3BWQ"/>
+      <stereotypes xmi:id="_A_smEhWpEeyDzaCLVC3BWQ" name="LegacyStyledElement">
+        <modelElement href="turismoTierraMedia.uml#_A2e_sRWpEeyDzaCLVC3BWQ"/>
+      </stereotypes>
+      <visibility xmi:id="_A_smExWpEeyDzaCLVC3BWQ" label="-"/>
+      <cardinality xmi:id="_A_smFBWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_A_smFRWpEeyDzaCLVC3BWQ" name="Usuario">
+        <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_A_smFhWpEeyDzaCLVC3BWQ" name="mostrarUsuarios" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_AyX7wBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smFxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smGBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_A_smGRWpEeyDzaCLVC3BWQ" name="sugerirAtraccion" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A1L_MRWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smGhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smGxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smHBWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A1MmQBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smHRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smHhWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smHxWpEeyDzaCLVC3BWQ" name="actualizarListaPromociones" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A1N0YBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smIBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smIRWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_A_smIhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1N0YhWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_smIxWpEeyDzaCLVC3BWQ" name="Promocion">
+          <modelElement href="turismoTierraMedia.uml#_Ax3lcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A_smJBWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A1N0YRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smJRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smJhWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smJxWpEeyDzaCLVC3BWQ" name="actualizarListaAtracciones" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A1ObcBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smKBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smKRWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_A_smKhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1PCgRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_smKxWpEeyDzaCLVC3BWQ" name="Atraccion">
+          <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A_smLBWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A1PCgBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smLRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smLhWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smLxWpEeyDzaCLVC3BWQ" name="sugerenciasAtraccionesPreferidas" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A1PCgxWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smMBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smMRWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_A_smMhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1PChRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_smMxWpEeyDzaCLVC3BWQ" name="Atraccion">
+          <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A_smNBWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A1PChBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smNRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smNhWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smNxWpEeyDzaCLVC3BWQ" name="sugerenciasOtrasAtracciones" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A1QQoBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smOBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smORWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_A_smOhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1Q3sRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_smOxWpEeyDzaCLVC3BWQ" name="Atraccion">
+          <modelElement href="turismoTierraMedia.uml#_AxTkwBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A_smPBWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A1Q3sBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smPRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smPhWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smPxWpEeyDzaCLVC3BWQ" name="tipoAtraccionGratis" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A1Q3sxWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smQBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smQRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_A_smQhWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1RewRWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_smQxWpEeyDzaCLVC3BWQ" name="TipoAtraccion">
+          <modelElement href="turismoTierraMedia.uml#_AyROEBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A_smRBWpEeyDzaCLVC3BWQ" name="promocion">
+        <modelElement href="turismoTierraMedia.uml#_A1RewBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smRRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smRhWpEeyDzaCLVC3BWQ" name="Promocion">
+          <modelElement href="turismoTierraMedia.uml#_Ax3lcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smRxWpEeyDzaCLVC3BWQ" comments="_A_mfcBWpEeyDzaCLVC3BWQ" targetConnectionVisual="_A_mfcRWpEeyDzaCLVC3BWQ" name="sugerenciasPromociones" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A1RewhWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smSBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smSRWpEeyDzaCLVC3BWQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_A_smShWpEeyDzaCLVC3BWQ">
+        <modelElement href="turismoTierraMedia.uml#_A1RexBWpEeyDzaCLVC3BWQ"/>
+        <type xmi:id="_A_smSxWpEeyDzaCLVC3BWQ" name="Promocion">
+          <modelElement href="turismoTierraMedia.uml#_Ax3lcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_A_smTBWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A1RewxWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smTRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smThWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smTxWpEeyDzaCLVC3BWQ" name="generarItinerario" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A1SF0BWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smUBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smURWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smUhWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A1SF0RWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smUxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smVBWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smVRWpEeyDzaCLVC3BWQ" name="generarArchivo">
+      <modelElement href="turismoTierraMedia.uml#_A1Ss4BWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smVhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smVxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smWBWpEeyDzaCLVC3BWQ" name="usuarioActual">
+        <modelElement href="turismoTierraMedia.uml#_A1Ss4RWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smWRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smWhWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smWxWpEeyDzaCLVC3BWQ" name="sugerirPromociones" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A12GgBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smXBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smXRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smXhWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A12GgRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smXxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smYBWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smYRWpEeyDzaCLVC3BWQ" name="promocionesRecomendadas">
+        <modelElement href="turismoTierraMedia.uml#_A12GghWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smYhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smYxWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smZBWpEeyDzaCLVC3BWQ" name="atraccionesRecomendadas">
+        <modelElement href="turismoTierraMedia.uml#_A12tkBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smZRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smZhWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smZxWpEeyDzaCLVC3BWQ" name="otrasAtracciones">
+        <modelElement href="turismoTierraMedia.uml#_A12tkRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smaBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smaRWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smahWpEeyDzaCLVC3BWQ" name="eleccion">
+        <modelElement href="turismoTierraMedia.uml#_A12tkhWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smaxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smbBWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smbRWpEeyDzaCLVC3BWQ" name="sugerirAtraccionesPreferidas" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A16X8RWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smbhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smbxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smcBWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A16X8hWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smcRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smchWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smcxWpEeyDzaCLVC3BWQ" name="promocionesRecomendadas">
+        <modelElement href="turismoTierraMedia.uml#_A16_ABWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smdBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smdRWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smdhWpEeyDzaCLVC3BWQ" name="atraccionesRecomendadas">
+        <modelElement href="turismoTierraMedia.uml#_A16_ARWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smdxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smeBWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smeRWpEeyDzaCLVC3BWQ" name="otrasAtracciones">
+        <modelElement href="turismoTierraMedia.uml#_A16_AhWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smehWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smexWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smfBWpEeyDzaCLVC3BWQ" name="eleccion">
+        <modelElement href="turismoTierraMedia.uml#_A16_AxWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smfRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smfhWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smfxWpEeyDzaCLVC3BWQ" name="sugerirOtrasAtracciones" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A19bQBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smgBWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smgRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smghWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A19bQRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smgxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smhBWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smhRWpEeyDzaCLVC3BWQ" name="promocionesRecomendadas">
+        <modelElement href="turismoTierraMedia.uml#_A19bQhWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smhhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smhxWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smiBWpEeyDzaCLVC3BWQ" name="atraccionesRecomendadas">
+        <modelElement href="turismoTierraMedia.uml#_A19bQxWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smiRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smihWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smixWpEeyDzaCLVC3BWQ" name="otrasAtracciones">
+        <modelElement href="turismoTierraMedia.uml#_A19bRBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smjBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smjRWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smjhWpEeyDzaCLVC3BWQ" name="eleccion">
+        <modelElement href="turismoTierraMedia.uml#_A19bRRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smjxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smkBWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smkRWpEeyDzaCLVC3BWQ" name="actualizarAtraccionesAdquiridas" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A1_QcRWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smkhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smkxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smlBWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A1_3gBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smlRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smlhWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smlxWpEeyDzaCLVC3BWQ" name="atracciones">
+        <modelElement href="turismoTierraMedia.uml#_A1_3gRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smmBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smmRWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smmhWpEeyDzaCLVC3BWQ" name="eleccion">
+        <modelElement href="turismoTierraMedia.uml#_A1_3ghWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smmxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smnBWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smnRWpEeyDzaCLVC3BWQ" name="actualizarPromocionesAdquiridas" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A2BFoBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smnhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smnxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smoBWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A2BssBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smoRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smohWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smoxWpEeyDzaCLVC3BWQ" name="promociones">
+        <modelElement href="turismoTierraMedia.uml#_A2BssRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smpBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smpRWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smphWpEeyDzaCLVC3BWQ" name="eleccion">
+        <modelElement href="turismoTierraMedia.uml#_A2BsshWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smpxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smqBWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smqRWpEeyDzaCLVC3BWQ" name="actualizarUsuarioPromocion" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A2C60BWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smqhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smqxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smrBWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A2Dh4BWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smrRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smrhWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smrxWpEeyDzaCLVC3BWQ" name="promociones">
+        <modelElement href="turismoTierraMedia.uml#_A2Dh4RWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smsBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smsRWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smshWpEeyDzaCLVC3BWQ" name="eleccion">
+        <modelElement href="turismoTierraMedia.uml#_A2EI8BWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smsxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smtBWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smtRWpEeyDzaCLVC3BWQ" name="actualizarUsuarioAtraccion" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A2F-IBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smthWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smtxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smuBWpEeyDzaCLVC3BWQ" name="usuario">
+        <modelElement href="turismoTierraMedia.uml#_A2F-IRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smuRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smuhWpEeyDzaCLVC3BWQ" name="Usuario">
+          <modelElement href="turismoTierraMedia.uml#_AyhswBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smuxWpEeyDzaCLVC3BWQ" name="atracciones">
+        <modelElement href="turismoTierraMedia.uml#_A2GlMBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smvBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smvRWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smvhWpEeyDzaCLVC3BWQ" name="eleccion">
+        <modelElement href="turismoTierraMedia.uml#_A2HMQBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smvxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smwBWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smwRWpEeyDzaCLVC3BWQ" name="actualizarCupoAtraccionPromo" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A2HzURWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smwhWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smwxWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smxBWpEeyDzaCLVC3BWQ" name="promociones">
+        <modelElement href="turismoTierraMedia.uml#_A2HzUhWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smxRWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smxhWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_smxxWpEeyDzaCLVC3BWQ" name="opcion">
+        <modelElement href="turismoTierraMedia.uml#_A2IaYBWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smyBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smyRWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_smyhWpEeyDzaCLVC3BWQ" name="actualizarCupoAtraccion" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A2JogBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_smyxWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_smzBWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_smzRWpEeyDzaCLVC3BWQ" name="atracciones">
+        <modelElement href="turismoTierraMedia.uml#_A2JogRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_smzhWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_smzxWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_A_sm0BWpEeyDzaCLVC3BWQ" name="i">
+        <modelElement href="turismoTierraMedia.uml#_A2JoghWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_sm0RWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_sm0hWpEeyDzaCLVC3BWQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_sm0xWpEeyDzaCLVC3BWQ" name="mostrarAtracciones" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A2MEwBWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_sm1BWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_sm1RWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_sm1hWpEeyDzaCLVC3BWQ" name="atraccionesParaMostrar">
+        <modelElement href="turismoTierraMedia.uml#_A2MEwRWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_sm1xWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_sm2BWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_A_sm2RWpEeyDzaCLVC3BWQ" name="ordenarAtraccionesPorPrecioYDuracion" staticOperation="true">
+      <modelElement href="turismoTierraMedia.uml#_A2N58RWpEeyDzaCLVC3BWQ"/>
+      <visibility xmi:id="_A_sm2hWpEeyDzaCLVC3BWQ" label="+"/>
+      <cardinality xmi:id="_A_sm2xWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_A_sm3BWpEeyDzaCLVC3BWQ" name="listaAtracciones">
+        <modelElement href="turismoTierraMedia.uml#_A2OhABWpEeyDzaCLVC3BWQ"/>
+        <cardinality xmi:id="_A_sm3RWpEeyDzaCLVC3BWQ" label="1" max="1" min="1"/>
+        <type xmi:id="_A_sm3hWpEeyDzaCLVC3BWQ" name="List">
+          <modelElement href="turismoTierraMedia.uml#_A0xIcBWpEeyDzaCLVC3BWQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
