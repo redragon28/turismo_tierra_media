@@ -13,21 +13,17 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-
-
 public class TurismoTierraMedia {
 	private static List<Atraccion> listaAtracciones;
 	private static List<Promocion> listaPromociones;
 	private static List<Usuario> listaUsuarios;
-	
+
 	public static List<Usuario> readUsuariosFileAndCreateList() {
 
-	listaUsuarios = new ArrayList<>();
-
+		listaUsuarios = new ArrayList<>();
 
 		FileReader fr = null;
 		BufferedReader br = null;
-		
 
 		try {
 
@@ -37,35 +33,29 @@ public class TurismoTierraMedia {
 			String linea = br.readLine();
 			while ((linea != null)) {
 				String[] valores = linea.split(",");
-				
-				String nombre= valores[0];
-				int presupuesto= Integer.parseInt(valores[1]);
-			    double tiempo = Double.parseDouble(valores[2]);
-			    
-			   
-			    
-			   /* int j;
-			    if(valores[3]== "PAISAJE") {
-			    	j=1;}
-			    if(valores[3]== "AVENTURA") {
-			    	j=2;}
-			    else {j= 3;}
-			    
-			    TipoAtraccion valor =  TipoAtraccion.values()[j]; */
-			    
-			    TipoAtraccion valor = Enum.valueOf (TipoAtraccion.class ,valores[3]);
-			     
-			    // posibles soluciones aal parametro , hayq  dejar una
-			                                        
-				
-				Usuario nuevoUsuario = new Usuario(nombre, presupuesto, tiempo , valor);
+
+				String nombre = valores[0];
+				int presupuesto = Integer.parseInt(valores[1]);
+				double tiempo = Double.parseDouble(valores[2]);
+
+				/*
+				 * int j; if(valores[3]== "PAISAJE") { j=1;} if(valores[3]== "AVENTURA") { j=2;}
+				 * else {j= 3;}
+				 * 
+				 * TipoAtraccion valor = TipoAtraccion.values()[j];
+				 */
+
+				TipoAtraccion valor = Enum.valueOf(TipoAtraccion.class, valores[3]);
+
+				// posibles soluciones aal parametro , hayq dejar una
+
+				Usuario nuevoUsuario = new Usuario(nombre, presupuesto, tiempo, valor);
 				listaUsuarios.add(nuevoUsuario);
-				
-				
+
 				linea = br.readLine();
-				
-				
-				//Hay que ver el valor[3] para que de con tipoPreferido o cambiar el parametro a un String//
+
+				// Hay que ver el valor[3] para que de con tipoPreferido o cambiar el parametro
+				// a un String//
 			}
 
 		} catch (IOException e) {
@@ -79,17 +69,15 @@ public class TurismoTierraMedia {
 				e2.printStackTrace();
 			}
 		}
-		
+
 		return listaUsuarios;
 	}
-	
-	
+
 	public static List<Atraccion> readAtraccionesFileAndCreateList() {
 
 		listaAtracciones = new ArrayList<>();
 		FileReader fr = null;
 		BufferedReader br = null;
-
 
 		try {
 
@@ -124,21 +112,16 @@ public class TurismoTierraMedia {
 			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
-		}  
+		}
 		return listaAtracciones;
 	}
 
-	
-
-		
-		
 	public static List<Promocion> readPromocionFileAndCreateList() {
-		
+
 		listaPromociones = new ArrayList<>();
 
 		FileReader fr = null;
 		BufferedReader br = null;
-
 
 		try {
 
@@ -149,22 +132,22 @@ public class TurismoTierraMedia {
 			while ((linea != null)) {
 				String[] valores = linea.split(",");
 				String valor3 = valores[3];
-				
-				if(!esNumero(valor3)){
-	            Promocion nuevaPromocion = new PromocionAxB(valores[0],atraccionesInvolucrada(valores) );
+
+				if (!esNumero(valor3)) {
+					Promocion nuevaPromocion = new PromocionAxB(valores[0], atraccionesInvolucrada(valores));
 					listaPromociones.add(nuevaPromocion);
 					break;
 				}
 				double Valor3 = Double.parseDouble(valores[3]);
-				if(Valor3> 1) {
-					Promocion nuevaPromocion = new PromocionAbsoluta(valores[0],Valor3,atraccionesInvolucrada(valores));
+				if (Valor3 > 1) {
+					Promocion nuevaPromocion = new PromocionAbsoluta(valores[0], Valor3,
+							atraccionesInvolucrada(valores));
 					listaPromociones.add(nuevaPromocion);
-				}else {
-					Promocion nuevaPromocion = new PromoPorcentual(valores[0],Valor3,atraccionesInvolucrada(valores));
+				} else {
+					Promocion nuevaPromocion = new PromoPorcentual(valores[0], Valor3, atraccionesInvolucrada(valores));
 					listaPromociones.add(nuevaPromocion);
 				}
 
-			
 				linea = br.readLine();
 
 			}
@@ -179,47 +162,46 @@ public class TurismoTierraMedia {
 			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
-		}  
+		}
 		return listaPromociones;
-	}		
+	}
 
-	 // busca mediante las atracciones mencionadas en el archivo
-	
-	
+	// busca mediante las atracciones mencionadas en el archivo
 
 	public static List<Atraccion> atraccionesInvolucrada(String[] valores) {
 		List<Atraccion> atraccionesInvolucradas = new ArrayList<>();
-		for (int i = 1; i < valores.length-1; i++) {
+		for (int i = 1; i < valores.length - 1; i++) {
 			atraccionesInvolucradas.add(buscadorAtraccion(valores[i]));
 		}
 		return atraccionesInvolucradas;
 	}
-	
-	public static boolean esNumero (String valor) {
-	return	valor.matches("[-+]?\\d*\\.?\\d+");
-	
+
+	public static boolean esNumero(String valor) {
+		return valor.matches("[-+]?\\d*\\.?\\d+");
+
 	}
+
 	// busca en el array los objetos que represtan los lugares.
 	public static Atraccion buscadorAtraccion(String nombre) {
 		Atraccion resultado = null;
 
 		for (Atraccion atraccion : GestionarAtracciones.readAtraccionesFileAndCreateList()) {
-			if (atraccion.getNombre().toUpperCase().equals(nombre.trim().toUpperCase())) { // revisar esto a ver si equals.(valores.trim())
+			if (atraccion.getNombre().toUpperCase().equals(nombre.trim().toUpperCase())) { // revisar esto a ver si
+																							// equals.(valores.trim())
 				resultado = atraccion;
 			}
 		}
 		return resultado;
 	}
 
-
 	public static void consola() {
 		readAtraccionesFileAndCreateList();
 		readPromocionFileAndCreateList();
-		
+
 		int eleccion = 1;
 		while (eleccion != 99999) {
 			// Si no hay mas usuarios se finaliza la ejecucion del programa
-			   if (listaUsuarios.isEmpty()) { 
+			if (listaUsuarios.isEmpty()) {
 				System.out.println("--------- SE HAN PROCESADO TODOS LOS USUARIOS ---------");
 				System.exit(0);
 			}
@@ -248,13 +230,11 @@ public class TurismoTierraMedia {
 			}
 		}
 	}
-	
-	
+
 	public static boolean esNumerico(String str) {
 		// regexp para verificar si es numerico
 		return str.matches("-?\\d+(\\.\\d+)?");
 	}
-
 
 	public static void sugerirAtraccion(Usuario usuario) {
 		listaPromociones = actualizarListaPromociones(usuario);
@@ -278,13 +258,12 @@ public class TurismoTierraMedia {
 				sugerirOtrasAtracciones(usuario, promocionesRecomendadas, atraccionesRecomendadas, otrasAtracciones,
 						eleccion);
 			} else {
-			borrarUsuario(usuario, eleccion);
+				borrarUsuario(usuario, eleccion);
 
 			}
-			}
 		}
-	
-	
+	}
+
 	public static void borrarUsuario(Usuario usuario, int eleccion) {
 		System.out.println("No puedes realizar compras!");
 		generarArchivo(usuario);
@@ -298,10 +277,10 @@ public class TurismoTierraMedia {
 			List<Atraccion> atraccionesRecomendadas, List<Atraccion> otrasAtracciones, int eleccion) {
 		while (!promocionesRecomendadas.isEmpty()) {
 			if (usuario.getPresupuesto() < 3 || usuario.getTiempoDisponible() < 1) {
-				if((usuario.getPresupuesto() < 3 || usuario.getTiempoDisponible() < 1)) {
-				// usuarioSinAtracciones(usuario, eleccion);
-			borrarUsuario(usuario, eleccion);
-			}
+				if ((usuario.getPresupuesto() < 3 || usuario.getTiempoDisponible() < 1)) {
+					// usuarioSinAtracciones(usuario, eleccion);
+					borrarUsuario(usuario, eleccion);
+				}
 			}
 			System.out.println("\nEstas son las promociones que tenemos para usted:");
 			mostrarPromociones(promocionesRecomendadas);
@@ -311,40 +290,39 @@ public class TurismoTierraMedia {
 			System.out.println("\nSi ya no desea continuar, pulse c");
 
 			Scanner sc = new Scanner(new InputStreamReader(System.in));
-				String valorEntrada = sc.nextLine();
+			String valorEntrada = sc.nextLine();
 
-				if (valorEntrada.equalsIgnoreCase("c")) {
-					sugerirAtraccionesPreferidas(usuario, promocionesRecomendadas, atraccionesRecomendadas,
-							otrasAtracciones, eleccion);
-				}
-				try {
-					if (valorEntrada.matches("-?\\d+(\\.,0\\d+)?")) {
-						eleccion = (int) Double.parseDouble(valorEntrada);
-						System.out.println(
-								"\nHas elegido la promocion: " + promocionesRecomendadas.get(eleccion - 1).getNombre());
-
-						// Se actualizan horas, presupuesto e historial de promociones del usuario
-						actualizarUsuarioPromocion(usuario, promocionesRecomendadas, eleccion - 1);
-						actualizarPromocionesAdquiridas(usuario, promocionesRecomendadas, eleccion - 1);
-						actualizarCupoAtraccionPromo(promocionesRecomendadas, eleccion - 1);
-
-						listaPromociones = actualizarListaPromociones(usuario);
-						listaAtracciones = actualizarListaAtracciones(usuario);
-						promocionesRecomendadas = sugerenciasPromociones(usuario);
-						atraccionesRecomendadas = sugerenciasAtraccionesPreferidas(usuario);
-						otrasAtracciones = sugerenciasOtrasAtracciones(usuario);
-
-					} else {
-						eleccion = promocionesRecomendadas.size() + 1;
-					}
-				} catch (IndexOutOfBoundsException ex) {
-					System.out.println("El valor ingresado solamente puede ser un entero entre 1 y "
-							+ promocionesRecomendadas.size());
-				}
+			if (valorEntrada.equalsIgnoreCase("c")) {
+				sugerirAtraccionesPreferidas(usuario, promocionesRecomendadas, atraccionesRecomendadas,
+						otrasAtracciones, eleccion);
 			}
-			sugerirAtraccion(usuario);
-		}
+			try {
+				if (valorEntrada.matches("-?\\d+(\\.,0\\d+)?")) {
+					eleccion = (int) Double.parseDouble(valorEntrada);
+					System.out.println(
+							"\nHas elegido la promocion: " + promocionesRecomendadas.get(eleccion - 1).getNombre());
 
+					// Se actualizan horas, presupuesto e historial de promociones del usuario
+					actualizarUsuarioPromocion(usuario, promocionesRecomendadas, eleccion - 1);
+					actualizarPromocionesAdquiridas(usuario, promocionesRecomendadas, eleccion - 1);
+					actualizarCupoAtraccionPromo(promocionesRecomendadas, eleccion - 1);
+
+					listaPromociones = actualizarListaPromociones(usuario);
+					listaAtracciones = actualizarListaAtracciones(usuario);
+					promocionesRecomendadas = sugerenciasPromociones(usuario);
+					atraccionesRecomendadas = sugerenciasAtraccionesPreferidas(usuario);
+					otrasAtracciones = sugerenciasOtrasAtracciones(usuario);
+
+				} else {
+					eleccion = promocionesRecomendadas.size() + 1;
+				}
+			} catch (IndexOutOfBoundsException ex) {
+				System.out.println(
+						"El valor ingresado solamente puede ser un entero entre 1 y " + promocionesRecomendadas.size());
+			}
+		}
+		sugerirAtraccion(usuario);
+	}
 
 	public static void sugerirAtraccionesPreferidas(Usuario usuario, List<Promocion> promocionesRecomendadas,
 			List<Atraccion> atraccionesRecomendadas, List<Atraccion> otrasAtracciones, int eleccion) {
@@ -362,42 +340,41 @@ public class TurismoTierraMedia {
 			System.out.println("\nSi ya no desea continuar, pulse c");
 
 			Scanner sc = new Scanner(new InputStreamReader(System.in));
-				String valorEntrada = sc.nextLine();
+			String valorEntrada = sc.nextLine();
 
-				if (valorEntrada.equalsIgnoreCase("c")) {
-					sugerirOtrasAtracciones(usuario, promocionesRecomendadas, atraccionesRecomendadas, otrasAtracciones,
-							eleccion);
+			if (valorEntrada.equalsIgnoreCase("c")) {
+				sugerirOtrasAtracciones(usuario, promocionesRecomendadas, atraccionesRecomendadas, otrasAtracciones,
+						eleccion);
 
-				}
-				try {
-					if (valorEntrada.matches("-?\\d+(\\.,0\\d+)?")) {
-						eleccion = (int) Double.parseDouble(valorEntrada);
-						System.out.println(
-								"\nHas elegido la promocion: " + promocionesRecomendadas.get(eleccion - 1).getNombre());
-
-						// Se actualizan horas, presupuesto e historial de promociones del usuario
-						actualizarUsuarioPromocion(usuario, promocionesRecomendadas, eleccion - 1);
-						actualizarPromocionesAdquiridas(usuario, promocionesRecomendadas, eleccion - 1);
-						actualizarCupoAtraccionPromo(promocionesRecomendadas, eleccion - 1);
-
-						listaPromociones = actualizarListaPromociones(usuario);
-						listaAtracciones = actualizarListaAtracciones(usuario);
-						promocionesRecomendadas = sugerenciasPromociones(usuario);
-						atraccionesRecomendadas = sugerenciasAtraccionesPreferidas(usuario);
-						otrasAtracciones = sugerenciasOtrasAtracciones(usuario);
-
-					} else {
-						eleccion = promocionesRecomendadas.size() + 1;
-					}
-				} catch (IndexOutOfBoundsException ex) {
-					System.out.println("El valor ingresado solamente puede ser un entero entre 1 y "
-							+ promocionesRecomendadas.size());
-				}
 			}
-			sugerirAtraccion(usuario);
+			try {
+				if (valorEntrada.matches("-?\\d+(\\.,0\\d+)?")) {
+					eleccion = (int) Double.parseDouble(valorEntrada);
+					System.out.println(
+							"\nHas elegido la promocion: " + promocionesRecomendadas.get(eleccion - 1).getNombre());
 
+					// Se actualizan horas, presupuesto e historial de promociones del usuario
+					actualizarUsuarioPromocion(usuario, promocionesRecomendadas, eleccion - 1);
+					actualizarPromocionesAdquiridas(usuario, promocionesRecomendadas, eleccion - 1);
+					actualizarCupoAtraccionPromo(promocionesRecomendadas, eleccion - 1);
+
+					listaPromociones = actualizarListaPromociones(usuario);
+					listaAtracciones = actualizarListaAtracciones(usuario);
+					promocionesRecomendadas = sugerenciasPromociones(usuario);
+					atraccionesRecomendadas = sugerenciasAtraccionesPreferidas(usuario);
+					otrasAtracciones = sugerenciasOtrasAtracciones(usuario);
+
+				} else {
+					eleccion = promocionesRecomendadas.size() + 1;
+				}
+			} catch (IndexOutOfBoundsException ex) {
+				System.out.println(
+						"El valor ingresado solamente puede ser un entero entre 1 y " + promocionesRecomendadas.size());
+			}
 		}
-	
+		sugerirAtraccion(usuario);
+
+	}
 
 	public static void sugerirOtrasAtracciones(Usuario usuario, List<Promocion> promocionesRecomendadas,
 			List<Atraccion> atraccionesRecomendadas, List<Atraccion> otrasAtracciones, int eleccion) {
@@ -415,39 +392,38 @@ public class TurismoTierraMedia {
 			System.out.println("\nSi ya no desea continuar, pulse c");
 
 			Scanner sc = new Scanner(new InputStreamReader(System.in));
-				String valorEntrada = sc.nextLine();
+			String valorEntrada = sc.nextLine();
 
-				if (valorEntrada.equalsIgnoreCase("c")) {
-					sugerirPromociones(usuario, promocionesRecomendadas, atraccionesRecomendadas, otrasAtracciones,
-							eleccion);
-					try {
-						if (valorEntrada.matches("-?\\d+(\\.,0\\d+)?")) {
-							eleccion = (int) Double.parseDouble(valorEntrada);
-							System.out.println("\nHas elegido la atraccion: "
-									+ promocionesRecomendadas.get(eleccion - 1).getNombre());
+			if (valorEntrada.equalsIgnoreCase("c")) {
+				sugerirPromociones(usuario, promocionesRecomendadas, atraccionesRecomendadas, otrasAtracciones,
+						eleccion);
+				try {
+					if (valorEntrada.matches("-?\\d+(\\.,0\\d+)?")) {
+						eleccion = (int) Double.parseDouble(valorEntrada);
+						System.out.println(
+								"\nHas elegido la atraccion: " + promocionesRecomendadas.get(eleccion - 1).getNombre());
 
-							// Se actualizan horas, presupuesto e historial de promociones del usuario
-							actualizarUsuarioPromocion(usuario, promocionesRecomendadas, eleccion - 1);
-							actualizarPromocionesAdquiridas(usuario, promocionesRecomendadas, eleccion - 1);
-							actualizarCupoAtraccion(atraccionesRecomendadas, eleccion - 1);
+						// Se actualizan horas, presupuesto e historial de promociones del usuario
+						actualizarUsuarioPromocion(usuario, promocionesRecomendadas, eleccion - 1);
+						actualizarPromocionesAdquiridas(usuario, promocionesRecomendadas, eleccion - 1);
+						actualizarCupoAtraccion(atraccionesRecomendadas, eleccion - 1);
 
-							listaAtracciones = actualizarListaAtracciones(usuario);
-							promocionesRecomendadas = sugerenciasPromociones(usuario);
-							atraccionesRecomendadas = sugerenciasAtraccionesPreferidas(usuario);
-							otrasAtracciones = sugerenciasOtrasAtracciones(usuario);
+						listaAtracciones = actualizarListaAtracciones(usuario);
+						promocionesRecomendadas = sugerenciasPromociones(usuario);
+						atraccionesRecomendadas = sugerenciasAtraccionesPreferidas(usuario);
+						otrasAtracciones = sugerenciasOtrasAtracciones(usuario);
 
-						} else {
-							eleccion = promocionesRecomendadas.size() + 1;
-						}
-					} catch (IndexOutOfBoundsException ex) {
-						System.out.println("El valor ingresado solamente puede ser un entero entre 1 y "
-								+ promocionesRecomendadas.size());
+					} else {
+						eleccion = promocionesRecomendadas.size() + 1;
 					}
+				} catch (IndexOutOfBoundsException ex) {
+					System.out.println("El valor ingresado solamente puede ser un entero entre 1 y "
+							+ promocionesRecomendadas.size());
 				}
-				sugerirAtraccion(usuario);
 			}
+			sugerirAtraccion(usuario);
 		}
-
+	}
 
 	public static List<Promocion> actualizarListaPromociones(Usuario usuario) {
 		List<Promocion> promocionesActualizada = new ArrayList<Promocion>();
@@ -569,19 +545,18 @@ public class TurismoTierraMedia {
 	}
 
 	public static List<Atraccion> sugerenciasOtrasAtracciones(Usuario usuario) {
-			List<Atraccion> otrasAtracciones = new ArrayList<Atraccion>();
-			
-			
-			for (Atraccion atraccion : listaAtracciones) {
-				if ((usuario.getTipoPreferido()).compareTo(atraccion.getTipo()) != 0) {
-					if (atraccion.getCupoPersonas() > 0 && usuario.getPresupuesto() >= atraccion.getPrecio()
-							&& usuario.getTiempoDisponible() >= atraccion.getDuracion()) {
-						otrasAtracciones.add(atraccion);
-					}
+		List<Atraccion> otrasAtracciones = new ArrayList<Atraccion>();
+
+		for (Atraccion atraccion : listaAtracciones) {
+			if ((usuario.getTipoPreferido()).compareTo(atraccion.getTipo()) != 0) {
+				if (atraccion.getCupoPersonas() > 0 && usuario.getPresupuesto() >= atraccion.getPrecio()
+						&& usuario.getTiempoDisponible() >= atraccion.getDuracion()) {
+					otrasAtracciones.add(atraccion);
 				}
 			}
-			return otrasAtracciones;
 		}
+		return otrasAtracciones;
+	}
 
 	public static void mostrarAtracciones(List<Atraccion> atraccionesParaMostrar) {
 		List<Atraccion> atracciones = atraccionesParaMostrar;
@@ -604,19 +579,20 @@ public class TurismoTierraMedia {
 		}
 		return tipo_gratis;
 	}
-	
 
 	public static List<Promocion> sugerenciasPromociones(Usuario usuario) {
-        List<Promocion> promocionesRecomendadas = new ArrayList<Promocion>();
-        List<Atraccion> atraccionesP = new ArrayList<Atraccion>();
-        for (Promocion promocion : listaPromociones) {
-        	atraccionesP = promocion.getAtracciones();
-        	int c = 0;
-            if (promocion.tipoPromocion() == 3 || promocion.tipoPromocion() == 2 || promocion.tipoPromocion() == 1)
-                promocionesRecomendadas.add(promocion);
-        }
-        return promocionesRecomendadas;
-    }
+		List<Promocion> promocionesRecomendadas = new ArrayList<Promocion>();
+		List<Atraccion> atraccionesp = new ArrayList<Atraccion>();
+		for (Promocion promocion : listaPromociones) {
+			atraccionesp = promocion.getAtracciones();
+			if ( usuario.getPresupuesto() >= promocion.getPrecio()
+					&& usuario.getTiempoDisponible() >= promocion.getTiempoPromocion())  {
+				promocionesRecomendadas.add(promocion);
+			}
+		
+		}
+		return promocionesRecomendadas;
+	}
 
 	public static void ordenarAtraccionesPorPrecioYDuracion(List<Atraccion> listaAtracciones) {
 		Collections.sort(listaAtracciones, new AtraccionComparator());
@@ -743,7 +719,7 @@ public class TurismoTierraMedia {
 		System.out.println("Archivo generado exitosamente!");
 
 	}
-	
+
 	public static void mostrarPromociones(List<Promocion> promocionesMostrar) {
 		List<Promocion> promociones = promocionesMostrar;
 		int cant = 0;
@@ -757,7 +733,7 @@ public class TurismoTierraMedia {
 					+ " monedas, duracion: " + promocion.getTiempoPromocion() + " hs.");
 		}
 	}
-	
+
 	public static List<Atraccion> analizarPromocion(String[] lectura) {
 		List<Atraccion> atracciones = new ArrayList<>();
 		for (int x = 1; x <= (lectura.length - 2); x++) {
@@ -765,16 +741,12 @@ public class TurismoTierraMedia {
 		}
 		return atracciones;
 	}
-	
-	
+
 	public static void main(String[] args) {
-		
+
 		readUsuariosFileAndCreateList();
 		consola();
 
 	}
 
 }
-
-	
-
