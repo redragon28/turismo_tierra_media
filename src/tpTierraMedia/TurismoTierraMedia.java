@@ -686,7 +686,7 @@ public class TurismoTierraMedia {
 	}
 
 	public static void generarArchivo(Usuario usuarioActual) {
-		String url = "./Archivos/Itinerarios/";
+		String url = ".\\Archivos\\Itinerarios\\" + usuarioActual.getNombre() + ".txt";
 
 		try {
 			String contenido = "";
@@ -724,9 +724,11 @@ public class TurismoTierraMedia {
 
 			File archivo = new File(url);
 
-			if (!archivo.exists()) {
-				archivo.createNewFile();
-			}
+//			 if (archivo.createNewFile()) {
+//			        System.out.println("Archivo creado: " + usuarioActual.getNombre());
+//			      } else {
+//			        System.out.println("El archivo ya existe.");
+//			      }
 
 			FileWriter fw = new FileWriter(archivo);
 			BufferedWriter bw = new BufferedWriter(fw);
@@ -740,7 +742,7 @@ public class TurismoTierraMedia {
 			e.printStackTrace();
 
 		}
-		System.out.println("Archivo generado exitosamente!");
+		
 
 	}
 	
