@@ -85,10 +85,11 @@ public class GestionarPromociones {
 		}
 		return resultado;
 	}
-public static void main(String[] args) {
+
 		
-		System.out.println(GestionarPromociones.readPromocionFileAndCreateList().toString());
-		
-		
+	 public static void main(String[] args) {
+		System.out.println(readPromocionFileAndCreateList().toString());
+	
 	}
 	}
+	

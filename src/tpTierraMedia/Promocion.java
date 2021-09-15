@@ -43,10 +43,7 @@ public abstract class Promocion {
     }
 	
 
-	@Override
-	public String toString() {
-		return "Promocion [nombre=" + nombre + ", atracciones=" + atracciones + "]";
-	}
+	
 
 	public TipoAtraccion getPreferenciaPromo() {
 		TipoAtraccion preferencia = null;

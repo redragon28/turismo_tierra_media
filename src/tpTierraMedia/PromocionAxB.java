@@ -23,10 +23,6 @@ public class PromocionAxB extends Promocion {
 		return atracciones.get(atracciones.size() - 1).getNombre();
 	}
 
-	@Override
-	public String toString() {
-		return "PromocionAxB [nombre=" + nombre + ", atracciones=" + atracciones + "]";
-	}
 
 	@Override
 	public int tipoPromocion() {
