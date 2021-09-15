@@ -79,7 +79,7 @@ public class GestionarPromociones {
 		Atraccion resultado = null;
 
 		for (Atraccion atraccion : GestionarAtracciones.readAtraccionesFileAndCreateList()) {
-			if (atraccion.getNombre().equals(nombre)) { // revisar esto a ver si equals.(valores.trim())
+			if (atraccion.getNombre().toUpperCase().equals(nombre.trim().toUpperCase())) { // revisar esto a ver si equals.(valores.trim())
 				resultado = atraccion;
 			}
 		}
