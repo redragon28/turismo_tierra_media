@@ -20,7 +20,7 @@ public class Usuario {
 		this.tipoPreferido = tipoPreferido;
 		this.todasLasAtracciones = new ArrayList<Atraccion>();
 		this.atraccionesAdquiridas = new ArrayList<Atraccion>();
-		this.promocionesAdquiridas = promocionesAdquiridas;
+		this.promocionesAdquiridas = new ArrayList<Promocion>();
 	}
 	
 	public boolean esBuenPrecio(double precio) {
