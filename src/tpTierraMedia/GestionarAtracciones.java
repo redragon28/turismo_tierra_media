@@ -84,6 +84,7 @@ public static List<Atraccion> mostrarAtracciones(List<Atraccion> lista , Usuario
 		System.out.println(j + "\n");
 	}
 	}
+	
 	return preferidas;
 	}
 	
@@ -106,6 +107,7 @@ public static Atraccion elegirAtraccion( List<Atraccion> lista ,Usuario persona,
 		     System.out.println("usted le queda "+ persona.toString());
 			}
 		}
+		System.out.println("\n"+"generando Itinerario...");
 		return elegida;
 			
 		

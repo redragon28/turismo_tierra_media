@@ -25,8 +25,8 @@ public class App {
 			GestionarUsuarios.MostrarUsuarios(listaUsuarios);
 			Usuario usuarioElegido = GestionarUsuarios.eleccionUsuario(Consola.leerIn(), listaUsuarios);
 			Promocion promocionelegida = GestionarPromociones.eleccionPromocionPreferida(listaPromociones,usuarioElegido);
-			GestionarAtracciones.elegirAtraccion(listaAtracciones, usuarioElegido, promocionelegida);   
-			
+			Atraccion Atraccionelegida =GestionarAtracciones.elegirAtraccion(listaAtracciones, usuarioElegido, promocionelegida);   
+		    ArmadoItinerario.armadoItinerario(promocionelegida, Atraccionelegida);
 			
 			
 			
