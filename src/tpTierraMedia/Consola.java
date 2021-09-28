@@ -32,27 +32,6 @@ public class Consola {
         	System.out.println("¿Desea Iniciar la Aplicacion?  SI/NO" );
 
 }
-
-
-
-/*
-
-public static void main(String[] args) {
-	metodoSaludar();
-	valorEntrada="";
-	while(!valorEntrada.equalsIgnoreCase("Finish")){
-	System.out.println("¿Desea armar su intinerario?" +"\n" + "Si / Finish");
-	leerConsola();
-	System.out.println("Podria tipear su nombre");
-	leerConsola();
-	
-	
-	/*if(valorEntrada.equalsIgnoreCase("todo bien")) {
-		System.out.println("usted es un maldito idiota");
-	}
-		else { System.out.println("");
-		
-	*/
 	}
 
 

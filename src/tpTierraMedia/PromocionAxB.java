@@ -25,7 +25,7 @@ public class PromocionAxB extends Promocion {
 
 	@Override
 	public String toString() {
-		return "PromocionAxB [nombre=" + nombre + ", atracciones=" + atracciones + "]";
+		return  nombre +"--"+ " "+ "precio:" + this.getPrecio() + " "+ atracciones + " "+ "Tendra gratis:" + this.visitaGratis();
 	}
 
 	@Override

@@ -86,7 +86,7 @@ public class GestionarPromociones {
 		return resultado;
 	}
 	
-	public static List<Promocion> PromocionesPreferidas(List<Promocion> lista ,Usuario persona) {
+	public static List<Promocion> mostrarPromociones(List<Promocion> lista ,Usuario persona) {
 		List<Promocion> promoPreferida = new ArrayList<>();
 		for(Promocion i : lista) {
 			if(i.getPreferenciaPromo().equals(persona.getTipoPreferido())) {
@@ -99,7 +99,7 @@ public class GestionarPromociones {
 			System.out.println(" Usted no posee suficiente Dinero / tiempo para adquirir una Promocion" + "\n");
 		}
 		else
-		System.out.println(" Estas son las Promociones recomendadas para usted , Seleccione una \n");
+		System.out.println(" Estas son las Promociones recomendadas para usted. Escriba el nombre para elegir la promocion \n");
 		for(Promocion j: promoPreferida) {
 		System.out.println(j + "\n");
 		}
@@ -107,9 +107,9 @@ public class GestionarPromociones {
 		
 	}
 	
-	public static  Promocion eleccionPromocionPreferida( List<Promocion> lista ,Usuario persona){
+	public static  Promocion eleccionPromocion( List<Promocion> lista ,Usuario persona){
 		Promocion elegida=null;
-		List<Promocion> promoOfrecidas = PromocionesPreferidas(lista, persona);
+		List<Promocion> promoOfrecidas = mostrarPromociones(lista, persona);
 		
 		
 		String entrada = Consola.leerIn();

@@ -19,8 +19,7 @@ public class PromocionAbsoluta extends Promocion {
 
 	@Override
 	public String toString() {
-		return "PromocionAbsoluta [valorPaquete=" + valorPaquete + ", nombre=" + nombre + ", atracciones=" + atracciones
-				+ "]";
+		return nombre+ "--" + " "+ "costo:" + valorPaquete + " "+ atracciones + "El paquete completo posee ese valor fijo";
 	}
 
 	@Override

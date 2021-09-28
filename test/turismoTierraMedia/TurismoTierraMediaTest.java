@@ -10,12 +10,12 @@ import org.junit.Test;
 import tpTierraMedia.Atraccion;
 import tpTierraMedia.Promocion;
 import tpTierraMedia.TipoAtraccion;
-import tpTierraMedia.TurismoTierraMedia;
+
 import tpTierraMedia.Usuario;
 
 public class TurismoTierraMediaTest {
 
-	TurismoTierraMedia ttm = new TurismoTierraMedia();
+	/*TurismoTierraMedia ttm = new TurismoTierraMedia();
 
 	Usuario user1 = new Usuario("Pedro", 1000, 1000, TipoAtraccion.AVENTURA);
 
@@ -44,5 +44,5 @@ public class TurismoTierraMediaTest {
 		// no hace nada pero era solo para probar que crea el archivo en la ruta
 		// especifica.
 	}
-
+*/
 }

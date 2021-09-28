@@ -89,8 +89,8 @@ public class Atraccion  extends Adquiribles implements Comparator<Atraccion> {
 
 	@Override
 	public String toString() {
-		return  nombre +" " + tipo +" " +"costo"+ " "+precio + " "+"duracion"+" "+ duracion + " "
-				 + cupoPersonas ;
+		return  nombre +" " + tipo +" " +"costo:"+ " "+precio + " "+"duracion:"+" "+ duracion +"hs"+ " "
+				 + "cuposdisponibles:" + " "+ cupoPersonas ;
 	}
 
 	@Override

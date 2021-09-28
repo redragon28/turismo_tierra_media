@@ -56,6 +56,7 @@ public abstract class Promocion extends Adquiribles {
 
 		return preferencia;
 	}
+	
 
 	protected abstract int tipoPromocion();
 	
