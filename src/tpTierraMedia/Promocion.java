@@ -2,7 +2,7 @@ package tpTierraMedia;
 
 import java.util.List;
 
-public abstract class Promocion {
+public abstract class Promocion extends Adquiribles {
 
 	protected String nombre;
 	protected List<Atraccion> atracciones;
@@ -22,11 +22,11 @@ public abstract class Promocion {
 	}
 
 	public String getNombre() {
-		return nombre;
+		return this.nombre;
 	}
 
 	public List<Atraccion> getAtracciones() {
-		return atracciones;
+		return this.atracciones;
 	}
 
 	public void setNombre(String nombre) {
@@ -45,7 +45,7 @@ public abstract class Promocion {
 
 	@Override
 	public String toString() {
-		return "Promocion [nombre=" + nombre + ", atracciones=" + atracciones + "]";
+		return " nombre +  atracciones ";
 	}
 
 	public TipoAtraccion getPreferenciaPromo() {

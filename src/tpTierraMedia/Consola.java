@@ -3,28 +3,39 @@ package tpTierraMedia;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 public class Consola {
 
-
-
-public  static String valorEntrada;
-
-//al inicio del programa saluda al usuario
-public static void metodoSaludar() {
 	
-	System.out.println( "Bienvenido a la Aplicacion ,donde le falicitara encontrar la excursion de sus sueños  me llamo COMPUTADORA" );
+	public static String leerIn() {
+			String valorEntrada ;
+			Scanner scanner = new Scanner(new InputStreamReader(System.in));
+
+		    valorEntrada = scanner.nextLine().toUpperCase();
+			
+              return valorEntrada;
+              
+              }
+			
 	
+	public static String inicioApp() {
+	String valorEntrada2 ;
+			Scanner scanner2 = new Scanner(new InputStreamReader(System.in));
+
+		    valorEntrada2 = scanner2.nextLine().toUpperCase();
+			
+              return valorEntrada2;
+	}
+	
+ public static void metodoSaludar() {
+	
+            System.out.println("Bienvenido a Tierra Media" );
+        	System.out.println("¿Desea Iniciar la Aplicacion?  SI/NO" );
+
 }
-//lee lo que el usuario disponga por entrada refereido o ante la consulta de ???
-public static void leerConsola() {
-	
-Scanner scanner = new Scanner(new InputStreamReader(System.in));
 
- valorEntrada = scanner.nextLine().toUpperCase();
 
-}
 
+/*
 
 public static void main(String[] args) {
 	metodoSaludar();
@@ -41,9 +52,7 @@ public static void main(String[] args) {
 	}
 		else { System.out.println("");
 		
-	
-	}*/
-}
+	*/
 	}
-}
+
 

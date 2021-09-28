@@ -6,7 +6,7 @@ import java.util.List;
 public class Usuario {
 
 	private String nombre;
-	public int presupuesto;
+	public double presupuesto;
 	public double tiempoDisponible;
 	private TipoAtraccion tipoPreferido;
 	private List<Atraccion> todasLasAtracciones;
@@ -41,7 +41,7 @@ public class Usuario {
 		return nombre;
 	}
 
-	public int getPresupuesto() {
+	public double getPresupuesto() {
 		return presupuesto;
 	}
 
@@ -71,7 +71,7 @@ public class Usuario {
 		this.nombre = nombre;
 	}
 
-	public void setPresupuesto(int presupuesto) {
+	public void setPresupuesto(double presupuesto) {
 		this.presupuesto = presupuesto;
 	}
 
@@ -90,8 +90,8 @@ public class Usuario {
 
 	@Override
 	public String toString() {
-		return "Usuario [nombre=" + nombre + ", presupuesto=" + presupuesto + ", tiempoDisponible=" + tiempoDisponible
-				+ ", tipoPreferido=" + tipoPreferido + "]";
+		return  nombre + ", presupuesto:" + presupuesto + ", tiempoDisponible:" + tiempoDisponible
+				+ ", Preferencia:" + tipoPreferido ;
 	}
 
 

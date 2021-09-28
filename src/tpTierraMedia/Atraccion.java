@@ -3,9 +3,10 @@ package tpTierraMedia;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Comparator;
 
-public class Atraccion {
-
+public class Atraccion  extends Adquiribles implements Comparator<Atraccion> {
+ 
 	private String nombre;
 	private TipoAtraccion tipo;
 	private double precio;
@@ -88,8 +89,20 @@ public class Atraccion {
 
 	@Override
 	public String toString() {
-		return "Atraccion [nombre=" + nombre + ", tipo=" + tipo + ", precio=" + precio + ", duracion=" + duracion
-				+ ", cupoPersonas=" + cupoPersonas + "]";
+		return  nombre +" " + tipo +" " +"costo"+ " "+precio + " "+"duracion"+" "+ duracion + " "
+				 + cupoPersonas ;
 	}
 
+	@Override
+	public int compare(Atraccion o1, Atraccion o2) {
+		int resultado=0;
+		if(o1.getPrecio()>o2.getPrecio() ||  o1.getPrecio()==o2.getPrecio() && o1.getDuracion()>o2.getDuracion() )
+               resultado= 1;
+		else if (o1.getPrecio()< o2.getPrecio() )
+		        resultado = -1;
+			
+		return resultado;
+	}
+	
+                  
 }

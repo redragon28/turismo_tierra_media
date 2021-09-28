@@ -8,7 +8,7 @@ import java.util.List;
 
 public class GestionarUsuarios {
 
-	public static List<Usuario> ListaUsuarios;
+	
 
 	public static List<Usuario> readUsuariosFileAndCreateList() {
 
@@ -77,7 +77,29 @@ public class GestionarUsuarios {
 		System.out.println(GestionarUsuarios.readUsuariosFileAndCreateList().toString());
 	}
 		
+	
+	public  static void MostrarUsuarios (List<Usuario> lista) {
+		for(Usuario i : lista) {
+		System.out.println(i);
+		System.out.print("\n");
+		}
 	}
+		
+	public static Usuario eleccionUsuario(String nombre, List<Usuario> lista) {
+			
+			Usuario eleccion = null;
+			for( Usuario i : lista ) {
+				if(i.getNombre().equalsIgnoreCase(nombre)) {
+					eleccion= i;
+				  System.out.println("usted eligio "+ eleccion + "\n");
+				}
+				}
+			return eleccion;
+			
+		}
+		
+	}
+	
 
 
 

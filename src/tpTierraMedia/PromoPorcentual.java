@@ -19,14 +19,13 @@ public class PromoPorcentual extends Promocion {
 
 	@Override
 	public double getPrecio() {
-		return super.getPrecio() * (1 - (this.porcentaje));
+		return Math.round(super.getPrecio() * (1 - (this.porcentaje)));
 
 	}
 
 	@Override
 	public String toString() {
-		return "PromoPorcentual [porcentaje=" + porcentaje + ", nombre=" + nombre + ", atracciones=" + atracciones
-				+ "]";
+		return " Promo" + " "+ nombre + " "+  porcentaje + " "+  "precio:"+ " "+ this.getPrecio() + atracciones;
 	}
 
 	@Override
@@ -41,7 +40,8 @@ public class PromoPorcentual extends Promocion {
 
 	@Override
 	protected String visitaGratis() {
-		return null;
+		return "No posee";
 	}
+	
 
 }
