@@ -115,6 +115,7 @@ public static Atraccion elegirAtraccion( List<Atraccion> lista ,Usuario persona,
 		for(Atraccion i : lista ) {
 			if(entrada.equals(i.getNombre().toUpperCase())) {
 		        elegida=i;
+		        i.setCupoPersonas();
 		   // elegida.setCupoPersonas();
 		    persona.setPresupuesto(persona.getPresupuesto()-i.getPrecio());
 		    persona.setTiempoDisponible(persona.getTiempoDisponible()-i.getDuracion());
@@ -142,22 +143,17 @@ public  static boolean condicionMinimaParaConseguirAtraccion (List<Atraccion> li
 }
 	return valorMinimo;
 }
-public  static double condicionMinimaTIempoParaConseguirAtraccion (List<Atraccion> lista){
-	double  valorMinimo = 1000000;
-	for(Atraccion i :lista) {
-		if (i.getDuracion() < valorMinimo ) {
-			valorMinimo=i.getDuracion(); }
-}
-	return valorMinimo;
-}
+
 
 public static  List<Atraccion> mostrarAtraccionesPreferidas(List<Atraccion> lista , Usuario persona, Promocion elegida) {
 	List<Atraccion> preferidas= new ArrayList<>();
 	for(Atraccion i : lista) {
 		if(i.getTipo().equals(persona.getTipoPreferido())  && i.getPrecio()<= persona.getPresupuesto() && i.getDuracion()<= persona.getTiempoDisponible() ){
-			
-			preferidas.add(i);
+			for(Atraccion j : elegida.getAtracciones())
+				if(!j.equals(j)) {
+			      preferidas.add(i);
 }
+		}
 	}
 		ordenarAtracciones(preferidas);
 		if(!preferidas.isEmpty()) {

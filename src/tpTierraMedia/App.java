@@ -20,7 +20,7 @@ public class App {
 	    
 		Consola.metodoSaludar();
 		
-		while( Consola.inicioApp().equals("SI"))  {
+		while( Consola.inicioApp().equals("SI")  && !listaUsuarios.isEmpty())  {
 			System.out.println("Escriba el nombre del usuario a elegir"+"\n");
 			GestionarUsuarios.MostrarUsuarios(listaUsuarios);
 			Usuario usuarioelegido = GestionarUsuarios.eleccionUsuario(Consola.leerIn(), listaUsuarios);

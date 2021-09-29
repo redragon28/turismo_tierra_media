@@ -117,9 +117,13 @@ public class GestionarPromociones {
 		for(Promocion i : promoOfrecidas ) {
 			if(entrada.equals(i.nombre.toUpperCase())) {
 		    elegida=i;
+		    for(Atraccion j : i.getAtracciones()) {
+		    	j.setCupoPersonas();
+		    }
+		    	
 		    persona.setPresupuesto(persona.getPresupuesto()-i.getPrecio());
 		    persona.setTiempoDisponible(persona.getTiempoDisponible()-i.getTiempoPromocion());
-		     //promoOfrecidas.remove(i);
+		     
 		     System.out.println("Eligio "+ entrada +"\n");
 		     System.out.println("usted le queda "+ persona.toString() +"\n");
 			}
