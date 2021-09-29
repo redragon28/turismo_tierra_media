@@ -28,7 +28,9 @@ public abstract class Promocion extends Adquiribles {
 	public List<Atraccion> getAtracciones() {
 		return this.atracciones;
 	}
-
+	
+		
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}

@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Comparator;
 
-public class Atraccion  extends Adquiribles implements Comparator<Atraccion> {
+public class Atraccion extends Adquiribles implements Comparable<Atraccion> {
  
 	private String nombre;
 	private TipoAtraccion tipo;
@@ -42,7 +42,13 @@ public class Atraccion  extends Adquiribles implements Comparator<Atraccion> {
 	public double getDuracion() {
 		return duracion;
 	}
-
+   public Double getPrecioObj() {
+	   return precio;
+   }
+   
+   public Double getDuracionOj() {
+	   return duracion;
+   }
 	public int getCupoPersonas() {
 		return cupoPersonas;
 	}
@@ -63,8 +69,8 @@ public class Atraccion  extends Adquiribles implements Comparator<Atraccion> {
 		this.duracion = duracion;
 	}
 
-	public void setCupoPersonas(int cupoPersonas) {
-		this.cupoPersonas = cupoPersonas;
+	public void setCupoPersonas() {
+		this.cupoPersonas = this.cupoPersonas -1;
 	}
 
 	@Override
@@ -94,15 +100,23 @@ public class Atraccion  extends Adquiribles implements Comparator<Atraccion> {
 	}
 
 	@Override
-	public int compare(Atraccion o1, Atraccion o2) {
+	public int compareTo(Atraccion o2) {
 		int resultado=0;
-		if(o1.getPrecio()>o2.getPrecio() ||  o1.getPrecio()==o2.getPrecio() && o1.getDuracion()>o2.getDuracion() )
+		if(this.getPrecio()>o2.getPrecio() ||  this.getPrecio()==o2.getPrecio() && this.getDuracion()>o2.getDuracion() )
                resultado= 1;
-		else if (o1.getPrecio()< o2.getPrecio() )
+		else if (this.getPrecio()< o2.getPrecio() )
 		        resultado = -1;
 			
 		return resultado;
-	}
+	
+	
+	
+		
+		}
+}
+
+	
+
 	
                   
-}
+

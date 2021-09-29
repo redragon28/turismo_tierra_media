@@ -120,17 +120,19 @@ public class GestionarPromociones {
 		    persona.setPresupuesto(persona.getPresupuesto()-i.getPrecio());
 		    persona.setTiempoDisponible(persona.getTiempoDisponible()-i.getTiempoPromocion());
 		     //promoOfrecidas.remove(i);
-		     System.out.println("Eligio "+ entrada);
-		     System.out.println("usted le queda "+ persona.toString());
+		     System.out.println("Eligio "+ entrada +"\n");
+		     System.out.println("usted le queda "+ persona.toString() +"\n");
 			}
 		}
 		return elegida;
 			
-		
-			
-		
-	}
+		}
 	
+	
+	public List<Promocion> ordenarPromocion(List<Promocion> lista){
+		List<Promocion> promosOrdenadas = new ArrayList<>();
+	return 	promosOrdenadas;
+	}
 public static void main(String[] args) {
 		
 		System.out.println(GestionarPromociones.readPromocionFileAndCreateList().toString());
