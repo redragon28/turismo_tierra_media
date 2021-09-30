@@ -13,7 +13,7 @@ public class Usuario {
 	private List<Atraccion> atraccionesAdquiridas;
 	private List<Promocion> promocionesAdquiridas;
 	
-	public Usuario(String nombre, int presupuesto, double tiempoDisponible, TipoAtraccion tipoPreferido) {
+	public Usuario(String nombre, double presupuesto, double tiempoDisponible, TipoAtraccion tipoPreferido) {
 		this.nombre = nombre;
 		this.presupuesto = presupuesto;
 		this.tiempoDisponible = tiempoDisponible;
@@ -72,11 +72,11 @@ public class Usuario {
 	}
 
 	public void setPresupuesto(double presupuesto) {
-		this.presupuesto = presupuesto;
+		this.presupuesto -= presupuesto;
 	}
 
 	public void setTiempoDisponible(double tiempoDisponible) {
-		this.tiempoDisponible = tiempoDisponible;
+		this.tiempoDisponible -= tiempoDisponible;
 	}
 
 	public void setTipoPreferido(TipoAtraccion tipoPreferido) {

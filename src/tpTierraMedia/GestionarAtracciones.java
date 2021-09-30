@@ -62,7 +62,7 @@ public static List<Atraccion> readAtraccionesFileAndCreateList() {
 	
 //}
 //solo muestra las atracciones.
-public static List<Atraccion> mostrarAtracciones(List<Atraccion> lista , Usuario persona ,Promocion obtenida) {
+/*public static List<Atraccion> mostrarAtracciones(List<Atraccion> lista , Usuario persona ,Promocion obtenida) {
 	List<Atraccion> preferidas= new ArrayList<>();
 	for(Atraccion i : lista) {
 		if(i.getTipo().equals(persona.getTipoPreferido())  && i.getPrecio()<persona.getPresupuesto() && i.getDuracion()< persona.getTiempoDisponible()){
@@ -73,9 +73,9 @@ public static List<Atraccion> mostrarAtracciones(List<Atraccion> lista , Usuario
 	}
 	if(preferidas.isEmpty()) {
 		mostrarAtraccionNoPreferida(lista ,persona);
-		/*for(Atraccion j : lista) {
+		for(Atraccion j : lista) {
 		if(!j.getTipo().equals(persona.getTipoPreferido())  && j.getPrecio()<persona.getPresupuesto() && j.getDuracion()< persona.getTiempoDisponible()){
-			preferidas.add(j);*/
+			preferidas.add(j);
 	
 		ordenarAtracciones(preferidas);
 	
@@ -93,24 +93,28 @@ public static List<Atraccion> mostrarAtracciones(List<Atraccion> lista , Usuario
 	return preferidas;
 	}
 	
-	 
+	*/
+	
 public static List<Atraccion> guardadoAtraccionesElegidas(List<Atraccion> lista ,Usuario persona, Promocion obtenida){
 	List<Atraccion> atraccionesElegidas= new ArrayList<>();
 	
-	if( condicionMinimaParaConseguirAtraccion ( lista, persona) )
+	if( condicionMinimaParaConseguirAtraccion ( lista, persona,obtenida) ) {
 		System.out.println("eliga la atraccion que le interese"+ "\n");
 	
-	  atraccionesElegidas.add(elegirAtraccion(mostrarAtraccionesPreferidas(lista, persona,obtenida), persona, obtenida));
-	  atraccionesElegidas.add(elegirAtraccion(mostrarAtraccionNoPreferida(lista ,  persona), persona, obtenida));
+	  atraccionesElegidas.add(elegirAtraccion(mostrarAtraccionesPreferidas(lista, persona,obtenida), persona));
+	  atraccionesElegidas.add(elegirAtraccion(mostrarAtraccionNoPreferida(lista ,  persona), persona));
        System.out.println("generando Itinerario...");
-	
+	}
+    else { System.out.println("No le alcanza para agregar una Atraccion");
+    }
 	return atraccionesElegidas;
 }
 
-public static Atraccion elegirAtraccion( List<Atraccion> lista ,Usuario persona, Promocion obtenida){
+public static Atraccion elegirAtraccion( List<Atraccion> lista ,Usuario persona){
 	//List<Atraccion> AtraccionesPreferidas = mostrarAtraccionesPreferidas(lista, persona,obtenida );	
 	//List<Atraccion> AtraccionesNopreferidas = mostrarAtraccionNoPreferida( lista ,persona);
 	Atraccion elegida = null;
+	//Promocion promoeElegida = obtenida;
 		String entrada = Consola.leerIn();
 		for(Atraccion i : lista ) {
 			if(entrada.equals(i.getNombre().toUpperCase())) {
@@ -132,38 +136,59 @@ public static Atraccion elegirAtraccion( List<Atraccion> lista ,Usuario persona,
 }
 		
 	
-public  static boolean condicionMinimaParaConseguirAtraccion (List<Atraccion> lista, Usuario persona){
+public  static boolean condicionMinimaParaConseguirAtraccion (List<Atraccion> lista, Usuario persona, Promocion obtenida){
 	boolean valorMinimo = false;
 	for(Atraccion i :lista) {
-		if (i.getPrecio() <= persona.presupuesto && i.getDuracion() <= persona.tiempoDisponible) {
-			if(i.getCupoPersonas()>0);
+		if (i.getPrecio() <= persona.presupuesto && i.getDuracion() <= persona.tiempoDisponible && i.getCupoPersonas()>0 ) {		
+				for(Atraccion j :obtenida.getAtracciones()) {
+					if(i.getNombre() != j.getNombre());
+				
+		
 			valorMinimo=true; 
 			break;
 			}
 }
+	}
 	return valorMinimo;
 }
 
 
 public static  List<Atraccion> mostrarAtraccionesPreferidas(List<Atraccion> lista , Usuario persona, Promocion elegida) {
 	List<Atraccion> preferidas= new ArrayList<>();
+
 	for(Atraccion i : lista) {
 		if(i.getTipo().equals(persona.getTipoPreferido())  && i.getPrecio()<= persona.getPresupuesto() && i.getDuracion()<= persona.getTiempoDisponible() ){
-			for(Atraccion j : elegida.getAtracciones())
-				if(!j.equals(j)) {
-			      preferidas.add(i);
-}
+		if(comparacion(i,elegida)) { // si da true  lo agrega
+			preferidas.add(i);
 		}
-	}
-		ordenarAtracciones(preferidas);
+			     	}
+			}
+		 ordenarAtracciones(preferidas);
 		if(!preferidas.isEmpty()) {
 		for(Atraccion j : preferidas) {
 		 System.out.println(j);
 		}
 		}
-		return preferidas;
-	}
 	
+		return preferidas;
+	
+}
+	
+public static boolean comparacion (Atraccion i,Promocion elegida ) {
+      boolean min= false;
+      for(Atraccion j : elegida.getAtracciones()) {
+			//System.out.println(j);
+			//System.out.println(i);
+			if((i.getNombre().equals(j.getNombre())));{
+				System.out.println(j.getNombre());
+				System.out.println(i.getNombre());
+				min= true;
+				
+		     }
+		     }
+      
+	return min;
+}
 
 
 public static List<Atraccion> mostrarAtraccionNoPreferida(List<Atraccion> lista , Usuario persona) {

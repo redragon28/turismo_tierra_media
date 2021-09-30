@@ -85,15 +85,27 @@ public class GestionarUsuarios {
 		}
 	}
 		
-	public static Usuario eleccionUsuario(String nombre, List<Usuario> lista) {
+	public static Usuario eleccionUsuario(List<Usuario> lista) {
 			
 			Usuario eleccion = null;
+			
+			do {
+			System.out.println("Escriba el nombre del usuario a elegir"+"\n");
+				String leer= Consola.leerIn();
+				
 			for( Usuario i : lista ) {
-				if(i.getNombre().equalsIgnoreCase(nombre)) {
+				if(i.getNombre().equalsIgnoreCase(leer)) {
 					eleccion= i;
 				  System.out.println("usted eligio "+ eleccion + "\n");
 				}
-				}
+			}
+			   
+			
+			}while (eleccion== null);
+	
+			
+			
+				
 			return eleccion;
 			
 		}

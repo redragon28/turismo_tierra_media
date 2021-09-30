@@ -8,10 +8,11 @@ public class ArmadoItinerario {
 	
 	
 
-	public  static List<Adquiribles> armadoItinerario(Promocion elegida , Atraccion elegido ){
+	public  static List<Adquiribles> armadoItinerario(Promocion elegida , List<Atraccion> elegido ){
 		List<Adquiribles> itinerario = new ArrayList <>();
 		itinerario.add(elegida);
-		itinerario.add(elegido);
+		
+		itinerario.addAll(elegido);
 		
 		
 		return itinerario;

@@ -21,15 +21,15 @@ public class App {
 		Consola.metodoSaludar();
 		
 		while( Consola.inicioApp().equals("SI")  && !listaUsuarios.isEmpty())  {
-			System.out.println("Escriba el nombre del usuario a elegir"+"\n");
-			GestionarUsuarios.MostrarUsuarios(listaUsuarios);
-			Usuario usuarioelegido = GestionarUsuarios.eleccionUsuario(Consola.leerIn(), listaUsuarios);
-			Promocion promocionelegida = GestionarPromociones.eleccionPromocion(listaPromociones,usuarioelegido);
+			
+		GestionarUsuarios.MostrarUsuarios(listaUsuarios);
+		Usuario usuarioelegido = GestionarUsuarios.eleccionUsuario( listaUsuarios);
+		Promocion promocionelegida = GestionarPromociones.eleccionPromocion(listaPromociones,usuarioelegido);
 		
 			listaUsuarios.remove(usuarioelegido);
 			//Atraccion Atraccionelegida =GestionarAtracciones.elegirAtraccion(listaAtracciones, usuarioelegido, promocionelegida); 
-			GestionarAtracciones.guardadoAtraccionesElegidas(listaAtracciones, usuarioelegido, promocionelegida);
-			//ArmadoItinerario.armadoItinerario(promocionelegida, Atraccionelegida);
+			 List<Atraccion> atraccionElegida= GestionarAtracciones.guardadoAtraccionesElegidas(listaAtracciones, usuarioelegido, promocionelegida);
+			  System.out.println(" estas son tus elecciones"+ ArmadoItinerario.armadoItinerario(promocionelegida, atraccionElegida));
 			
 			
 			
