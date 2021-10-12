@@ -7,8 +7,8 @@ import org.junit.Test;
 public class GestionarPromocionesTest {
 
 	@Test
-	public void test() {
-		
+	public void testElegirPromociones() {
+		eleccionPromocion
 	}
 
 }

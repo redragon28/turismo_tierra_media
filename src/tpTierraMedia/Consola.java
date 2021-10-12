@@ -1,6 +1,8 @@
 package tpTierraMedia;
 
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Consola {
@@ -19,6 +21,7 @@ public class Consola {
 	
 	public static String inicioApp() {
 	String valorEntrada2 ;
+                 
 			Scanner scanner2 = new Scanner(new InputStreamReader(System.in));
 
 		    valorEntrada2 = scanner2.nextLine().toUpperCase();
@@ -32,6 +35,10 @@ public class Consola {
         	System.out.println("¿Desea Iniciar la Aplicacion?  SI/NO" );
 
 }
-	}
+ 
+ 
+			
+		}
+	
 
 

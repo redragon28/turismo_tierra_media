@@ -49,5 +49,20 @@ public class PromocionAbsolutaTest {
 		assertEquals (55, absoluta.getPrecio (), 0.001);
 	}
 	
-	
+	@Test
+	public void Testgetcupo() {
+		
+		List<Atraccion> Atracciones = new ArrayList<>();
+		
+		
+		Atraccion a1 = new Atraccion ("salto", 35, 3, 5, TipoAtraccion.AVENTURA);
+		Atraccion a2 = new Atraccion ("Tigre", 30, 2, 7, TipoAtraccion.AVENTURA);
+		
+		Atracciones.add(a1);
+		Atracciones.add(a2);
+		
+		Promocion absoluta = new PromocionAbsoluta ("GetAll", 55, Atracciones);  
+		
+		assertEquals (5, absoluta.getCupo() , 0.001);
+}
 }

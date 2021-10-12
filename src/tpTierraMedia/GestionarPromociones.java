@@ -86,8 +86,12 @@ public class GestionarPromociones {
 		return resultado;
 	}
 	
-	public static List<Promocion> mostrarPromociones(List<Promocion> lista ,Usuario persona) {
+	public static List<Promocion> mostrarPromocionesPreferidas(List<Promocion> lista ,Usuario persona) {
 		List<Promocion> promoPreferida = new ArrayList<>();
+		
+		if(!lista.isEmpty()) {
+			
+		
 		
 		for(Promocion i : lista) {
 			if(i.getPreferenciaPromo().equals(persona.getTipoPreferido())) {
@@ -98,31 +102,44 @@ public class GestionarPromociones {
 		}
 		
 		
+		
+		
 		if(promoPreferida.isEmpty()) {
 			System.out.println(" Usted no posee suficiente Dinero / tiempo para adquirir una Promocion" + "\n");
 		}
 		else
 		System.out.println(" Estas son las Promociones recomendadas para usted. Escriba el nombre para elegir la promocion \n");
+		System.out.println(" En caso de no estar interesado , escriba SIGUIENTE \n");
 		for(Promocion j: promoPreferida) {
 		System.out.println(j + "\n");
+		}
+		}else {
+			System.out.println( "no hay Promociones para ofrecerle");
 		}
 		return promoPreferida;
 		
 	}
 	
-	public static  Promocion eleccionPromocion( List<Promocion> lista ,Usuario persona){
-		Promocion elegida=null;
-		List<Promocion> promoOfrecidas = mostrarPromociones(lista, persona);
+	public static List<Promocion> eleccionesPromociones( List<Promocion> lista ,Usuario persona){
+		List<Promocion> elegidas=new ArrayList<>();
+		List<Promocion> promoOfrecidas = lista;
+		
+		while(condicionMinimaParaConseguirPromocion ( promoOfrecidas, persona, persona.getTipoPreferido()) ) {
+         mostrarPromocionesPreferidas(promoOfrecidas,persona);
 		
 		
 		String entrada = Consola.leerIn();
+		if(!(entrada.equalsIgnoreCase("siguiente"))){
 		
 		for(Promocion i : promoOfrecidas ) {
 			if(entrada.equals(i.nombre.toUpperCase())) {
-		    elegida=i;
-		    for(Atraccion j : i.getAtracciones()) {
+		    elegidas.add(i);
+		    
+		    
+		     for(Atraccion j : i.getAtracciones()) {
 		    	j.setCupoPersonas();
-		    }
+		    	
+		   }
 		    	
 		    persona.setPresupuesto(i.getPrecio());
 		    persona.setTiempoDisponible(i.getTiempoPromocion());
@@ -130,11 +147,20 @@ public class GestionarPromociones {
 		     System.out.println("Eligio "+ entrada +"\n");
 		     
 		     System.out.println("Actualizacion Usuario: "+ persona.toString() +"\n");
+		     promoOfrecidas.remove(i);
+		     break;
 			}
+			 
+			
+		}	
+		}else {
+		    break;}
+		
 		
 		}
-		return elegida;
-			
+		 promoOfrecidas.addAll(elegidas);
+		return elegidas;
+	    
 		}
 	
 	
@@ -148,4 +174,17 @@ public static void main(String[] args) {
 		
 		
 	}
-	}
+public  static boolean condicionMinimaParaConseguirPromocion (List<Promocion> lista, Usuario persona, TipoAtraccion tipo){
+	boolean valorMinimo = false;
+	
+	for(Promocion i :lista) {
+		if ((i.getPrecio() <= persona.presupuesto && i.getTiempoPromocion() <= persona.tiempoDisponible && persona.getTipoPreferido() == i.getPreferenciaPromo()) ) {		
+			valorMinimo	=i.hayCupo();
+				
+			break;
+			}
+}
+	
+	return valorMinimo;
+}
+}

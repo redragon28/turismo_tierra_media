@@ -25,7 +25,7 @@ public class PromoPorcentual extends Promocion {
 
 	@Override
 	public String toString() {
-		return   nombre +"--"+ " "+  "precio:"+ " "+ this.getPrecio() +  atracciones+ " "+" este valor tuvo un descuento de:" + porcentaje;
+		return   nombre +"--"+ " "+  "precio:"+ " "+ this.getPrecio() + "tiempo:"+ " "+this.getTiempoPromocion()+ " "+"cupo:"+ this.getCupo() + " "+ atracciones+ " "+" este valor tuvo un descuento de:" + porcentaje;
 	}
 
 	@Override

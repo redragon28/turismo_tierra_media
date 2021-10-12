@@ -94,6 +94,16 @@ public class Usuario {
 				+ ", Preferencia:" + tipoPreferido ;
 	}
 
-
+ public boolean acceso(List<Promocion> lista) {
+	 boolean acceso = false;
+	 for(Promocion i : lista) {
+		 if(this.getPresupuesto()>i.getPrecio() && this.getTiempoDisponible()> i.getTiempoPromocion())
+			 acceso= true;
+		 
+	 }
+	 return acceso;
+ }
+ 
 	}
+
 

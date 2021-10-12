@@ -34,7 +34,40 @@ public abstract class Promocion extends Adquiribles {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	
+	public int getCupo() {
+		 int cupo=0;
+		 
+		for(Atraccion i: this.getAtracciones()) {
+			if( cupo == 0){
+				
+			cupo= i.getCupoPersonas();
+			}
+			if(cupo > i.getCupoPersonas()) {
+			cupo=i.getCupoPersonas();}
+			
+			}
+		return cupo;
+		}
+		
+	public void setCupo(Atraccion atraccion) {
+		atraccion.setCupoPersonas();
+		
+	}
 
+	public boolean hayCupo () {
+		boolean resultado= true;
+		for( Atraccion i : this.getAtracciones()) {
+			if(i.getCupoPersonas() == 0 ) {
+			resultado=	false;
+			break;
+			}
+		}
+		return resultado;
+	}
+	
+
+	
     
 	public double getTiempoPromocion () {
     	double tiempo = 0.0;
@@ -64,3 +97,4 @@ public abstract class Promocion extends Adquiribles {
 	
 	protected abstract String visitaGratis();
 }
+

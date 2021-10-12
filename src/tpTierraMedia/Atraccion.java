@@ -70,7 +70,7 @@ public class Atraccion extends Adquiribles implements Comparable<Atraccion> {
 	}
 
 	public void setCupoPersonas() {
-		this.cupoPersonas = this.cupoPersonas -1;
+		this.cupoPersonas -= 1;
 	}
 
 	@Override

@@ -25,7 +25,7 @@ public class PromocionAxB extends Promocion {
 
 	@Override
 	public String toString() {
-		return  nombre +"--"+ " "+ "precio:" + this.getPrecio() + " "+ atracciones + " "+ "Tendra gratis:" + this.visitaGratis();
+		return  nombre +"--"+ " "+ "precio:" + this.getPrecio() + " "+"tiempo:"+" " + this.getTiempoPromocion()+" " + "cupo:"+ this.getCupo() + " "+ atracciones + " "+ "Tendra gratis:" + this.visitaGratis();
 	}
 
 	@Override
@@ -34,13 +34,19 @@ public class PromocionAxB extends Promocion {
 	}
 
 	@Override
-	public double getTiempoPromocion() {
+	public double getTiempoPromocion () {
+    	double tiempo = 0.0;
+    	for(Atraccion atraccionesEnPromo : atracciones) {
+    		tiempo += atraccionesEnPromo.getDuracion();
+    	}
+    		return tiempo;
+	/*public double getTiempoPromocion() {
 		double tiempo = 0;
 		for (int x = 0; x < atracciones.size() - 1; x++) {
 			tiempo += atracciones.get(x).getDuracion();
 		}
 		return tiempo;
-
+*/
 	}
 
 }
