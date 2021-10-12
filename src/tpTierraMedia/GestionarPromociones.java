@@ -95,7 +95,7 @@ public class GestionarPromociones {
 		
 		for(Promocion i : lista) {
 			if(i.getPreferenciaPromo().equals(persona.getTipoPreferido())) {
-				if(persona.getPresupuesto()>i.getPrecio() && persona.getTiempoDisponible()>i.getTiempoPromocion())
+				if(persona.getPresupuesto()>=i.getPrecio() && persona.getTiempoDisponible()>=i.getTiempoPromocion())
 				promoPreferida.add(i);
 			
 		}
@@ -134,12 +134,12 @@ public class GestionarPromociones {
 		for(Promocion i : promoOfrecidas ) {
 			if(entrada.equals(i.nombre.toUpperCase())) {
 		    elegidas.add(i);
+		   i.setCupo();
 		    
-		    
-		     for(Atraccion j : i.getAtracciones()) {
+		   /*  for(Atraccion j : i.getAtracciones()) {
 		    	j.setCupoPersonas();
 		    	
-		   }
+		   }*/
 		    	
 		    persona.setPresupuesto(i.getPrecio());
 		    persona.setTiempoDisponible(i.getTiempoPromocion());
@@ -159,13 +159,16 @@ public class GestionarPromociones {
 		
 		}
 		 promoOfrecidas.addAll(elegidas);
+		 ordenarPromocion(promoOfrecidas);
 		return elegidas;
 	    
 		}
 	
 	
-	public List<Promocion> ordenarPromocion(List<Promocion> lista){
+	public static List<Promocion>  ordenarPromocion(List<Promocion> lista){
 		List<Promocion> promosOrdenadas = new ArrayList<>();
+       promosOrdenadas= lista;
+		lista.sort(new PromocionComparator());
 	return 	promosOrdenadas;
 	}
 public static void main(String[] args) {

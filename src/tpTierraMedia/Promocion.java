@@ -28,8 +28,12 @@ public abstract class Promocion extends Adquiribles {
 	public List<Atraccion> getAtracciones() {
 		return this.atracciones;
 	}
-	
-		
+	public String getLugares() {
+		String lugares= " ";
+		for (Atraccion i :this.atracciones) {
+		lugares = lugares +	i.getNombre() ;
+	}return  lugares;
+}
 	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
@@ -50,8 +54,9 @@ public abstract class Promocion extends Adquiribles {
 		return cupo;
 		}
 		
-	public void setCupo(Atraccion atraccion) {
-		atraccion.setCupoPersonas();
+	public void setCupo() {
+		for (Atraccion i : this.atracciones)
+		i.setCupoPersonas();
 		
 	}
 

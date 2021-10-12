@@ -19,7 +19,7 @@ public class PromocionAbsoluta extends Promocion {
 
 	@Override
 	public String toString() {
-		return nombre+ "--" + " "+ "costo:" + valorPaquete + " "+"tiempo"+" "+ this.getTiempoPromocion() + " "+ "cupo:"+ this.getCupo() +  atracciones + "El paquete completo posee ese valor fijo";
+		return nombre+ "--" + " "+ "costo:" + valorPaquete + " "+"tiempo"+" "+ this.getTiempoPromocion() + " "+ "cupo:"+" "+ this.getCupo() +  atracciones ;
 	}
 
 	@Override

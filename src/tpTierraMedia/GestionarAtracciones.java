@@ -94,6 +94,7 @@ public static List<Atraccion> guardadoAtraccionesElegidas(List<Atraccion> lista 
 System.out.println("generando Itinerario...");
 System.out.println("\n");
 atraccionesOfrecidas.addAll(atraccionesElegidas);
+//ordenarAtracciones(atraccionesOfrecidas);
 	return atraccionesElegidas;
 }
 
