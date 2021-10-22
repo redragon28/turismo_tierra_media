@@ -31,7 +31,7 @@ public class App {
 		listaUsuarios.remove(usuarioelegido);
 		
 		List<Atraccion> atraccionElegida= GestionarAtracciones.guardadoAtraccionesElegidas(listaAtraccionesModificables, usuarioelegido, promocionesElegidas);
-		System.out.println(" estas son tus elecciones"+ ArmadoItinerario.armadoItinerario(promocionesElegidas, atraccionElegida));
+		ImpresionItinerario.generarArchivo(usuarioelegido,promocionesElegidas, atraccionElegida);
 			
 			
 			
