@@ -10,90 +10,121 @@ import java.util.List;
 import db.ConnectionProvider;
 import tpTierraMedia.Usuario;
 
-
 public class UsarioDaoImpl implements UsuarioDao {
 
-		public Usuario findByName(String nombre) throws SQLException {
-			Usuario usuario = null;
+	public Usuario findByName(String nombre) throws SQLException {
+		Usuario usuario = null;
 
-			Connection connection = ConnectionProvider.getConnection();
-			String query = "select * from Farmacia where nombre=?";
-				
-			PreparedStatement statement = connection.prepareStatement(query);
-			statement.setString(1, nombre);
-			ResultSet resultSet = statement.executeQuery();
+		Connection connection = ConnectionProvider.getConnection();
+		String query = "SELECT * FROM Usuario WHERE nombre=?";
 
-				if (resultSet.next()) {
-					usuario = toUsuario(resultSet);
-				}
-				return usuario;
-			
+		PreparedStatement statement = connection.prepareStatement(query);
+		statement.setString(1, nombre);
+		ResultSet resultSet = statement.executeQuery();
+
+		if (resultSet.next()) {
+			usuario = toUsuario(resultSet);
 		}
-		
-		public List<Usuario> findAll() throws SQLException {
-			List<Usuario> usuarios = new ArrayList<Usuario>();
-			Connection connection = ConnectionProvider.getConnection();
+		return usuario;
 
-			String query = "select * from Farmacia";
+	}
 
-			PreparedStatement preparedStatement = connection.prepareStatement(query);
+	public List<Usuario> findAll() throws SQLException {
+		List<Usuario> usuarios = new ArrayList<Usuario>();
+		Connection connection = ConnectionProvider.getConnection();
 
-			ResultSet resultSet = preparedStatement.executeQuery();
+		String query = "SELECT * FROM Usuario";
 
-			while (resultSet.next()) {
-				Usuario usuario = toUsuario(resultSet);
-				usuarios.add(usuario);
-			}
+		PreparedStatement preparedStatement = connection.prepareStatement(query);
 
-			return usuarios;
-}
+		ResultSet resultSet = preparedStatement.executeQuery();
 
-		
-		private Usuario toUsuario(ResultSet resultSet) throws SQLException {
-
-			Integer id = resultSet.getInt("id_usuario");
-			String nombre = resultSet.getString("nombre");
-			Double presupuesto = resultSet.getDouble("monedas");
-			Double tiempoDisponible = resultSet.getDouble("tiempo");
-			String tipoAtraccion = resultSet.getString("atraccion_preferida");
-			
-			Usuario usuario = new Usuario(id, nombre, presupuesto, tiempoDisponible, tipoAtraccion);
-		//Habria que cambiar el constructor de Usuario y ver los nombres de las tablas de SQL de usuario
-			return usuario;
+		while (resultSet.next()) {
+			Usuario usuario = toUsuario(resultSet);
+			usuarios.add(usuario);
 		}
-		
-		public int insert(Usuario usuario) throws SQLException {
-			String sqlQuery = "INSERT INTO Usuario (id_usuario,nombre,monedas,tiempo,atraccion_preferida) " 
-						+ "VALUES (?,?,?,?,?,?)";
-			Connection connection = ConnectionProvider.getConnection();
 
-			PreparedStatement statement = connection.prepareStatement(sqlQuery);
+		return usuarios;
+	}
 
-			statement.setInt(1, usuario.getId());
-			statement.setString(2, usuario.getNombre());
-			statement.setDouble(3, usuario.getPresupuesto());
-			statement.setDouble(4, usuario.getTiempoDisponible());
-			statement.setString(5, usuario.getTipoPreferido());
-		//Hay que pasarlo a TipoAtraccion
+	private Usuario toUsuario(ResultSet resultSet) throws SQLException {
 
-			int rowsUpdated = statement.executeUpdate();
+		Integer id = resultSet.getInt("id_usuario");
+		String nombre = resultSet.getString("nombre");
+		Double presupuesto = resultSet.getDouble("monedas");
+		Double tiempoDisponible = resultSet.getDouble("tiempo");
+		String tipoAtraccion = resultSet.getString("atraccion_preferida");
 
-			return rowsUpdated;
-		}
-		
-		public int delete(Usuario usuario) throws SQLException {
-			return delete(usuario.getId());
-		}
-		
-		public int delete(Integer id) throws SQLException {
-			String sqlDeleteQuery = "DELETE FROM Usuario WHERE id=?";
-			
-			Connection connection = ConnectionProvider.getConnection();
-			
-			PreparedStatement statement = connection.prepareStatement(sqlDeleteQuery);
-			statement.setInt(1, id);
+		Usuario usuario = new Usuario(id, nombre, presupuesto, tiempoDisponible, tipoAtraccion);
+		// Habria que cambiar el constructor de Usuario y ver los nombres de las tablas
+		// de SQL de usuario
+		return usuario;
+	}
 
-			int rowsUpdated = statement.executeUpdate();
-			return rowsUpdated;
-		}
+	public int insert(Usuario usuario) throws SQLException {
+		String sqlQuery = "INSERT INTO Usuario (id_usuario,nombre,monedas,tiempo,atraccion_preferida) "
+				+ "VALUES (?,?,?,?,?,?)";
+		Connection connection = ConnectionProvider.getConnection();
+
+		PreparedStatement statement = connection.prepareStatement(sqlQuery);
+
+		statement.setInt(1, usuario.getId());
+		statement.setString(2, usuario.getNombre());
+		statement.setDouble(3, usuario.getPresupuesto());
+		statement.setDouble(4, usuario.getTiempoDisponible());
+		statement.setString(5, usuario.getTipoPreferido());
+		// Hay que pasarlo a TipoAtraccion
+
+		int rowsUpdated = statement.executeUpdate();
+
+		return rowsUpdated;
+	}
+
+	public int delete(Usuario usuario) throws SQLException {
+		return delete(usuario.getId());
+	}
+
+	public int delete(Integer id) throws SQLException {
+		String sqlDeleteQuery = "DELETE FROM Usuario WHERE id=?";
+
+		Connection connection = ConnectionProvider.getConnection();
+
+		PreparedStatement statement = connection.prepareStatement(sqlDeleteQuery);
+		statement.setInt(1, id);
+
+		int rowsUpdated = statement.executeUpdate();
+		return rowsUpdated;
+	}
+
+	public int update(Usuario usuario) throws SQLException {
+		String sqlQuery = "UPDATE usuario" + "WHERE id = ?" + "SET nombre = ?, " + "presupuesto = ?, " + "tiempo = ?,"
+				+ "atraccion_preferida = ?";
+		Connection connection = ConnectionProvider.getConnection();
+
+		PreparedStatement statement = connection.prepareStatement(sqlQuery);
+
+		statement.setInt(1, usuario.getId());
+		statement.setString(2, usuario.getNombre());
+		statement.setDouble(3, usuario.getPresupuesto());
+		statement.setDouble(4, usuario.getTiempoDisponible());
+		statement.setString(5, usuario.getTipoPreferido());
+
+		int rowsUpdate = statement.executeUpdate();
+
+		return rowsUpdate;
+	}
+
+	public int countAll(Usuario usuario) throws SQLException {
+		String sqlQuery = "SELECT COUNT() AS total FROM usuarios";
+
+		Connection connection = ConnectionProvider.getConnection();
+
+		PreparedStatement statement = connection.prepareStatement(sqlQuery);
+		ResultSet resultSet = statement.executeQuery();
+		resultSet.next();
+		int total = resultSet.getInt("total");
+
+		return total;
+
+	}
 }
