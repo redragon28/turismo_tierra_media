@@ -10,7 +10,7 @@ public class ConnectionProvider {
 	
 	public static Connection getConnection() throws SQLException {
 		if (connection == null) {
-			connection = DriverManager.getConnection("jdbc:sqlite:TurismoTierraMedia.db");
+			connection = DriverManager.getConnection("jdbc:sqlite:turismo-tierra-media-db.db");
 		}
 		
 		return connection;

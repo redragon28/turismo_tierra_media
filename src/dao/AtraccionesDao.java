@@ -24,7 +24,7 @@ public class AtraccionesDao {
 		ResultSet resultSet = preparedStatement.executeQuery();
 
 		while (resultSet.next()) {
-			Atraccion atracciones = toAtraccion(resultSet);
+			Atraccion atraccion = toAtraccion(resultSet);
 			atracciones.add(atraccion);
 		}
 
@@ -33,39 +33,39 @@ public class AtraccionesDao {
 
 	private Atraccion toAtraccion(ResultSet resultSet) throws SQLException {
 
-		Integer id = resultSet.getInt("id_atraccion");
+		Integer idAtraccion = resultSet.getInt("id_atraccion");
 		String nombre = resultSet.getString("nombre");
-		Double precio = resultSet.getDouble("monedas");
+		Double precio = resultSet.getDouble("costo");
 		Double duracion = resultSet.getDouble("tiempo");
 		Integer cupoPersonas = resultSet.getInt("cupo");
-		String tipoAtraccion = resultSet.getString("tipo_atraccion");
+		TipoAtraccion tipo = TipoAtraccion.valueOf(resultSet.getString("tipo"));
 
-		Atraccion atraccion = new Atraccion(id, nombre, precio, duracion, cupoPersonas, tipoAtraccion);
+		Atraccion atraccion = new Atraccion(idAtraccion, nombre, precio, duracion, cupoPersonas, tipo);
 
 		return atraccion;
 	}
 
 	public int insert(Atraccion atraccion) throws SQLException {
-		String sqlQuery = "INSERT INTO Atraccion (id_atraccion,nombre,monedas,tiempo,cupo,tipo_atraccion) "
-				+ "VALUES (?,?,?,?,?,?)";
+		String sqlQuery = "INSERT INTO Atraccion (nombre,costo,tiempo,cupo,tipo) "
+				+ "VALUES (?,?,?,?,?)";
 		Connection connection = ConnectionProvider.getConnection();
 
 		PreparedStatement statement = connection.prepareStatement(sqlQuery);
 
-		statement.setInt(1, atraccion.getId());
-		statement.setString(2, atraccion.getNombre());
-		statement.setDouble(3, atraccion.getPrecio());
-		statement.setDouble(4, atraccion.getDuracion());
-		statement.setString(5, atraccion.getTipo());
-		// Hay que pasarlo a TipoAtraccion
-
+		
+		statement.setString(1, atraccion.getNombre());
+		statement.setDouble(2, atraccion.getPrecio());
+		statement.setDouble(3, atraccion.getDuracion());
+		statement.setInt(4, atraccion.getCupoPersonas());
+		statement.setInt(5, atraccion.getTipo().ordinal() + 1);
+		
 		int rowsUpdated = statement.executeUpdate();
 
 		return rowsUpdated;
 	}
 
 	public int delete(Atraccion atraccion) throws SQLException {
-		return delete(atraccion.getId());
+		return delete(atraccion.getIdAtraccion());
 	}
 
 	public int delete(Integer id) throws SQLException {
@@ -88,11 +88,11 @@ public class AtraccionesDao {
 
 		PreparedStatement statement = connection.prepareStatement(sqlQuery);
 
-		statement.setInt(1, atraccion.getId());
-		statement.setString(2, atraccion.getNombre());
-		statement.setDouble(3, atraccion.getPrecio());
-		statement.setDouble(4, atraccion.getDuracion());
-		statement.setString(5, atraccion.getTipo());
+		statement.setString(1, atraccion.getNombre());
+		statement.setDouble(2, atraccion.getPrecio());
+		statement.setDouble(3, atraccion.getDuracion());
+		statement.setInt(4, atraccion.getCupoPersonas());
+		statement.setInt(5, atraccion.getTipo().ordinal() + 1);
 
 		int rowsUpdate = statement.executeUpdate();
 

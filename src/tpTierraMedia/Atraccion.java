@@ -6,19 +6,25 @@ import java.util.Objects;
 import java.util.Comparator;
 
 public class Atraccion extends Adquiribles implements Comparable<Atraccion> {
- 
+	
+	private int idAtraccion;
 	private String nombre;
 	private TipoAtraccion tipo;
 	private double precio;
 	private double duracion;
 	private int cupoPersonas;
 
-	public Atraccion(String nombre, double precio, double duracion, int cupoPersonas, TipoAtraccion tipo) {
+	public Atraccion(int idAtraccion, String nombre, double precio, double duracion, int cupoPersonas, TipoAtraccion tipo) {
+		this.idAtraccion = idAtraccion;
 		this.nombre = nombre;
 		this.tipo = tipo;
 		this.precio = precio;
 		this.duracion = duracion;
 		this.cupoPersonas = cupoPersonas;
+	}
+
+	public int getIdAtraccion() {
+		return idAtraccion;
 	}
 
 	public List<TipoAtraccion> getListaTiposAtraccion() {

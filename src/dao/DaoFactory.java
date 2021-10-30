@@ -1,9 +1,9 @@
 package dao;
 
-public class DAOFactory {
+public class DaoFactory {
 
 	public static UsuarioDao getUsuarioDao() {
-		return new UsarioDaoImpl();
+		return new UsuarioDao();
 	}
 
 	public static AtraccionesDao getAtraccionesDao() {

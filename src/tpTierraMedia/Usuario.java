@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Usuario {
-
+	
+	private int idUsuario;
 	private String nombre;
 	public double presupuesto;
 	public double tiempoDisponible;
@@ -13,7 +14,8 @@ public class Usuario {
 	private List<Atraccion> atraccionesAdquiridas;
 	private List<Promocion> promocionesAdquiridas;
 	
-	public Usuario(String nombre, double presupuesto, double tiempoDisponible, TipoAtraccion tipoPreferido) {
+	public Usuario(int idUsuario, String nombre, double presupuesto, double tiempoDisponible, TipoAtraccion tipoPreferido) {
+		this.idUsuario = idUsuario;
 		this.nombre = nombre;
 		this.presupuesto = presupuesto;
 		this.tiempoDisponible = tiempoDisponible;
@@ -23,6 +25,10 @@ public class Usuario {
 		this.promocionesAdquiridas = new ArrayList<Promocion>();
 	}
 	
+	public int getIdUsuario() {
+		return idUsuario;
+	}
+
 	public boolean esBuenPrecio(double precio) {
 		return presupuesto >= precio;
 	}
