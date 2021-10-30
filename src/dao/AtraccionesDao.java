@@ -17,7 +17,9 @@ public class AtraccionesDao {
 		List<Atraccion> atracciones = new ArrayList<Atraccion>();
 		Connection connection = ConnectionProvider.getConnection();
 
-		String query = "SELECT * FROM Atracciones";
+		String query = "SELECT * "
+				+ "FROM atracciones "
+				+ "JOIN tipo_atraccion ON tipo_atraccion.id_tipo = atracciones.tipo ";
 
 		PreparedStatement preparedStatement = connection.prepareStatement(query);
 
@@ -44,9 +46,30 @@ public class AtraccionesDao {
 
 		return atraccion;
 	}
+	
+	public List<Atraccion> findByName(String nombre) throws SQLException {
+		List<Atraccion> atracciones = new ArrayList<Atraccion>();
+		Connection connection = ConnectionProvider.getConnection();
+
+		String query = "SELECT * "
+				+ "FROM atracciones "
+				+ "JOIN tipo_atraccion ON tipo_atraccion.id_tipo = atracciones.tipo "
+				+ "WHERE atracciones.nombre LIKE ? ";
+
+		PreparedStatement statement = connection.prepareStatement(query);
+		statement.setString(1, nombre);
+		ResultSet resultSet = statement.executeQuery();
+
+		while (resultSet.next()) {
+			Atraccion atraccion = toAtraccion(resultSet);
+			atracciones.add(atraccion);
+		}
+
+		return atracciones;
+	}
 
 	public int insert(Atraccion atraccion) throws SQLException {
-		String sqlQuery = "INSERT INTO Atraccion (nombre,costo,tiempo,cupo,tipo) "
+		String sqlQuery = "INSERT INTO atracciones (nombre,costo,tiempo,cupo,tipo) "
 				+ "VALUES (?,?,?,?,?)";
 		Connection connection = ConnectionProvider.getConnection();
 
@@ -64,17 +87,14 @@ public class AtraccionesDao {
 		return rowsUpdated;
 	}
 
-	public int delete(Atraccion atraccion) throws SQLException {
-		return delete(atraccion.getIdAtraccion());
-	}
 
-	public int delete(Integer id) throws SQLException {
-		String sqlDeleteQuery = "DELETE FROM Atraccion WHERE id=?";
+	public int delete(Atraccion atraccion) throws SQLException {
+		String sqlDeleteQuery = "DELETE FROM atracciones WHERE atracciones.nombre LIKE ? ";
 
 		Connection connection = ConnectionProvider.getConnection();
 
 		PreparedStatement statement = connection.prepareStatement(sqlDeleteQuery);
-		statement.setInt(1, id);
+		statement.setString(1, atraccion.getNombre());
 
 		int rowsUpdated = statement.executeUpdate();
 		return rowsUpdated;
@@ -99,8 +119,9 @@ public class AtraccionesDao {
 		return rowsUpdate;
 	}
 
-	public int countAll(Atraccion atraccion) throws SQLException {
-		String sqlQuery = "SELECT COUNT() AS total FROM Atraccion";
+	public int countAll() throws SQLException {
+		String sqlQuery = "SELECT COUNT() AS total "
+				+ "FROM atracciones ";
 
 		Connection connection = ConnectionProvider.getConnection();
 

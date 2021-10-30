@@ -1,7 +1,10 @@
 package tpTierraMedia;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Itinerario {
-	
+
 	private int id_itinerario;
 	private int id_promocion;
 	private int id_atraccion;
@@ -20,6 +23,16 @@ public class Itinerario {
 		this.id_promocion = id_promo;
 	}
 
+	public static List<Adquiribles> armadoItinerario(List<Promocion> elegida, List<Atraccion> elegido) {
+		List<Adquiribles> itinerario = new ArrayList<>();
+		itinerario.addAll(elegida);
+
+		itinerario.addAll(elegido);
+
+		return itinerario;
+
+	}
+
 	public int getId_itinerario() {
 		return id_itinerario;
 	}
@@ -35,8 +48,9 @@ public class Itinerario {
 	public int getId_usuario() {
 		return id_usuario;
 	}
-	
-	//Hay que ver el tema del itinerario. Creo que hay que copiar nada más el ArmadoItinerario aca dentro.
+
+	// Hay que ver el tema del itinerario. Creo que hay que copiar nada más el
+	// ArmadoItinerario aca dentro.
 
 	@Override
 	public String toString() {

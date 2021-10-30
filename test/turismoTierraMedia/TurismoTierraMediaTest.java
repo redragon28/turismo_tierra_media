@@ -2,11 +2,15 @@ package turismoTierraMedia;
 
 import static org.junit.Assert.*;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Test;
 
+import dao.DaoFactory;
+import dao.UsuarioDao;
 import tpTierraMedia.Atraccion;
 import tpTierraMedia.Promocion;
 import tpTierraMedia.TipoAtraccion;
@@ -45,4 +49,23 @@ public class TurismoTierraMediaTest {
 		// especifica.
 	}
 */
+	
+	@Test
+	public void findAllUsuarioTest() throws SQLException {
+		UsuarioDao userConn = DaoFactory.getUsuarioDao();
+
+		List<Usuario> usuarios = userConn.findAll();
+
+		assertEquals("Eowyn", usuarios.get(0).getNombre());
+		assertEquals("Gandalf", usuarios.get(1).getNombre());
+		/*assertEquals("Sebastian", usuarios.get(2).getNombreDeUsuario());
+		assertEquals("Jeremias", usuarios.get(3).getNombreDeUsuario());
+		assertEquals("Tomas", usuarios.get(4).getNombreDeUsuario());
+		assertEquals("Diego", usuarios.get(5).getNombreDeUsuario());
+*/
+		// Imprime todos los usuarios
+		for (Usuario usuario : usuarios)
+			System.out.println(usuario.getNombre());
+
+	}
 }

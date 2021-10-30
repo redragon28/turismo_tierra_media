@@ -17,7 +17,10 @@ public class UsuarioDao implements GenericDao<Usuario> {
 		Usuario usuario = null;
 
 		Connection connection = ConnectionProvider.getConnection();
-		String query = "SELECT * FROM Usuario WHERE nombre=?";
+		String query = "SELECT * "
+				+ "FROM usuarios "
+				+ "JOIN tipo_atraccion ON tipo_atraccion.id_tipo = usuarios.preferencia"
+				+ "WHERE nombre LIKE ?";
 
 		PreparedStatement statement = connection.prepareStatement(query);
 		statement.setString(1, nombre);
@@ -34,7 +37,9 @@ public class UsuarioDao implements GenericDao<Usuario> {
 		List<Usuario> usuarios = new ArrayList<Usuario>();
 		Connection connection = ConnectionProvider.getConnection();
 
-		String query = "SELECT * FROM Usuario";
+		String query = "SELECT * "
+				+ "FROM usuarios "
+				+ "JOIN tipo_atraccion ON tipo_atraccion.id_tipo = usuarios.preferencia";
 
 		PreparedStatement preparedStatement = connection.prepareStatement(query);
 
@@ -64,7 +69,7 @@ public class UsuarioDao implements GenericDao<Usuario> {
 	}
 
 	public int insert(Usuario usuario) throws SQLException {
-		String sqlQuery = "INSERT INTO Usuario (nombre,monedas,tiempo,preferencia) "
+		String sqlQuery = "INSERT INTO usuarios (nombre,monedas,tiempo,preferencia) "
 				+ "VALUES (?,?,?,?)";
 		Connection connection = ConnectionProvider.getConnection();
 
@@ -73,6 +78,7 @@ public class UsuarioDao implements GenericDao<Usuario> {
 		statement.setString(1, usuario.getNombre());
 		statement.setDouble(2, usuario.getPresupuesto());
 		statement.setDouble(3, usuario.getTiempoDisponible());
+		//statement.setString(4, usuario.getTipoPreferido().name());
 		statement.setInt(4, usuario.getTipoPreferido().ordinal() + 1);
 		//lo de ordinal lo pusimos para que de el orden de los enum. En las tabla en vez de poner text, seria un int.
 
@@ -86,7 +92,7 @@ public class UsuarioDao implements GenericDao<Usuario> {
 	}
 
 	public int delete(Integer id) throws SQLException {
-		String sqlDeleteQuery = "DELETE FROM Usuario WHERE id=?";
+		String sqlDeleteQuery = "DELETE FROM usuarios WHERE id=?";
 
 		Connection connection = ConnectionProvider.getConnection();
 
